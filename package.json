@@ -1,7 +1,7 @@
 {
   "name": "rythmhacks-website",
   "version": "0.1.0",
-  "homepage": "https://feng-zhang2495.github.io/RythmHacks-Website",
+  "homepage": "https://rythmhacks.ca",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
