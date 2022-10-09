@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #20202F;
   margin: 0;
@@ -46,5 +50,6 @@ p {
 }
 
 #hero {
-  padding-top: 2rem;
+  padding-top: 5rem;
+  padding-left: 5rem;
 }
