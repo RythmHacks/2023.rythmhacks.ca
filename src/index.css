@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'URW Form Medium';
+  src: url('fonts/Text Font.otf');
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -23,6 +28,7 @@ p {
   top: 0;
   width: 100%;
   font-size: 2rem;
+  font-family: 'URW Form Medium';
 }
 
 .nav ul {
@@ -52,4 +58,20 @@ p {
 #hero {
   padding-top: 5rem;
   padding-left: 5rem;
+}
+
+button {
+  color: #FFFFFF;
+  background: rgb(180,67,89);
+  background: linear-gradient(90deg, rgba(180,67,89) 35%, rgba(222,173,70) 100%);
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 1rem;
+  text-decoration: none;
+  border-width: 0;
+}
+
+button:hover {
+  background: rgb(180,67,89);
 }
