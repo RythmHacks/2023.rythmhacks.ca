@@ -1,31 +1,24 @@
 import React from 'react';
+import logo from '../assets/FINAL_logo.ai'
 
 const Navbar = () => {
-  return (
-    <nav className='nav'>
-        <a href='/' className='nav-logo'>Site Logo</a>
-        <ul>
-            <li>
-                <a href='#'>Home</a>
-            </li>
-            <li>
-                <a href='#about'>About</a>
-            </li>
-            <li>
-                <a href='#contact'>Contact</a>
-            </li>
-            <li>
-                <a href='#faq'>FAQ</a>
-            </li>
-            <li>
-                <a href='#sponsers'>Sponsers</a>
-            </li>
-            <li>
-                <a href='#team'>Team</a>
-            </li>
-        </ul>
-    </nav>
-  );
+
+    let pages = ['Home', 'About', 'FAQ', 'Sponsors', 'Team', 'Contact']
+    return (
+        <nav className='nav'>
+            <a href='/' className='nav-logo'>Site Logo</a>
+            <img src = {logo}></img>
+            <div>
+                {pages.map(
+                    (value, index) => {
+                        return (
+                            <a href={'#'+value.toLowerCase()}>{value}</a>
+                        )
+                    }
+                )}
+            </div>
+        </nav>
+    );
 };
   
 export default Navbar;
