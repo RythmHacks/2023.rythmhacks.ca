@@ -3,11 +3,11 @@ import logo from '../assets/FINAL_logo.ai'
 
 const Navbar = () => {
 
-    let pages = ['Home', 'About', 'FAQ', 'Sponsors', 'Team', 'Contact']
+    let pages = ['HOME', 'ABOUT', 'FAQ', 'SPONSORS', 'TEAM', 'CONTACT']
     return (
-        <nav className='nav'>
-            <a href='/' className='nav-logo'>Site Logo</a>
-            <img src = {logo}></img>
+        <nav class='nav'>
+            <a href='/' className='nav-logo'>RythmHacks</a>
+            {/* <img src = {logo}></img> */}
             <div>
                 {pages.map(
                     (value, index) => {

@@ -6,6 +6,7 @@ const Hero = () => {
             <p><b>Join us @ [DATE AND TIME]</b></p>
             <button>Register Now</button>
             <button>Cool Box</button>
+            <p class='text-center text-3xl'>as;dkfaodk</p>
         </div>
     );
 }

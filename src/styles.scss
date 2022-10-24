@@ -1,15 +1,16 @@
-@font-face {
-  font-family: 'URW Form Medium';
-  src: url('fonts/Text Font.otf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Work+Sans&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #20202F;
+  background-color: #180438;
   margin: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 p {
@@ -17,18 +18,21 @@ p {
 }
 
 .nav {
-  background-color: #000000;
   color: white;
   display: flex;
-  align-items: stretch;
-  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
   padding: 1rem;
+  margin-right: 2rem;
+
   /* Make sticky */
   position: fixed;
   top: 0;
   width: 100%;
-  font-size: 2rem;
-  font-family: 'URW Form Medium';
+  font-size: max(2vw, 20px);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 100;
 
   div {
     margin: 0;
@@ -41,9 +45,6 @@ p {
   a {
     color: inherit;
     text-decoration: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
   }
 
   a:active {
