@@ -8,18 +8,18 @@ html {
 }
 
 body {
-  background-color: #180438;
+  background: linear-gradient(90deg, theme('colors.background.lightblue')  0%, theme('colors.background.darkblue') 27%, theme('colors.background.neon') 100%);
   margin: 0;
   font-family: 'Inter', sans-serif;
 }
 
-p {
+* {
   color: #FFFFFF;
 }
 
-#hero {
-  padding-top: 5rem;
-  padding-left: 5rem;
+.section {
+  height: 90vh;
+  border: 3px solid black;
 }
 
 button {
