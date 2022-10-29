@@ -3,7 +3,7 @@ import './Navbar.scss'
 
 const Navbar = () => {
 
-    let pages = ['HOME', 'ABOUT', 'FAQ', 'SPONSORS', 'TEAM', 'CONTACT']
+    let pages = ['ABOUT', 'FAQ', 'SCHEDULE', 'SPONSORS', 'TEAM']
     return (
         <nav class='nav text-3xl'>
             <img src = {logo} class='nav-logo hover:cursor-pointer'></img>
