@@ -1,0 +1,44 @@
+.nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin-right: 2rem;
+  
+    /* Make sticky */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+  
+    div {
+      margin: 0;
+      padding-right: 2rem;
+      list-style: none;
+      display: flex;
+      gap: 3rem;
+    }
+  
+    a {
+      color: inherit;
+      text-decoration: none;
+    //   background-image: linear-gradient(90deg, red, blue);
+    //   background-size: 0% 5px;
+    //   background-repeat: no-repeat;
+    //   background-position: left bottom;
+    //   transition: 0.5s;
+
+    //   &:hover {
+    //     background-size: 100% 5px;
+    //   }
+    }
+
+    .nav-logo {
+        width: 5%;
+    }
+}
+  
+  
