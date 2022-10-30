@@ -1,6 +1,7 @@
 import logo from '../../assets/FINAL_logo-01.svg'
 import './Navbar.scss'
 import React, { useState } from "react"
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 const Navbar = () => {
 
@@ -27,7 +28,7 @@ const Navbar = () => {
                 )}
             </div>
             <div className="burger">
-                <a onClick={handleToggle} class='cursor-pointer burger-button'>{navbarOpen ? "x" : "-"}</a>
+                <a onClick={handleToggle} class='cursor-pointer burger-button'><GiHamburgerMenu/></a>
                 <div className={navbarOpen ? "shown" : "hidden"}>
                     {pages.map(
                         (value, index) => {
