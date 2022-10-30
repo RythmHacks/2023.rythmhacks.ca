@@ -11,3 +11,4 @@ function App() {
 }
 
 export default App;
+// Adding this to configure netlify, you guys can delete this
