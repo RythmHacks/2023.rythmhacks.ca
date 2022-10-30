@@ -3,7 +3,20 @@ import './Hero.scss'
 const Hero = () => {
     return (
         <div id = 'hero' class='section items-center'>
-            <h3 class='ml-8'>Thing that changes at</h3>
+            
+            <div id = 'cycle-wrapper' class="font-extralight">
+				<h3 class="rw-sentence ml-8">
+					<div class="rw-words rw-words-1">
+						<span>Win cool prizes at</span>
+						<span>Meet amazing people at</span>
+						<span>Enjoy free food at</span>
+						<span>Create a project at</span>
+						<span>Make lifetime memories at</span>
+						<span>Get inspired at</span>
+					</div>
+				</h3>
+			</div>
+
             <h1 id = 'title' class='font-bold'>
                 RYTHM
                 <h1 class='gradient inline'>HɅCKS</h1>
