@@ -22,14 +22,6 @@
         background-color: darken(rgba(18,20,60,0.8), 4%);
     }
   
-    div {
-      margin: 0;
-      padding-right: 2rem;
-      list-style: none;
-      display: flex;
-      gap: 3rem;
-    }
-  
     a {
       color: inherit;
       text-decoration: none;
@@ -37,12 +29,17 @@
     }
 
     .links {
+      margin: 0;
+      padding-right: 2rem;
+      list-style: none;
+      display: flex;
+      gap: 3rem;
       display: flex;
     }
 
     .nav-logo {
       // position: absolute;
-      width: max(5%, 50px);
+      width: max(6vw, 75px);
     }
 
     .burger {
@@ -61,8 +58,6 @@
       .shown {
         display: grid;
         padding: 25px;
-        margin-left: 50px;
-        line-height: 8px;
       }
     }
 }
@@ -74,8 +69,20 @@
     }
     .burger {
       display: block;
+
+    }
+    .nav-logo {
+      width: 75px;
     }
   }
 }
-  
+
+@media screen and (max-width: 1200px) {
+  #navlogodiv {
+    gap: 0px;
+    p {
+      display: none;
+    }
+  }
+}
   

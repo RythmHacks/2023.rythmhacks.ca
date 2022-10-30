@@ -15,11 +15,18 @@ const Navbar = () => {
 
     return (
         <nav class='nav text-3xl'>
-            <img onClick = {
-                () => {
-                    window.scrollTo(0,0)
-                }
-            } src = {logo} class={`nav-logo ${navbarOpen ? "absolute top-4" : ""} hover:cursor-pointer`}></img>
+            <div id = 'navlogodiv' class='flex items-center gap-4'>
+                <img onClick = {
+                    () => {
+                        window.scrollTo(0,0)
+                    }
+                } src = {logo} class={`nav-logo hover:cursor-pointer`}></img>
+                <p class='font-bold'>
+                    RYTHM
+                    <p class='text-accent inline'>HɅCKS</p>
+                </p>
+            </div>
+
             <div className='links'>
                 {pages.map(
                     (value, index) => {
