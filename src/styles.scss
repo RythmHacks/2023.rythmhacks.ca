@@ -8,7 +8,9 @@ html {
 }
 
 body {
-  background: linear-gradient(90deg, theme('colors.background.lightblue')  0%, theme('colors.background.darkblue') 27%, theme('colors.background.neon') 100%);
+  background: url('./assets/background.svg') no-repeat, linear-gradient(90deg, theme('colors.background.lightblue')  0%, theme('colors.background.darkblue') 27%, theme('colors.background.neon') 100%);
+  background-size: 100%;
+  background-size: cover;
   margin: 0;
   font-family: 'Inter', sans-serif;
 }

@@ -15,12 +15,12 @@ const Navbar = () => {
 
     return (
         <nav class='nav text-3xl'>
-            <div id = 'navlogodiv' class='flex items-center gap-4'>
-                <img onClick = {
+            <div onClick = {
                     () => {
                         window.scrollTo(0,0)
-                    }
-                } src = {logo} class={`nav-logo hover:cursor-pointer`}></img>
+                    } 
+            } id = 'navlogodiv' class='flex items-center gap-4 cursor-pointer'>
+                <img src = {logo} class={`nav-logo`}></img>
                 <p class='font-bold'>
                     RYTHM
                     <p class='text-accent inline'>HɅCKS</p>
