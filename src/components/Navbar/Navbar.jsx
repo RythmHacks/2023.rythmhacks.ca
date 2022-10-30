@@ -15,13 +15,27 @@ const Navbar = () => {
 
     return (
         <nav class='nav text-3xl'>
-            <img src = {logo} class={`nav-logo ${navbarOpen ? "absolute top-4" : ""} hover:cursor-pointer`}></img>
+            <img onClick = {
+                () => {
+                    window.scrollTo(0,0)
+                }
+            } src = {logo} class={`nav-logo ${navbarOpen ? "absolute top-4" : ""} hover:cursor-pointer`}></img>
             <div className='links'>
                 {pages.map(
                     (value, index) => {
                         return (
-                            <a href={'#'+value.toLowerCase()}
-                            class = 'transition-all duration-300 hover:text-accent'
+                            <a onClick = {
+                                () => {
+                                    var rect = document.getElementById(value.toLowerCase())
+                                    try {
+                                        rect = rect.getBoundingClientRect();
+                                    } catch {
+                                        return;
+                                    }
+                                    window.scrollTo(rect.left,rect.top)
+                                }
+                            }
+                            class = 'transition-all duration-300 hover:text-accent cursor-pointer'
                             >{value}</a>
                         )
                     }
