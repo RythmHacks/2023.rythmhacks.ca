@@ -33,20 +33,49 @@
     a {
       color: inherit;
       text-decoration: none;
-    //   background-image: linear-gradient(90deg, red, blue);
-    //   background-size: 0% 5px;
-    //   background-repeat: no-repeat;
-    //   background-position: left bottom;
-    //   transition: 0.5s;
+      // display: none;
+    }
 
-    //   &:hover {
-    //     background-size: 100% 5px;
-    //   }
+    .links {
+      display: flex;
     }
 
     .nav-logo {
-        width: 5%;
+      // position: absolute;
+      width: max(5%, 50px);
     }
+
+    .burger {
+      display: none;
+      width: 100%;
+
+      .burger-button {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+      }
+
+      .hidden {
+        display: none;
+      }
+      .shown {
+        display: grid;
+        padding: 25px;
+        margin-left: 50px;
+        line-height: 15px;
+      }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav {
+    .links {
+      display: none;
+    }
+    .burger {
+      display: block;
+    }
+  }
 }
   
   
