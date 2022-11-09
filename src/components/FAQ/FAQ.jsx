@@ -1,5 +1,5 @@
 import './FAQ.scss'
-import Accordion from '../Accordion';
+import Accordion from '../Accordion/Accordion';
 
 const FAQ = () => {
 
@@ -11,46 +11,26 @@ const FAQ = () => {
             </h2>
             <div className='faq-content'>
                 <div className='column'>
-                    <details>
-                        <summary>What is RythmHacks?</summary>
-                        <p>RythmHacks is a hackathon.</p>
-                    </details>
-                    <details>
-                        <summary>What kind of workshops, speakers, and activities will there be?</summary>
-                        <p>TBD</p>
-                    </details>
+                    <Accordion
+                    title='What is RythmHacks?'
+                    content='RythmHacks is a hackathon.'
+                    />
+                    <Accordion
+                    title='What kind of workshops, speakers, and activities will there be?'
+                    content='TBD'
+                    />
                 </div>
                 <div className='column'>
-                    <details>
-                        <summary>How much does it cost?</summary>
-                        <p>Nothing! There is no cost to attending RythmHacks, food and accommodations will be provided during the event.</p>
-                    </details>
-                    <details>
-                        <summary>Who can participate?</summary>
-                        <p>TBD</p>
-                    </details>
+                    <Accordion
+                    title='How much does it cost?'
+                    content='Nothing! There is no cost to attending RythmHacks, food and accommodations will be provided during the event.'
+                    />
+                    <Accordion
+                    title='Who can participate?'
+                    content='TBD'
+                    />
                 </div>
             </div>
-   <div>
-     <Accordion
-       title="What is your return policy?"
-       content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-     />
-     <Accordion
-       title="Which languages does you support?"
-       content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-     />
-     <Accordion
-       title="Can I use a custom domain?"
-       content="
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-   </br>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-   </br>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
-     />
-   </div>
- );
         </div>
     );
 }
