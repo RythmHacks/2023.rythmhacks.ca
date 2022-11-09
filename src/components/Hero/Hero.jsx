@@ -6,7 +6,7 @@ const Hero = () => {
             
             <div id = 'cycle-wrapper' class="font-extralight">
 				<h3 class="rw-sentence ml-8">
-					<div class="rw-words rw-words-1">
+					<div class="rw-words rw-words-1 z-0">
 						<span>Win cool prizes at</span>
 						<span>Meet amazing people at</span>
 						<span>Enjoy free food at</span>
