@@ -1,6 +1,8 @@
 import './FAQ.scss'
+import Accordion from '../Accordion';
 
 const FAQ = () => {
+
     return (
         <div id = 'faq' class='section items-center'>
             <h2 class='mt-8 font-bold text-center'>
@@ -29,6 +31,26 @@ const FAQ = () => {
                     </details>
                 </div>
             </div>
+   <div>
+     <Accordion
+       title="What is your return policy?"
+       content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+     />
+     <Accordion
+       title="Which languages does you support?"
+       content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+     />
+     <Accordion
+       title="Can I use a custom domain?"
+       content="
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+   </br>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+   </br>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+     />
+   </div>
+ );
         </div>
     );
 }
