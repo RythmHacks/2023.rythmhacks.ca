@@ -1,11 +1,12 @@
 import './Hero.scss'
 
+
 const Hero = () => {
     return (
         <div id = 'hero' class='section items-center'>
             
             <div id = 'cycle-wrapper' class="font-extralight">
-				<h3 class="rw-sentence ml-8">
+				<h3 class="rw-sentence ml-20">
 					<div class="rw-words rw-words-1 z-0">
 						<span>Win cool prizes at</span>
 						<span>Meet amazing people at</span>

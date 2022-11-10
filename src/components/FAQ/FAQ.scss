@@ -6,8 +6,23 @@
 
 .faq-content {
   display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .faq-content {
+    display: block;
+  }
 }
 
 .column {
   flex: 50%;
+  border-radius: 10px;
+  border-collapse: separate;
+
+  &:first-child {
+    &:first-child {
+      border-radius: 15px 15px 0px 0px;
+    }
+  }
 }

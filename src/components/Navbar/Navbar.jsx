@@ -21,9 +21,9 @@ const Navbar = () => {
                     } 
             } id = 'navlogodiv' class='flex items-center gap-4 cursor-pointer'>
                 <img src = {logo} class={`nav-logo`}></img>
-                <p class='font-bold'>
+                <p class='font-bold text-3xl'>
                     RYTHM
-                    <p class='text-accent inline'>HɅCKS</p>
+                    <p class='text-accent inline text-3xl'>HɅCKS</p>
                 </p>
             </div>
 
@@ -33,13 +33,11 @@ const Navbar = () => {
                         return (
                             <a onClick = {
                                 () => {
-                                    var rect = document.getElementById(value.toLowerCase())
-                                    try {
-                                        rect = rect.getBoundingClientRect();
-                                    } catch {
-                                        return;
-                                    }
-                                    window.scrollTo(rect.left,rect.top)
+                                    var element = document.getElementById(value.toLowerCase());
+                                    element.scrollIntoView({
+                                      block: 'start',
+                                      behavior: 'smooth'
+                                    });
                                 }
                             }
                             class = 'transition-all duration-300 hover:text-accent cursor-pointer'

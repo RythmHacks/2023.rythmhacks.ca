@@ -8,16 +8,16 @@ function Accordion(props) {
   const content = useRef(null);
 
   function toggleAccordion() {
-    setActiveState(setActive === '' ? 'active' : '');
+    setActiveState(setActive === '' ? ' active' : '');
     setHeightState(
-      setActive === 'active' ? '0px' : `${content.current.scrollHeight}px`
+      setActive === ' active' ? '0px' : `${content.current.scrollHeight}px`
     );
   }
 
   return (
     <div className='accordion__section'>
-      <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
-        <p className='accordion__title'>{props.title}</p>
+      <button class={`accordion ${setActive} bg-[#3C3579] text-left`} onClick={toggleAccordion}>
+        <p>{' '}{props.title}</p>
       </button>
       <div
         ref={content}
@@ -25,8 +25,8 @@ function Accordion(props) {
         className='accordion__content'
       >
         <div
-          className='accordion__text'
           dangerouslySetInnerHTML={{ __html: props.content }}
+          class='p-[1rem] text-[1.2rem]'
         />
       </div>
     </div>
