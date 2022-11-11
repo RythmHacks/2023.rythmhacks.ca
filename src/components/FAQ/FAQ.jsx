@@ -5,7 +5,7 @@ const FAQ = () => {
 
     return (
         <div id = 'faq' class='section items-center'>
-            <h2 class='mt-8 font-bold text-center'>
+            <h2 class='mt-8 text-center'>
                 <span class='gradient-vertical'>F</span>REQUENTLY <span class='gradient-vertical'>A</span>SKED
                 {' '}<span class='gradient-vertical'>Q</span>UESTIONS
             </h2>

@@ -13,14 +13,15 @@
     top: 0;
     width: 100%;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     backdrop-filter: blur(6px);
     background-color: darken(rgba(18,20,60,0.4), 2%);
-    transition: background-color 0.5s;
+    transition: background-color 0.5s ease, backdrop-filter 0.5s ease;
     z-index: 10;
 
     &:hover {
-        background-color: darken(rgba(18,20,60,0.8), 4%);
+      background-color: darken(rgba(18,20,60,0.6), 3%);
+      backdrop-filter: blur(10px);
     }
   
     a {

@@ -7,8 +7,8 @@
     }
 }
 
-#cycle-wrapper {
-    margin-bottom: 3vw;
+#hero {
+    display: flex;
 }
 
 .rw-sentence{
@@ -54,27 +54,34 @@
     100% { opacity: 0; }
 }
 
-@media screen and (max-width: 600px) {
-    #cycle-wrapper {
-        margin-bottom: 5vh;
-    }
+@media screen and (max-width: 800px) {
     .rw-words-1 span {
         position: absolute;
         margin-left: auto;
         margin-right: auto;
         left: 0;
         right: 0;
+        top: 20vh;
         text-align: center;        
     }
     #hero {
+        display: block;
         justify-content: center;
         h1, h3 {
             text-align: center;
             margin: 0;
+            font-size: max(5vw, 20px);
         }
         h1 {
             text-align: center;
-            font-size: 3rem;
+            font-size: max(10vw, 40px);
         }
+    }
+    #titlewrapper {
+        margin-top: 12vh;
+    }
+    #herologo {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
