@@ -1,5 +1,9 @@
 import './Hero.scss'
-
+import line0 from '../../assets/yellowlines/yellowline0.png';
+import line1 from '../../assets/yellowlines/yellowline1.png';
+import line2 from '../../assets/yellowlines/yellowline2.png';
+import line3 from '../../assets/yellowlines/yellowline3.png';
+import line4 from '../../assets/yellowlines/yellowline4.png';
 
 const Hero = () => {
     return (
