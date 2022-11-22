@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Work+Sans:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,25 +10,36 @@ $debug: false;
   }
 }
 
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: url('./assets/background.svg') no-repeat, linear-gradient(90deg, theme('colors.background.lightblue')  0%, theme('colors.background.darkblue') 27%, theme('colors.background.neon') 100%);;
   background-size: 100%;
+  background-color: #efefef;
   background-size: cover;
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Satoshi', sans-serif;
 }
 
 * {
-  color: #FFFFFF;
+  color: #000;
+}
+
+p, a {
+  font-size: 1.5rem;
+}
+
+a {
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    color: theme('colors.accent');
+  }
 }
 
 p {
-  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
 }
 
 h1 {
@@ -41,6 +52,10 @@ h2 {
 
 h3 {
   font-size: max(1.5rem, 3vw);
+}
+
+h4 {
+  font-size: max(1rem, 2vw);
 }
 
 .section {
