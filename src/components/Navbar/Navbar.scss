@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
   
     /* Make sticky */
     position: sticky;
@@ -22,6 +21,24 @@
   
     a {
       text-decoration: none;
+      padding: 1rem 0;
+      position: relative;
+      &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '.';
+        color: transparent;
+        background: theme('colors.accent');
+        height: 3px;
+        transition: width 0.3s;
+      }
+      &:hover:after {
+        width: 100%;
+      }
     }
 
     .links {
@@ -36,11 +53,13 @@
       position: absolute;
       left: 1rem;
       top: 1rem;
+      padding: 0;
     }
 
     .burger {
       display: none;
       width: 100%;
+      padding: 1rem;
 
       .burger-button {
         float: right;
@@ -65,6 +84,9 @@
     }
     .burger {
       display: block !important;
+    }
+    a {
+      padding: 0;
     }
   }
 }
