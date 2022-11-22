@@ -10,25 +10,36 @@ $debug: false;
   }
 }
 
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: url('./assets/background.svg') no-repeat, linear-gradient(49deg, rgba(8,59,67,1) 3%, rgba(21,48,81,1) 9%, rgba(22,4,56,1) 65%, rgba(75,12,91,1) 92%);
   background-size: 100%;
+  background-color: #efefef;
   background-size: cover;
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Satoshi', sans-serif;
 }
 
 * {
-  color: #FFFFFF;
+  color: #000;
+}
+
+p, a {
+  font-size: 1.5rem;
+}
+
+a {
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    color: theme('colors.accent');
+  }
 }
 
 p {
-  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
 }
 
 h1 {

@@ -1,11 +1,10 @@
-import logo from '../../assets/FINAL_logo-01.svg'
 import './Navbar.scss'
 import React, { useState } from "react"
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 const Navbar = () => {
 
-    let pages = ['ABOUT', 'FAQ', 'SCHEDULE', 'SPONSORS', 'TEAM']
+    let pages = ['About', 'FAQ', 'Schedule', 'Sponsors', 'Team']
 
     const [navbarOpen, setNavbarOpen] = useState(false)
 
@@ -15,18 +14,12 @@ const Navbar = () => {
 
     return (
         <nav class='nav text-3xl'>
-            <div onClick = {
-                    () => {
-                        window.scrollTo(0,0)
-                    } 
-            } id = 'navlogodiv' class='flex items-center gap-4 cursor-pointer'>
-                <img src = {logo} class={`nav-logo`}></img>
-                <p class='font-bold text-3xl'>
-                    RYTHM
-                    <p class='text-accent inline text-3xl'>HɅCKS</p>
-                </p>
-            </div>
-
+            <a id = 'navlogo' class = {`text-accent navlogo`}
+            onClick={
+                () => {
+                    window.scrollTo(0,0)
+                }
+            }>RythmHacks</a>
             <div className='links'>
                 {pages.map(
                     (value, index) => {
@@ -40,14 +33,13 @@ const Navbar = () => {
                                     });
                                 }
                             }
-                            class = 'transition-all duration-300 hover:text-accent cursor-pointer'
                             >{value}</a>
                         )
                     }
                 )}
             </div>
             <div className="burger">
-                <a onClick={handleToggle} class='cursor-pointer burger-button'><GiHamburgerMenu/></a>
+                <a onClick={handleToggle} class='cursor-pointer burger-button h-[36px] flex items-center'><GiHamburgerMenu/></a>
                 <div className={navbarOpen ? "shown" : "hidden"}>
                     {pages.map(
                         (value, index) => {
