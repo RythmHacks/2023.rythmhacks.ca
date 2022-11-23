@@ -26,8 +26,12 @@ body {
   color: #000;
 }
 
-p, a {
-  font-size: 1.5rem;
+button {
+
+}
+
+p, a, button {
+  font-size: max(1.5rem);
 }
 
 a {
@@ -43,7 +47,7 @@ p {
 }
 
 h1 {
-  font-size: max(4rem, 6.5vw);
+  font-size: max(3rem, 6.5vw);
 }
 
 h2 {

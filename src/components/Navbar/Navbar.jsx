@@ -39,7 +39,7 @@ const Navbar = () => {
                 )}
             </div>
             <div className="burger">
-                <a onClick={handleToggle} class='cursor-pointer burger-button h-[36px] flex items-center'><GiHamburgerMenu/></a>
+                <p onClick={handleToggle} class='cursor-pointer burger-button h-[36px] flex items-center'><GiHamburgerMenu/></p>
                 <div className={navbarOpen ? "shown" : "hidden"}>
                     {pages.map(
                         (value, index) => {

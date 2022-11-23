@@ -14,10 +14,15 @@ const ParticlesComponent = (props) => {
         zIndex: -1, // this is the z-index value used when the fullScreen is enabled, it's 0 by default
       },
       particles: {
-        number: {
-          value: 50,
+        "number": {
+          "density": {
+            "enable": true,
+            "area": 1000
+          },
+          "limit": 500,
+          "value": 30
         },
-        color: {
+          color: {
           value: '#548CA8'
         },
         links: {
