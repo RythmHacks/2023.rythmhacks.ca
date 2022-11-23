@@ -1,4 +1,5 @@
 import './Hero.scss'
+import Socials from '../Socials/Socials.jsx'
 
 const Hero = () => {
     return (
@@ -23,6 +24,10 @@ const Hero = () => {
       <div class='mt-8 flex gap-4 justify-center'>
         <button>Apply to be an organizer!</button>
         <button>Get in touch</button>
+      </div>
+
+      <div class='flex justify-center mt-8'>
+        <Socials />
       </div>
 		</div>
     );
