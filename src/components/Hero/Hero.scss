@@ -8,7 +8,14 @@
 }
 
 #hero {
-    display: flex;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+#description {    
+    text-decoration: underline;
+    text-decoration-color: theme('colors.accent');
 }
 
 .rw-sentence{
@@ -19,28 +26,33 @@
 }
 .rw-words-1 span{
 	position: absolute;
+    user-select: none;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
 	opacity: 0;
 	overflow: hidden;
-	animation: rotateWord 30s linear infinite 0s;
+	animation: rotateWord 24s linear infinite 0s;
 
     &:nth-child(2) { 
-        animation-delay: 5s; 
+        animation-delay: 4s; 
     }
 
     &:nth-child(3) { 
-        animation-delay: 10s; 
+        animation-delay: 8s; 
     }
 
     &:nth-child(4) { 
-        animation-delay: 15s; 
+        animation-delay: 12s; 
     }
 
     &:nth-child(5) { 
-        animation-delay: 20s; 
+        animation-delay: 16s; 
     }
 
     &:nth-child(6) { 
-        animation-delay: 25s; 
+        animation-delay: 20s; 
     }
 }
 
@@ -50,8 +62,7 @@
 	5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
     17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
 	20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
-	80% { opacity: 0; }
-    100% { opacity: 0; }
+	100% { opacity: 0; }
 }
 
 @media screen and (max-width: 800px) {
@@ -61,21 +72,12 @@
         margin-right: auto;
         left: 0;
         right: 0;
-        top: 20vh;
+        margin-top: 1vh;
         text-align: center;        
     }
     #hero {
         display: block;
         justify-content: center;
-        h1, h3 {
-            text-align: center;
-            margin: 0;
-            font-size: max(5vw, 20px);
-        }
-        h1 {
-            text-align: center;
-            font-size: max(10vw, 40px);
-        }
     }
     #titlewrapper {
         margin-top: 12vh;
