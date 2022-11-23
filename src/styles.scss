@@ -3,6 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
+$accent: #548CA8;
+
 $debug: false;
 @if $debug {
   * { 
@@ -27,18 +29,31 @@ body {
 }
 
 button {
+  background-color: lighten($accent, 15%);
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.1s;
 
+  &:hover {
+    background-color: lighten($accent, 22%);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
 }
 
 p, a, button {
   font-size: max(1.5rem);
+  font-family: 'Inter', sans-serif;
 }
 
 a {
   transition: all 0.3s;
+  font-family: 'Satoshi', sans-serif;
   cursor: pointer;
   &:hover {
-    color: theme('colors.accent');
+    color: $accent;
   }
 }
 
@@ -98,7 +113,7 @@ h4 {
 .blue {
   @include gradient;
   // background-image: linear-gradient(90deg, rgba(25,197,229,1) 3%, rgba(191,39,228,1) 47%, rgba(25,197,229,1) 100%);
-  // background-image: linear-gradient(90deg, theme('colors.accent') 3%, rgba(191,39,228,1) 47%, theme('colors.accent') 100%);
+  // background-image: linear-gradient(90deg, $accent 3%, rgba(191,39,228,1) 47%, $accent 100%);
 }
 
 .gradient-vertical {

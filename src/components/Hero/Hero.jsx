@@ -19,7 +19,11 @@ const Hero = () => {
 
       <h1 class='mt-12 font-bold text-accent' id = 'title'>RythmHacks</h1>
       <h4 id = 'description'>July | University of Waterloo</h4>
-      <button>Apply to be an organizer!</button>
+      
+      <div class='mt-8 flex gap-4 justify-center'>
+        <button>Apply to be an organizer!</button>
+        <button>Get in touch</button>
+      </div>
 		</div>
     );
 }
