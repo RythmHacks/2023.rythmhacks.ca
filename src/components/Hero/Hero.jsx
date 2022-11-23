@@ -4,7 +4,6 @@ import Socials from '../Socials/Socials.jsx'
 const Hero = () => {
     return (
 		<div id = 'hero' class='section'>
-
       <div id = 'cycle-wrapper' class="font-extralight">
 				<h4 class="rw-sentence">
 					<div class="rw-words rw-words-1">
