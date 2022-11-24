@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 
 const Navbar = () => {
 
-    let pages = ['About', 'FAQ', 'Schedule', 'Sponsors', 'Team']
+    let pages = ['About', 'Join Us', 'Sponsors', 'Team']
 
     const [navbarOpen, setNavbarOpen] = useState(false)
 
@@ -26,6 +26,7 @@ const Navbar = () => {
                         return (
                             <a onClick = {
                                 () => {
+                                    console.log(value.toLowerCase())
                                     var element = document.getElementById(value.toLowerCase());
                                     element.scrollIntoView({
                                       block: 'start',

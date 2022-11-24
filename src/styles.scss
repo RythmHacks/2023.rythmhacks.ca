@@ -28,7 +28,7 @@ button {
   background-color: lighten($accent, 15%);
   padding: 0.5vh 1vw;
   border-radius: 10px;
-  transition: background-color 0.3s ease, transform 0.1s;
+  transition: background-color 0.3s ease, transform 0.025s ease;
 
   &:hover {
     background-color: lighten($accent, 22%);

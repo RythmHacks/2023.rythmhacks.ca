@@ -5,7 +5,7 @@ import { IconContext } from 'react-icons'
 
 const Socials = () => {
   return (
-    <div class='text-accent text-lg flex gap-4'>
+    <div class='text-accentlight text-lg flex gap-4 border-accent border-2 px-4 pr-4 pt-2 pb-2 rounded-full'>
         <a class='text-lg'>
             <SiDiscord />
         </a>
