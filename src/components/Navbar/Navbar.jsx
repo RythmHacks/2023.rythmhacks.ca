@@ -13,18 +13,19 @@ const Navbar = () => {
     }
 
     return (
-        <nav class='nav text-3xl'>
-            <a id = 'navlogo' class = {`text-accent navlogo`}
+        <nav className='nav text-3xl'>
+            <button id = 'navlogo' className={`text-accent navlogo`}
             onClick={
                 () => {
                     window.scrollTo(0,0)
                 }
-            }>RythmHacks</a>
+            }>RythmHacks</button>
             <div className='links'>
                 {pages.map(
                     (value, index) => {
                         return (
-                            <a onClick = {
+                            <button
+                            onClick = {
                                 () => {
                                     console.log(value.toLowerCase())
                                     var element = document.getElementById(value.toLowerCase());
@@ -34,20 +35,28 @@ const Navbar = () => {
                                     });
                                 }
                             }
-                            >{value}</a>
+                            >{value}</button>
                         )
                     }
                 )}
             </div>
             <div className="burger">
-                <p onClick={handleToggle} class='cursor-pointer burger-button h-[36px] flex items-center'><GiHamburgerMenu/></p>
+                <p onClick={handleToggle} className='cursor-pointer burger-button h-[36px] flex items-center'><GiHamburgerMenu/></p>
                 <div className={navbarOpen ? "shown" : "hidden"}>
                     {pages.map(
                         (value, index) => {
                             return (
-                                <a href={'#'+value.toLowerCase()}
-                                class = 'transition-all duration-300 hover:text-accent'
-                                >{value}</a>
+                                <button
+                                className='text-left'
+                                onClick = {
+                                    () => {
+                                        let element = document.getElementById(value.toLowerCase())
+                                        const y = element.getBoundingClientRect().top + window.pageYOffset - 80;
+
+                                        window.scrollTo({top: y, behavior: 'smooth'});
+                                    }
+                                }
+                                >{value}</button>
                             )
                         }
                     )}

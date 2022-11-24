@@ -16,7 +16,7 @@ function Accordion(props) {
 
   return (
     <div className='accordion__section'>
-      <button class={`accordion ${setActive} bg-[#3C3579] text-left`} onClick={toggleAccordion}>
+      <button className={`accordion ${setActive} bg-[#3C3579] text-left`} onClick={toggleAccordion}>
         <p>{' '}{props.title}</p>
       </button>
       <div
@@ -26,7 +26,7 @@ function Accordion(props) {
       >
         <div
           dangerouslySetInnerHTML={{ __html: props.content }}
-          class='p-[1rem] text-[1.2rem]'
+          className='p-[1rem] text-[1.2rem]'
         />
       </div>
     </div>

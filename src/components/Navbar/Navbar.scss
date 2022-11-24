@@ -20,9 +20,11 @@
       backdrop-filter: blur(12px);
     }
   
-    a {
+    button {
       text-decoration: none;
+      background-color: transparent;
       padding: 1rem 0;
+      font-family: 'Satoshi', sans-serif;
       position: relative;
       &:after {
         position: absolute;
@@ -86,7 +88,7 @@
     .burger {
       display: block !important;
     }
-    a {
+    button {
       padding: 0;
     }
   }

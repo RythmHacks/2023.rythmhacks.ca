@@ -5,17 +5,17 @@ import { IconContext } from 'react-icons'
 
 const Socials = () => {
   return (
-    <div class='text-accentlight text-lg flex gap-4 border-accent border-2 px-4 pr-4 pt-2 pb-2 rounded-full'>
-        <a class='text-lg'>
+    <div className='text-accentlight text-lg flex gap-4 border-accent border-2 px-4 pr-4 pt-2 pb-2 rounded-full'>
+        <a className='text-lg'>
             <SiDiscord />
         </a>
-        <a class='text-lg'>
+        <a className='text-lg'>
             <RiInstagramFill />
         </a>
-        <a class='text-lg'>
+        <a className='text-lg'>
             <SiLinkedin />
         </a>
-        <a class='text-lg'>
+        <a className='text-lg'>
             <SiTwitter />
         </a>
     </div>

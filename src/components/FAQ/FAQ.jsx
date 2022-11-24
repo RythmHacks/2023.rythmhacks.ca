@@ -4,10 +4,10 @@ import Accordion from '../Accordion/Accordion';
 const FAQ = () => {
 
     return (
-        <div id = 'faq' class='section items-center'>
-            <h2 class='mt-8 text-center'>
-                <span class='gradient-vertical'>F</span>REQUENTLY <span class='gradient-vertical'>A</span>SKED
-                {' '}<span class='gradient-vertical'>Q</span>UESTIONS
+        <div id = 'faq' className='section items-center'>
+            <h2 className='mt-8 text-center'>
+                <span className='gradient-vertical'>F</span>REQUENTLY <span className='gradient-vertical'>A</span>SKED
+                {' '}<span className='gradient-vertical'>Q</span>UESTIONS
             </h2>
             <div className='faq-content'>
                 <div className='column'>
