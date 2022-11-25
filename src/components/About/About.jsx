@@ -1,22 +1,79 @@
-import React from 'react'
+import { useEffect, useState, useMemo, useRef } from 'react';
 import './About.scss'
+// import useIsInViewport from '../../useIsInViewport.js'
 
-import EngImg from '../../assets/engineering.svg'
+import EngImg from '../../assets/Graphics/engineering.png'
+import TogetherImg from '../../assets/Graphics/together.png'
+
+function useIsInViewport(ref) {
+  const [isIntersecting, setIsIntersecting] = useState(false);
+
+  const observer = useMemo(
+    () =>
+      new IntersectionObserver(([entry]) =>
+        setIsIntersecting(entry.isIntersecting),
+      ),
+    [],
+  );
+
+  useEffect(() => {
+    observer.observe(ref.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [ref, observer]);
+
+  return isIntersecting;
+}
 
 const About = () => {
+
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+
+  const isInViewport1 = useIsInViewport(ref1);
+
+  const isInViewport2 = useIsInViewport(ref2);
+  console.log(isInViewport1, isInViewport2)
+  console.log(ref1.current.className)
+
+  if (isInViewport1 && ref1.current.className == 'scrollanimation ') {
+    ref1.current.className += 'scrollanimate'
+  } else {
+    ref1.current.className = 'scrollanimation '
+  }
+  if (isInViewport2 && ref2.current.className == 'scrollanimation ') {
+    ref2.current.className += 'scrollanimate'
+  } else {
+    ref2.current.className = 'scrollanimation '
+  }
+
   return (
     <div id='about' className='section'>
-        <h3 className='text-center font-bold'>
-            Experience the <h3 className='blue inline'>magic</h3> of tech
+        <h3>
+            Experience the <h3 className='gradient blue'>magic</h3> of tech
         </h3>
 
-        <div className='flex justify-between h-full'>
-          <p className='pt-8'>
-            Hackathons are some of the best ways to get inspired, learn new skills, and launch your career in tech. At RythmHacks, our mission is to spread the magical spark of inspiration that you get from attending a hackathon.
+        <div ref={ref1} className = ''>
+          <p>
+            Hackathons are some of the best ways to get inspired, learn new skills, and connect with like-minded innovators. At RythmHacks, our mission is to spread the magical spark of inspiration that you get from attending a hackathon.
             <br/><br/>
             In July of 2023, we're going in person at the University of Waterloo! Join us for an amazing weekend of fun, innovation, and free food. At RythmHacks, you'll work in teams of four or less to create a website, app, game, robot, or anything you can imagine. You'll have 36 hours to create your project, pitch it to judges, and compete for prizes!
           </p>
-          <img width='30%' src={EngImg}/>
+          <img loading='lazy' src={EngImg} alt='togetherimg'/>
+        </div>
+
+        <h3>
+          A place for <h3 className='darkblue gradient'>everyone</h3>
+        </h3>
+        <div ref={ref2} className = ''>
+          <img loading='lazy' src={TogetherImg} alt='togetherimg'></img>
+          <p>
+            Whether you're a seasoned developer or it's your first time creating a project, you're welcome at RythmHacks. We've got workshops, mini-events, and other resources planned through the weekend to help you in your project creation. Developers, designers, hardware wizards, and tech enthusiasts of all sorts have a place here at RythmHacks.
+            <br/><br/>
+            We know from first-hand experience that finding tech opportunities can be one of the hardest things to do in high school. That's why we've made RythmHacks into a high-school only hackathon, tailored to beginners. We hope that you'll learn a lot and that attending RythmHacks will help you launch your career.
+          </p>
         </div>
     </div>
   )

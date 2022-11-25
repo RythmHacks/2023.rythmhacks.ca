@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Satoshi;
+  src: url('../../assets/Satoshi-Medium.woff');
+}
+
 .nav {
     display: flex;
     justify-content: center;
@@ -5,7 +10,6 @@
   
     /* Make sticky */
     position: sticky;
-    font-family: 'Satoshi', sans-serif;
     top: 0;
     width: 100%;
     font-weight: 500;
@@ -24,8 +28,8 @@
       text-decoration: none;
       background-color: transparent;
       padding: 1rem 0;
-      font-family: 'Satoshi', sans-serif;
-      position: relative;
+      position: relative;    
+      font-family: Satoshi;
       &:after {
         position: absolute;
         bottom: 0;
