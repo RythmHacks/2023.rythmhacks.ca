@@ -93,24 +93,25 @@ h4 {
     .blue, .gradient, .gradient-vertical {
       display: inline
     }
-
-    &:not(:first-child) {
-      margin-top: 4rem;
-    }
   }
 
   div {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     height: 100%;
 
-    p {
-      padding-top: 2rem;
-    }
-    img {
-      width: 30%;
-      margin-top: auto;
-      align-self: center;
+    .sectionwrapper {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        padding-top: 2rem;
+      }
+  
+      img {
+        width: 30%;
+        margin-top: auto;
+        align-self: center;
+      }
     }
   }
 }
@@ -144,19 +145,20 @@ h4 {
 
 @keyframes scrollAnimate {
   from {
-    opacity: 0.5;
-    margin-right: 50%;
+    opacity: 0.1;
+    padding-top: 8rem;
   } to {
     opacity: 1;
-    margin-right: inherit;
+    padding-top: 0;
   }
 }
 
 .scrollanimation {
-  opacity: 0;
-  transition-property: opacity, transform;
-}
-.scrollanimate {
-  transform: translate3d(0, 100, 0);
-  opacity: 1;
+  animation-name: scrollAnimate;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+
+  &:not(:first-child) {
+    margin-top: 4rem;
+  }
 }
