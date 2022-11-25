@@ -60,7 +60,7 @@ const About = () => {
               <br/><br/>
               In July of 2023, we're going in person at the University of Waterloo! Join us for an amazing weekend of fun, innovation, and free food. At RythmHacks, you'll work in teams of four or less to create a website, app, game, robot, or anything you can imagine. You'll have 36 hours to create your project, pitch it to judges, and compete for prizes!
             </p>
-            <img loading='lazy' src={EngImg} alt='togetherimg'/>
+            <img loading='lazy' src={EngImg} alt='engimg'/>
           </div>
         </div>
 
@@ -75,7 +75,7 @@ const About = () => {
               <br/><br/>
               We know from first-hand experience that finding tech opportunities can be one of the hardest things to do in high school. That's why we've made RythmHacks into a high-school only hackathon, tailored to beginners. We hope that you'll learn a lot and that attending RythmHacks will help you launch your career.
             </p>
-            <img loading='lazy' src={TogetherImg} alt='togetherimg' className='hidden md:block'></img>
+            <img loading='lazy' src={TogetherImg} alt='togetherimgmobile' className='hidden md:block'></img>
           </div>
         </div>
     </div>

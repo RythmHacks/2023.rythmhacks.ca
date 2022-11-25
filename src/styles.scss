@@ -116,6 +116,9 @@ h4 {
 }
 
 @media screen and (max-width: 900px) {
+  #hero {
+    padding-top: 25%;
+  }
   .section {
     div {
       .sectionwrapper {
@@ -144,6 +147,30 @@ h4 {
   }
 }
 
+.hide {
+  opacity: 0;
+  transition: 2s;
+  transform: translate(0, 10rem);
+  
+  .sectionwrapper { img {
+    transition: 2s;
+    transform: scale(50%);
+  } }
+}
+
+.show {
+  opacity: 1;
+  transform: translate(0, 0);
+
+  .sectionwrapper { img {
+    transform: scale(100%);
+  } }
+
+  &:not(:first-child) {
+    margin-top: 4rem;
+  }
+}
+
 .gradient {
   background-clip: text;
   background-size: 200%;
@@ -169,27 +196,4 @@ h4 {
   background: linear-gradient(0deg, rgba(235,153,60,1) 0%, rgba(184,31,31,1) 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;      
-}
-
-@keyframes scrollAnimate {
-  from {
-    opacity: 0.3;
-  } to {
-    opacity: 1;
-  }
-}
-
-.hide {
-  opacity: 0;
-  transition: all 2s;
-  padding-top: 10rem;
-}
-
-.show {
-  opacity: 1;
-  padding-top: 0px;
-
-  &:not(:first-child) {
-    margin-top: 4rem;
-  }
 }
