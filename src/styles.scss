@@ -188,4 +188,8 @@ h4 {
 .show {
   opacity: 1;
   padding-top: 0px;
+
+  &:not(:first-child) {
+    margin-top: 4rem;
+  }
 }

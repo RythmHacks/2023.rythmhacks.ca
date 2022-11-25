@@ -69,7 +69,7 @@ const About = () => {
             A place for <h3 className='darkblue gradient'>everyone</h3>
           </h3>
           <div className='sectionwrapper'>
-            <img loading='lazy' src={TogetherImg} alt='togetherimg' className='block'></img>
+            <img loading='lazy' src={TogetherImg} alt='togetherimg' className='md:block hidden'></img>
             <p>
               Whether you're a seasoned developer or it's your first time creating a project, you're welcome at RythmHacks. We've got workshops, mini-events, and other resources planned through the weekend to help you in your project creation. Developers, designers, hardware wizards, and tech enthusiasts of all sorts have a place here at RythmHacks.
               <br/><br/>
