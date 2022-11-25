@@ -20,8 +20,8 @@ module.exports = {
       }
     },
     screens: {
-      'sm': '600px',
-      'md': '900px'
+      'sm': {'max': '600px'},
+      'md': {'max': '900px'}
     }
   },
   plugins: [],

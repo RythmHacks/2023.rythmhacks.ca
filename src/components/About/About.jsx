@@ -37,20 +37,20 @@ const About = () => {
   const isInViewport2 = useIsInViewport(ref2);
 
   if (isInViewport1) {
-    ref1.current.className = 'hidden show'
+    ref1.current.className = 'hide show'
   } else if (ref1.current != null) {
-    ref1.current.className = 'hidden'
+    ref1.current.className = 'hide'
   }
   if (isInViewport2) {
-    ref2.current.className = 'hidden show'
+    ref2.current.className = 'hide show'
   } else if (ref1.current != null) {
-    ref2.current.className = 'hidden'
+    ref2.current.className = 'hide'
   }
 
   return (
     <div id='about' className='section'>
 
-        <div ref={ref1} className='hidden'>
+        <div ref={ref1} className='hide'>
           <h3>
               Experience the <h3 className='gradient blue'>magic</h3> of tech
           </h3>
@@ -64,18 +64,18 @@ const About = () => {
           </div>
         </div>
 
-        <div ref={ref2} className='hidden'>
+        <div ref={ref2} className='hide'>
           <h3>
             A place for <h3 className='darkblue gradient'>everyone</h3>
           </h3>
           <div className='sectionwrapper'>
-            <img loading='lazy' src={TogetherImg} alt='togetherimg' className='md:block hidden'></img>
+            <img loading='lazy' src={TogetherImg} alt='togetherimg' className='block md:hidden'></img>
             <p>
               Whether you're a seasoned developer or it's your first time creating a project, you're welcome at RythmHacks. We've got workshops, mini-events, and other resources planned through the weekend to help you in your project creation. Developers, designers, hardware wizards, and tech enthusiasts of all sorts have a place here at RythmHacks.
               <br/><br/>
               We know from first-hand experience that finding tech opportunities can be one of the hardest things to do in high school. That's why we've made RythmHacks into a high-school only hackathon, tailored to beginners. We hope that you'll learn a lot and that attending RythmHacks will help you launch your career.
             </p>
-            <img loading='lazy' src={TogetherImg} alt='togetherimg' className='md:hidden block'></img>
+            <img loading='lazy' src={TogetherImg} alt='togetherimg' className='hidden md:block'></img>
           </div>
         </div>
     </div>
