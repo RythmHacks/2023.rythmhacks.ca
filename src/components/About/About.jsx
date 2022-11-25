@@ -64,7 +64,7 @@ const About = () => {
           </div>
         </div>
 
-        <div ref={ref2}>
+        <div ref={ref2} className='pt-24'>
           <h3>
             A place for <h3 className='darkblue gradient'>everyone</h3>
           </h3>

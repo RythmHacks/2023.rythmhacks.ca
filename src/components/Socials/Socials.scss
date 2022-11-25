@@ -1,0 +1,11 @@
+.socials {
+    a, p {
+        font-size: max(1.4rem, 2vw);
+    }
+    p {
+        &:hover {
+            cursor: not-allowed;
+        }
+        opacity: 0.5;
+    }
+}
