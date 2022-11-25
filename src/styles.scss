@@ -109,8 +109,36 @@ h4 {
   
       img {
         width: 30%;
-        margin-top: auto;
         align-self: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section {
+    div {
+      .sectionwrapper {
+        display: block;
+        text-align: left;
+        img {
+          margin-top: 0px;
+          margin-left: auto;
+          margin-right: auto;
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section {
+    div {
+      .sectionwrapper {
+        img {
+          width: 80%;
+        }
       }
     }
   }

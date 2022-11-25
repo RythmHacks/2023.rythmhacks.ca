@@ -19,6 +19,10 @@ module.exports = {
         "3xl": 'max(2.75rem, 6.5vw)'
       }
     },
+    screens: {
+      'sm': '600px',
+      'md': '900px'
+    }
   },
   plugins: [],
 }

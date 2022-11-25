@@ -69,12 +69,13 @@ const About = () => {
             A place for <h3 className='darkblue gradient'>everyone</h3>
           </h3>
           <div className='sectionwrapper'>
-            <img loading='lazy' src={TogetherImg} alt='togetherimg'></img>
+            <img loading='lazy' src={TogetherImg} alt='togetherimg' className='md:block hidden'></img>
             <p>
               Whether you're a seasoned developer or it's your first time creating a project, you're welcome at RythmHacks. We've got workshops, mini-events, and other resources planned through the weekend to help you in your project creation. Developers, designers, hardware wizards, and tech enthusiasts of all sorts have a place here at RythmHacks.
               <br/><br/>
               We know from first-hand experience that finding tech opportunities can be one of the hardest things to do in high school. That's why we've made RythmHacks into a high-school only hackathon, tailored to beginners. We hope that you'll learn a lot and that attending RythmHacks will help you launch your career.
             </p>
+            <img loading='lazy' src={TogetherImg} alt='togetherimg' className='md:hidden block'></img>
           </div>
         </div>
     </div>
