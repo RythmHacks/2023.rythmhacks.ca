@@ -37,20 +37,20 @@ const About = () => {
   const isInViewport2 = useIsInViewport(ref2);
 
   if (isInViewport1) {
-    ref1.current.className = 'scrollanimation'
+    ref1.current.className = 'hidden show'
   } else if (ref1.current != null) {
-    ref1.current.className = ''
+    ref1.current.className = 'hidden'
   }
   if (isInViewport2) {
-    ref2.current.className = 'scrollanimation'
+    ref2.current.className = 'hidden show'
   } else if (ref1.current != null) {
-    ref2.current.className = ''
+    ref2.current.className = 'hidden'
   }
 
   return (
     <div id='about' className='section'>
 
-        <div ref={ref1}>
+        <div ref={ref1} className='hidden'>
           <h3>
               Experience the <h3 className='gradient blue'>magic</h3> of tech
           </h3>
@@ -64,12 +64,12 @@ const About = () => {
           </div>
         </div>
 
-        <div ref={ref2} className='pt-24'>
+        <div ref={ref2} className='hidden'>
           <h3>
             A place for <h3 className='darkblue gradient'>everyone</h3>
           </h3>
           <div className='sectionwrapper'>
-            <img loading='lazy' src={TogetherImg} alt='togetherimg' className='md:block hidden'></img>
+            <img loading='lazy' src={TogetherImg} alt='togetherimg' className='block'></img>
             <p>
               Whether you're a seasoned developer or it's your first time creating a project, you're welcome at RythmHacks. We've got workshops, mini-events, and other resources planned through the weekend to help you in your project creation. Developers, designers, hardware wizards, and tech enthusiasts of all sorts have a place here at RythmHacks.
               <br/><br/>

@@ -174,19 +174,18 @@ h4 {
 @keyframes scrollAnimate {
   from {
     opacity: 0.3;
-    padding-top: 8rem;
   } to {
     opacity: 1;
-    padding-top: 0;
   }
 }
 
-.scrollanimation {
-  animation-name: scrollAnimate;
-  animation-duration: 2s;
-  animation-timing-function: ease;
+.hidden {
+  opacity: 0;
+  transition: all 2s;
+  padding-top: 10rem;
+}
 
-  &:not(:first-child) {
-    margin-top: 4rem;
-  }
+.show {
+  opacity: 1;
+  padding-top: 0px;
 }
