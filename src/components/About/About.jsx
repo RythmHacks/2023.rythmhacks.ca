@@ -1,31 +1,11 @@
 import { useEffect, useState, useMemo, useRef } from 'react';
 import './About.scss'
-// import useIsInViewport from '../../useIsInViewport.js'
+
+import useIsInViewport from '../ScrollAnimation/useIsInViewport.js'
+import '../ScrollAnimation/ScrollAnimation.scss'
 
 import EngImg from '../../assets/Graphics/engineering.png'
 import TogetherImg from '../../assets/Graphics/together.png'
-
-function useIsInViewport(ref) {
-  const [isIntersecting, setIsIntersecting] = useState(false);
-
-  const observer = useMemo(
-    () =>
-      new IntersectionObserver(([entry]) =>
-        setIsIntersecting(entry.isIntersecting),
-      ),
-    [],
-  );
-
-  useEffect(() => {
-    observer.observe(ref.current);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, [ref, observer]);
-
-  return isIntersecting;
-}
 
 const About = () => {
 
@@ -33,7 +13,6 @@ const About = () => {
   const ref2 = useRef(null);
 
   const isInViewport1 = useIsInViewport(ref1);
-
   const isInViewport2 = useIsInViewport(ref2);
 
   if (isInViewport1) {

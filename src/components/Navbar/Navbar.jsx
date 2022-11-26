@@ -27,7 +27,6 @@ const Navbar = () => {
                             <button
                             onClick = {
                                 () => {
-                                    console.log(value.toLowerCase())
                                     var element = document.getElementById(value.toLowerCase());
                                     element.scrollIntoView({
                                       block: 'start',

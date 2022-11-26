@@ -147,30 +147,6 @@ h4 {
   }
 }
 
-.hide {
-  opacity: 0;
-  transition: 2s;
-  transform: translate(0, 10rem);
-  
-  .sectionwrapper { img {
-    transition: 2s;
-    transform: scale(50%);
-  } }
-}
-
-.show {
-  opacity: 1;
-  transform: translate(0, 0);
-
-  .sectionwrapper { img {
-    transform: scale(100%);
-  } }
-
-  &:not(:first-child) {
-    margin-top: 4rem;
-  }
-}
-
 .gradient {
   background-clip: text;
   background-size: 200%;
