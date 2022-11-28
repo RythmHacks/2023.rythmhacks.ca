@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo, useRef } from 'react';
+import { useRef } from 'react';
 import './About.scss'
 
 import useIsInViewport from '../ScrollAnimation/useIsInViewport.js'
@@ -15,21 +15,10 @@ const About = () => {
   const isInViewport1 = useIsInViewport(ref1);
   const isInViewport2 = useIsInViewport(ref2);
 
-  if (isInViewport1) {
-    ref1.current.className = 'hide show'
-  } else if (ref1.current != null) {
-    ref1.current.className = 'hide'
-  }
-  if (isInViewport2) {
-    ref2.current.className = 'hide show'
-  } else if (ref1.current != null) {
-    ref2.current.className = 'hide'
-  }
-
   return (
     <div id='about' className='section'>
 
-        <div ref={ref1} className='hide'>
+        <div ref={ref1} className={isInViewport1 ? 'hide show' : "hide"}>
           <h3>
               Experience the <h3 className='gradient blue'>magic</h3> of tech
           </h3>
@@ -43,7 +32,7 @@ const About = () => {
           </div>
         </div>
 
-        <div ref={ref2} className='hide'>
+        <div ref={ref2} className={isInViewport2 ? 'hide show' : "hide"}>
           <h3>
             A place for <h3 className='darkblue gradient'>everyone</h3>
           </h3>
