@@ -3,6 +3,7 @@ For the RythmHacks hackathon
 
 https://www.rythmhacks.ca/<br/>
 [Backup link](https://rythmhacks.vercel.app/)
+[Graphics](https://designstripe.com/) for reference
 
 ## Created Using
 - React
@@ -25,6 +26,6 @@ const ref1 = useRef(null);
 const isInViewport1 = useIsInViewport(ref1);
 ```
 3. Reference each element like so
-```javascript
+```html
  <div ref={ref1} className='hide'>
 ```

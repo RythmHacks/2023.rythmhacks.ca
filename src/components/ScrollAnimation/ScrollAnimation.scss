@@ -3,6 +3,10 @@
     transition: 2s;
     transform: translate(0, 10rem);
     
+    img {
+      transition: 2s;
+      transform: scale(50%);
+    }
     .sectionwrapper { img {
       transition: 2s;
       transform: scale(50%);
@@ -10,11 +14,16 @@
   }
   
 .show {
-opacity: 1;
-transform: translate(0, 0);
+  opacity: 1;
+  transform: translate(0, 0);
 
-.sectionwrapper { img {
+  img {
+    transition: 2s;
     transform: scale(100%);
+  }
+
+  .sectionwrapper { img {
+      transform: scale(100%);
 } }
 
 &:not(:first-child) {
