@@ -21,8 +21,8 @@ const Hero = () => {
 			<h4 id = 'description'>July | University of Waterloo</h4>
 			
 			<div className='mt-8 flex gap-4 justify-center'>
-				<button>Apply to be an organizer!</button>
-				<button>Get in touch</button>
+				<button onClick={() => {window.open('https://docs.google.com/forms/u/1/d/e/1FAIpQLSeEr_kLSEboK22bXmDTFbZhfEw1-0_QRcfEf9bmDJ_UBOhwaw/viewform?usp=send_form')}}>Apply to be an organizer!</button>
+				<button onClick={() => {window.location = "mailto:rythmhacks@gmail.com";}}>Get in touch</button>
 			</div>
 
 			<div className='flex justify-center mt-8'>

@@ -2,10 +2,11 @@ import './Navbar.scss'
 import React, { useState } from "react"
 import { GiHamburgerMenu } from 'react-icons/gi'
 import Logo from '../../assets/logo.png'
+import Socials from '../Socials/Socials'
 
 const Navbar = () => {
 
-    let pages = ['About', 'Join Us', 'Sponsors', 'Team']
+    let pages = ['About', 'Join Us', 'Contact']
 
     const [navbarOpen, setNavbarOpen] = useState(false)
 
@@ -67,6 +68,9 @@ const Navbar = () => {
                 </div>
             </div>
 
+            <div className='absolute right-4' id='socials'>
+                <Socials/>
+            </div>
         </nav>
     );
 };

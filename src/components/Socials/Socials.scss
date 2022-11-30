@@ -1,6 +1,12 @@
+@use '../../styles.scss' as *;
+
 .socials {
     a, p {
         font-size: max(1.4rem, 2vw);
+
+        &:hover {
+            color: lighten($accent, 10%);
+        }
     }
     p {
         &:hover {

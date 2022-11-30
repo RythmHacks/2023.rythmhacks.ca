@@ -6,18 +6,18 @@ import './Socials.scss'
 const Socials = () => {
   return (
     <div className='socials text-accentlight text-lg flex gap-4 border-accent border-2 px-4 pr-4 pt-2 pb-2 rounded-full'>
-        <p>
+        {/* <p>
             <SiDiscord />
-        </p>
-        <p>
+        </p> */}
+        <a href='https://www.instagram.com/rythm.hacks/' target='_blank' rel='noreferrer'>
             <RiInstagramFill />
-        </p>
-        <p>
+        </a>
+        <a href='https://www.linkedin.com/company/89856850/admin/' target='_blank' rel='noreferrer'>
             <SiLinkedin />
-        </p>
-        <p>
+        </a>
+        <a href='https://twitter.com/rythmhacks' target='_blank' rel='noreferrer'>
             <SiTwitter />
-        </p>
+        </a>
         <a href='https://github.com/RythmHacks' target='_blank' rel='noreferrer'>
             <SiGithub />
         </a>
