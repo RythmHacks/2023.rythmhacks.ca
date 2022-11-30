@@ -12,15 +12,25 @@ const JoinUs = () => {
     let ref2 = useRef(null)
     let ref3 = useRef(null)
     let ref4 = useRef(null)
+    let button1 = useRef(null)
+    let button2 = useRef(null)
+    let button3 = useRef(null)
+    let button4 = useRef(null)
     let scrollAnim = useRef(null)
     const isInViewport1 = useIsInViewport(scrollAnim);
-    let refs = [ref1, ref2, ref3, ref4]
+    let refs = [ref1, ref2, ref3, ref4, button1, button2, button3, button4]
     
-    const changeRef = (newRef) => {
+    const changeRef = (newRef, button) => {
         for (let ref in refs) {
-            refs[ref].current.className='hidden'
+            if (ref > 3) {
+                refs[ref].current.className = 'button'
+            } else {
+                refs[ref].current.className='hidden'
+            }
         }
         newRef.current.className = 'shown'
+        console.log(button)
+        button.current.className = 'buttonselected'
     }
     
     return (
@@ -34,10 +44,10 @@ const JoinUs = () => {
                 <div className='selector'>
                     <h3 className='text-center'>Organizer Roles</h3>
                     <div id='icons'>
-                        <button onClick={() => {changeRef(ref1)}}><RiMoneyDollarCircleFill size="max(3vw, 2rem)"/></button>
-                        <button onClick={() => {changeRef(ref2)}}><RiBrushFill size="max(3vw, 2rem)"/></button>
-                        <button onClick={() => {changeRef(ref3)}}><RiHammerFill size="max(3vw, 2rem)"/></button>
-                        <button onClick={() => {changeRef(ref4)}}><RiComputerFill size="max(3vw, 2rem)"/></button>
+                        <button className='buttonselected' ref={button1} onClick={() => {changeRef(ref1, button1)}}><RiMoneyDollarCircleFill size="max(3vw, 2rem)"/></button>
+                        <button className='button' ref={button2} onClick={() => {changeRef(ref2, button2)}}><RiBrushFill size="max(3vw, 2rem)"/></button>
+                        <button className='button'  ref={button3} onClick={() => {changeRef(ref3, button3)}}><RiHammerFill size="max(3vw, 2rem)"/></button>
+                        <button className='button' ref={button4} onClick={() => {changeRef(ref4, button4)}}><RiComputerFill size="max(3vw, 2rem)"/></button>
                     </div>
                     <div ref={ref1} className='shown'>
                         <h4>Finance and Sponsorship</h4>

@@ -24,9 +24,9 @@ const About = () => {
           </h3>
           <div className='sectionwrapper'>
             <p>
-              Hackathons are some of the best ways to get inspired, learn new skills, and connect with like-minded innovators. At RythmHacks, our mission is to spread the magical spark of inspiration that you get from attending a hackathon.
+              Hackathons are some of the best ways to get inspired, learn new skills, and connect with like-minded innovators. At RythmHacks, our mission is to spread the magical spark of inspiration that you get from attending a hackathon. We're a high-school only hackathon happening in Waterloo, Ontario.
               <br/><br/>
-              In July of 2023, we're going in person at the University of Waterloo! Join us for an amazing weekend of fun, innovation, and free food. At RythmHacks, you'll work in teams of four or less to create a website, app, game, robot, or anything you can imagine. You'll have 36 hours to create your project, pitch it to judges, and compete for prizes!
+              In July of 2023, we're going in person at the University of Waterloo! If you're a high schooler, join us for an amazing weekend of fun, innovation, and free food. At RythmHacks, you'll work in teams of four or less to create a website, app, game, robot, or anything you can imagine. You'll have 36 hours to create your project, pitch it to judges, and compete for prizes!
             </p>
             <img loading='lazy' src={EngImg} alt='engimg'/>
           </div>

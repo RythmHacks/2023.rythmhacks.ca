@@ -49,6 +49,7 @@
       }
       &:hover {
         color: theme('colors.accent');
+        background-color: transparent;
       }
     }
 
@@ -62,8 +63,11 @@
 
     .navlogo {
       position: absolute;
-      left: 1rem;
-      top: 1rem;
+      left: 1.5rem;
+      top: 1px;
+      gap: 1.5rem;
+      display: flex;
+      align-items: center;
       padding: 0;
     }
 
@@ -82,7 +86,7 @@
       .shown {
         display: grid;
         padding: 25px;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
       }
     }
 }
@@ -98,6 +102,9 @@
     }
     button {
       padding: 0;
+    }
+    .navlogo {
+      height: 65px;
     }
   }
 }

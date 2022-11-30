@@ -1,6 +1,7 @@
 import './Navbar.scss'
 import React, { useState } from "react"
 import { GiHamburgerMenu } from 'react-icons/gi'
+import Logo from '../../assets/logo.png'
 
 const Navbar = () => {
 
@@ -14,12 +15,16 @@ const Navbar = () => {
 
     return (
         <nav className='nav text-3xl'>
-            <button id = 'navlogo' className={`text-accent navlogo`}
-            onClick={
+            <button onClick={
                 () => {
                     window.scrollTo(0,0)
                 }
-            }>RythmHacks</button>
+            }
+            className='items-center navlogo h-[100%]'>
+                <img src={Logo} alt='rythmhackslogo' className='h-[45px]'></img>
+                <p className={`text-accent`}>RythmHacks</p>
+            </button>
+
             <div className='links'>
                 {pages.map(
                     (value, index) => {

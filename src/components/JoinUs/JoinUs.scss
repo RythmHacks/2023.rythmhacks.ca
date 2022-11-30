@@ -1,3 +1,5 @@
+@use '../../styles.scss' as *;
+
 #joinustext {
     background-color:rgba(217, 217, 217, 0.4);
     backdrop-filter: blur(6px);
@@ -30,13 +32,6 @@
     #icons {
         button {
             padding: 0.25rem;
-            color: theme('colors.accent');
-            background-color: white;
-            border: 2px solid theme('colors.accent');
-            &:hover {
-                background-color: theme('colors.accent');
-                color: white;
-            }    
         }
         display: flex;
         justify-content: center;
@@ -66,20 +61,38 @@
     display: block;
     animation-name: fadeIn;
     animation-duration: 1s;
+} 
+.button {
+    background-color: white;
+    color: lighten($accent, 10%);
+    border: 2px solid lighten($accent, 10%);
+    
+    &:hover {
+        background-color: lighten($accent, 10%);
+        color: white;
+    }    
+}.buttonselected {
+    background-color: lighten($accent, 10%);
+    color: white;
+    border: 2px solid lighten($accent, 10%);
+
+    &:hover {
+        background-color: lighten($accent, 20%);
+    }
 }
 
 @media screen and (max-width: 900px) {
     #joinustext {
-        margin-left: 7.5%;
-        margin-right: 7.5%;
+        margin: 0;
+        text-align: left;
     }
     .selector {
-        width: 75%;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 600px) {
     .selector {
-        width: 85%;
+        width: 100%;
     }
 }
