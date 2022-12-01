@@ -2,7 +2,7 @@
 For the RythmHacks hackathon
 
 https://www.rythmhacks.ca/<br/>
-[Backup link](https://rythmhacks.vercel.app/)
+[Backup link](https://rythmhacks.vercel.app/)<br/>
 [Graphics](https://designstripe.com/) for reference
 
 ## Created Using
@@ -12,6 +12,7 @@ https://www.rythmhacks.ca/<br/>
 
 ## Deployed with
 - Vercel
+- Google Domains
 
 ## Instructions for using scroll animations
 1. Have these imports
@@ -27,5 +28,5 @@ const isInViewport1 = useIsInViewport(ref1);
 ```
 3. Reference each element like so
 ```html
- <div ref={ref1} className='hide'>
+<div ref={ref1} className={isInViewport1 ? 'hide show' : "hide"}></div>
 ```
