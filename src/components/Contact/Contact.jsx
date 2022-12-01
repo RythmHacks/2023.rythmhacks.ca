@@ -7,7 +7,7 @@ const Contact = () => {
         <h3>Reach out to us</h3>
         <div>
             <div className='sectionwrapper'>
-                <p>
+                <p >
                     Hackathons are a great way to meet other people, gain experience, or just get free merch. We want to make RythmHacks as accessible as possible so that everyone has a chance to spark their interest in tech. Feel free to contact us about any request, big or small, that you may have, or questions you have regarding the event.<br/>
                     <br/>Have questions? Need guidance about the application process? Want to sponsor or support us? Email us <a href='mailto:rythmhacks@gmail.com'>here!</a>
                 </p>
