@@ -87,3 +87,13 @@
         margin-right: auto;
     }
 }
+
+@media (prefers-reduced-motion) {
+    .rw-words-1 span {
+        animation: none;
+
+        &:last-child { 
+            opacity: 1;
+        }
+    }
+}

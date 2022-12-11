@@ -111,3 +111,9 @@
     display: none;
   }
 }
+
+@media (prefers-reduced-motion) {
+  .nav button:after {
+    transition: none;
+  }
+}
