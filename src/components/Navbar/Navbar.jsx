@@ -1,6 +1,7 @@
 import './Navbar.scss'
 import React, { useState } from "react"
 import { GiHamburgerMenu } from 'react-icons/gi'
+import { ImTree } from 'react-icons/im'
 import Logo from '../../assets/logo.png'
 import Socials from '../Socials/Socials'
 
@@ -68,9 +69,13 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className='absolute right-4' id='socials'>
+            {/* <div className='absolute right-4' id='socials'>
                 <Socials/>
-            </div>
+            </div> */}
+            <button className='socialslink' onClick={() => {window.open('https://links.rythmhacks.ca/')}}>
+                <ImTree/>
+                Links
+            </button>
         </nav>
     );
 };

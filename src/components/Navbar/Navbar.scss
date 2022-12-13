@@ -52,6 +52,13 @@
         background-color: transparent;
       }
     }
+    .socialslink {
+      position: absolute;
+      right: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
 
     .links {
       list-style: none;

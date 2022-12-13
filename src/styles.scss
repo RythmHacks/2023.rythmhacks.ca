@@ -22,15 +22,12 @@ $debug: false;
   }
 }
 
-@media (prefers-reduced-motion) {
-  * {
-    transition: none !important;
+@keyframes background-pan {
+  from {
+      background-position: 0% center;
   }
-  #tsparticles {
-    // display: none;
-  }
-  html {
-    scroll-behavior: auto;
+  to {
+      background-position: -200% center;
   }
 }
 
@@ -188,4 +185,17 @@ h4 {
   background: linear-gradient(0deg, rgba(235,153,60,1) 0%, rgba(184,31,31,1) 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;      
+}
+
+@media (prefers-reduced-motion) {
+  * {
+    transition: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+  .gradient {
+    animation: none;
+    animation-duration: 0s;
+  }
 }

@@ -18,7 +18,7 @@ const Hero = () => {
 					</div>
 
 			<h1 className='mt-12 font-bold text-accent' id = 'title'>RythmHacks</h1>
-			<h4 id = 'description'>July | University of Waterloo</h4>
+			<h4 id = 'description'>August | University of Waterloo</h4>
 			
 			<div className='mt-8 flex gap-4 justify-center'>
 				<button onClick={() => {window.open('https://docs.google.com/forms/u/1/d/e/1FAIpQLSeEr_kLSEboK22bXmDTFbZhfEw1-0_QRcfEf9bmDJ_UBOhwaw/viewform?usp=send_form')}}>Apply to be an organizer!</button>
