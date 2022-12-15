@@ -69,9 +69,6 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* <div className='absolute right-4' id='socials'>
-                <Socials/>
-            </div> */}
             <button className='socialslink' onClick={() => {window.open('https://links.rythmhacks.ca/')}}>
                 <ImTree/>
                 Links
