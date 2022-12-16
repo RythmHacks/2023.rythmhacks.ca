@@ -1,13 +1,35 @@
 import './Navbar.scss'
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { ImTree } from 'react-icons/im'
 import Logo from '../../assets/logo.png'
 import Socials from '../Socials/Socials'
 
+export const useScrollPosition = () => {
+    const [scrollPosition, setScrollPosition] = useState(0)
+
+    useEffect(() => {
+    const updatePosition = () => {
+        setScrollPosition(window.pageYOffset)
+    }
+
+    window.addEventListener('scroll', updatePosition)
+
+    updatePosition()
+
+    return () => window.removeEventListener('scroll', updatePosition)
+    }, [])
+
+    return scrollPosition
+}
+
 const Navbar = () => {
 
-    let pages = ['About', 'Join Us', 'Sponsors', 'Contact']
+    let scrollPosition = useScrollPosition();
+    console.log(scrollPosition)
+    let shouldChange = (scrollPosition > 10) ? 'scrolled' : '';
+
+    let pages = ['About', 'Join Us', 'Contact']
 
     const [navbarOpen, setNavbarOpen] = useState(false)
 
@@ -16,7 +38,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='nav text-3xl'>
+        <nav className={`nav text-3xl ${shouldChange}`}>
             <button onClick={
                 () => {
                     window.scrollTo(0,0)
