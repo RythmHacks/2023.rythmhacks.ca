@@ -7,7 +7,7 @@ import Socials from '../Socials/Socials'
 
 const Navbar = () => {
 
-    let pages = ['About', 'Join Us', 'Contact']
+    let pages = ['About', 'Join Us', 'Sponsors', 'Contact']
 
     const [navbarOpen, setNavbarOpen] = useState(false)
 
