@@ -1,14 +1,14 @@
 .hide {
     opacity: 0;
-    transition: 2s;
+    transition: 1.5s ease;
     transform: translate(0, 10rem);
     
     img {
-      transition: 2s;
+      transition: 1.5s ease;
       transform: scale(50%);
     }
     .sectionwrapper { img {
-      transition: 2s;
+      transition: 1.5s ease;
       transform: scale(50%);
     } }
   }
@@ -18,7 +18,7 @@
   transform: translate(0, 0);
 
   img {
-    transition: 2s;
+    transition: 1.5s ease;
     transform: scale(100%);
   }
 

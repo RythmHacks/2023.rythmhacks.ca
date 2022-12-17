@@ -1,5 +1,6 @@
 import './Hero.scss'
 import Socials from '../Socials/Socials.jsx'
+import { BsArrowDownCircleFill } from 'react-icons/bs'
 
 const Hero = () => {
     return (
@@ -27,6 +28,17 @@ const Hero = () => {
 
 			<div className='flex justify-center mt-8'>
 				<Socials />
+			</div>
+
+			<div className='getstarted' onClick={() => {
+				var element = document.getElementById('about');
+				element.scrollIntoView({
+					block: 'start',
+					behavior: 'smooth'
+				});
+			}}>
+				<BsArrowDownCircleFill />
+				<p>Let's get started</p>
 			</div>
 		</div>
     );
