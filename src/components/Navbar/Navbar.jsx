@@ -9,7 +9,6 @@ import { useScrollPosition } from '../ScrollAnimation/UseScrollPosition'
 const Navbar = () => {
 
     let scrollPosition = useScrollPosition();
-    console.log(scrollPosition)
     let shouldChange = (scrollPosition > 10) ? 'scrolled' : '';
 
     let pages = ['About', 'Join Us', 'Contact']

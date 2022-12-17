@@ -12,7 +12,7 @@ const Hero = () => {
 	opacity = parseFloat(opacity).toFixed(2);
 
     return (
-		<div id = 'hero' className={`h-[92vh] p-0 fixed w-full ${(scrollPosition > 300) ? "opacity-0" : "opacity-1"}`}>
+		<div id = 'hero' className={`h-[92vh] p-[5%] fixed w-full ${(scrollPosition > 300) ? "opacity-0" : "opacity-1"}`}>
 			<div id = 'cycle-wrapper' className="font-extralight">
 						<h4 className="rw-sentence">
 							<div className="rw-words rw-words-1">
@@ -39,11 +39,10 @@ const Hero = () => {
 			</div>
 
 			<div className='getstarted' onClick={() => {
-				var element = document.getElementById('about');
-				element.scrollIntoView({
-					block: 'start',
-					behavior: 'smooth'
-				});
+				let element = document.getElementById('about')
+				const y = element.getBoundingClientRect().top + window.pageYOffset - 60;
+
+				window.scrollTo({top: y, behavior: 'smooth'});
 			}}>
 				<BsArrowDownCircleFill />
 				<p>Let's get started</p>
