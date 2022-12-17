@@ -16,11 +16,11 @@ const About = () => {
   const isInViewport2 = useIsInViewport(ref2);
 
   return (
-    <div id='about' className='section'>
+    <div id='about' className='section mt-[92vh]'>
 
         <div ref={ref1} className={isInViewport1 ? 'hide show' : "hide"}>
           <h3>
-              Experience the <h3 className='gradient blue'>magic</h3> of tech
+              Experience the <h3 className='gradient blue'>magic</h3> of tech.
           </h3>
           <div className='sectionwrapper'>
             <p>
@@ -34,7 +34,7 @@ const About = () => {
 
         <div ref={ref2} className={isInViewport2 ? 'hide show' : "hide"}>
           <h3>
-            A place for <h3 className='darkblue gradient'>everyone</h3>
+             <h3 className='darkblue gradient'>Tech</h3> isn't scary.
           </h3>
           <div className='sectionwrapper'>
             <img loading='lazy' src={TogetherImg} alt='togetherimg' className='block md:hidden'></img>

@@ -1,27 +1,10 @@
 import './Navbar.scss'
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { ImTree } from 'react-icons/im'
 import Logo from '../../assets/logo.png'
-import Socials from '../Socials/Socials'
 
-export const useScrollPosition = () => {
-    const [scrollPosition, setScrollPosition] = useState(0)
-
-    useEffect(() => {
-    const updatePosition = () => {
-        setScrollPosition(window.pageYOffset)
-    }
-
-    window.addEventListener('scroll', updatePosition)
-
-    updatePosition()
-
-    return () => window.removeEventListener('scroll', updatePosition)
-    }, [])
-
-    return scrollPosition
-}
+import { useScrollPosition } from '../ScrollAnimation/UseScrollPosition'
 
 const Navbar = () => {
 
