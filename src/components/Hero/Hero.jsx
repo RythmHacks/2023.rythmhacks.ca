@@ -12,7 +12,7 @@ const Hero = () => {
 	opacity = parseFloat(opacity).toFixed(2);
 
     return (
-		<div id = 'hero' className={`h-[92vh] p-[5%] fixed w-full ${(scrollPosition > 300) ? "opacity-0" : "opacity-1"}`}>
+		<div id = 'hero' className={`h-[92vh] p-0 fixed w-full ${(scrollPosition > 300) ? "opacity-0" : "opacity-1"}`}>
 			<div id = 'cycle-wrapper' className="font-extralight">
 						<h4 className="rw-sentence">
 							<div className="rw-words rw-words-1">

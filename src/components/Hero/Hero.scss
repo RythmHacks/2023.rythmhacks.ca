@@ -2,6 +2,7 @@
     display: block;
     justify-content: center;
     text-align: center;
+    padding-top: 5%;
 
     transition: opacity 1.5s ease-in-out;
 }
@@ -27,7 +28,7 @@
     backdrop-filter: blur(8px);
     background-color: rgba(205, 205, 205, 0.3);
     box-shadow: 1px 1px 5px 2px rgba(150, 150, 150, 50%);
-    width: 15%;
+    width: max(15%, 8rem);
     padding: 1rem;
     cursor: pointer;
     border-radius: 1rem;
@@ -100,13 +101,6 @@
     #hero {
         display: block;
         justify-content: center;
-    }
-    #titlewrapper {
-        margin-top: 12vh;
-    }
-    #herologo {
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 

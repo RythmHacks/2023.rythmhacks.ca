@@ -62,7 +62,7 @@ const Navbar = () => {
                                 onClick = {
                                     () => {
                                         let element = document.getElementById(value.toLowerCase())
-                                        const y = element.getBoundingClientRect().top + window.pageYOffset - 80;
+                                        const y = element.getBoundingClientRect().top + window.pageYOffset - 200;
 
                                         window.scrollTo({top: y, behavior: 'smooth'});
                                     }
