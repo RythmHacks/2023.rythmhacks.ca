@@ -1,15 +1,15 @@
 .hide {
     opacity: 0;
     transition: 1.5s ease;
-    transform: translate(0, 10rem);
+    transform: translate(0, 5rem);
     
     img {
       transition: 1.5s ease;
-      transform: scale(50%);
+      transform: scale(70%);
     }
     .sectionwrapper { img {
       transition: 1.5s ease;
-      transform: scale(50%);
+      transform: scale(70%);
     } }
   }
   

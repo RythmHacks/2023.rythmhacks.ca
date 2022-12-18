@@ -32,9 +32,9 @@ const About = () => {
           </div>
         </div>
 
-        <div ref={ref2} className={isInViewport2 ? 'hide show' : "hide"}>
+        <div ref={ref2} className={`${isInViewport2 ? 'hide show' : "hide"} mt-4`}>
           <h3>
-             <h3 className='darkblue gradient'>Tech</h3> isn't scary.
+            A place for <h3 className='darkblue gradient'>everyone</h3>. 
           </h3>
           <div className='sectionwrapper'>
             <img loading='lazy' src={TogetherImg} alt='togetherimg' className='block md:hidden'></img>
