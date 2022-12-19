@@ -58,7 +58,7 @@ button {
 }
 
 p, a, button {
-  font-size: max(1.2vw, 1.2rem);
+  font-size: max(1.1vw, 1.1rem);
   font-family: 'Inter', sans-serif;
   line-height: 175%;
 }
@@ -73,33 +73,33 @@ a {
   }
 }
 
+h1, h2, h3, h4 {
+  font-family: Satoshi;
+  // font-weight: 400;
+}
+
 h1 {
   font-size: max(2.75rem, 6.5vw);
-  font-family: Satoshi;
 }
 
 h2 {
   font-size: max(2.3rem, 4.5vw);
-  font-family: Satoshi-Light;
 }
 
 h3 {
-  font-size: max(1.8rem, 2.5vw);
-  font-family: Satoshi-Light;
+  font-size: max(1.6rem, 2.3vw);
 }
 
 h4 {
-  font-size: max(1.4rem, 2vw);
-  font-family: Satoshi;
+  font-size: max(1.2rem, 1.6vw);
 }
 
 .section {
-  padding: 5%;
+  padding: 5% 8%;
 
   h3 {
     // margin-bottom: 2rem;
     text-align: center;
-    font-weight: bold;
 
     .blue, .gradient, .gradient-vertical {
       display: inline

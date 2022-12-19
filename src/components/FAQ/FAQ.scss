@@ -1,28 +1,19 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+#faq {
+    margin: 0 0 3rem 0;
+    .faqwrapper {
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+        
+        .column {
+            width: 35%;
+            background-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(3px);
+            padding: 0.5rem;
 
-.faq-content {
-  display: flex;
-  gap: 1rem;
-}
+            // .row {
 
-@media screen and (max-width: 1000px) {
-  .faq-content {
-    display: block;
-  }
-}
-
-.column {
-  flex: 50%;
-  border-radius: 10px;
-  border-collapse: separate;
-
-  &:first-child {
-    &:first-child {
-      border-radius: 15px 15px 0px 0px;
+            // }
+        }
     }
-  }
 }
