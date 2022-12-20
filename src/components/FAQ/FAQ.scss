@@ -12,20 +12,21 @@
             border-radius: 0.5rem;
             border: 2px solid #ddd;
             height: max-content;
-            
-            .row {
-                .q {
-                    padding: 1rem;
-                }
-                .a {
-                    padding: 0 1rem;
-                    background-color:rgba(230, 240, 250, 0.7);
-                    max-height: 0px;
-                    box-sizing: border-box;
-                    overflow: hidden;
-                    transition: max-height, padding 0.2s ease-out;  
-                }
-            }
         }
+    }
+}
+
+.row {
+    cursor: pointer;
+    .q {
+        padding: 1rem;
+    }
+    .a {
+        padding: 0 1rem;
+        background-color:rgba(230, 240, 250, 0.7);
+        max-height: 0px;
+        box-sizing: border-box;
+        overflow: hidden;
+        transition: max-height 0.4s ease, padding 0.4s ease;  
     }
 }
