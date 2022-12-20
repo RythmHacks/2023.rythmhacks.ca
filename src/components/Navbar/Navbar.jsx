@@ -27,7 +27,7 @@ const Navbar = () => {
                 }
             }
             className='items-center navlogo h-[100%]'>
-                <img src={Logo} alt='rythmhackslogo' className='h-[45px]'></img>
+                <img src={Logo} alt='rythmhackslogo' className='h-[45px]'></img> {/* dear future devs, this doesn't need to be lazy loaded because it's on the navbar and gets rendered immediately */}
                 <p className={`text-accent`}>RythmHacks</p>
             </button>
 

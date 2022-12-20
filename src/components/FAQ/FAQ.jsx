@@ -6,7 +6,7 @@ const FAQ = () => {
     const ref = useRef(null);
 
     return (
-        <div id = 'faq' className='pt-[4rem]'>
+        <div id = 'faq' className='pt-[6rem]'>
             <h3 className='text-center mb-4'>Frequently Asked Questions</h3>
 
             <div className='faqwrapper'>
