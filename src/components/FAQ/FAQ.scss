@@ -1,12 +1,12 @@
 #faq {
-    margin: 0 0 3rem 0;
+    margin: 0 0 5rem 0;
     .faqwrapper {
         display: flex;
         justify-content: center;
-        gap: 10%;
+        gap: 7.5%;
         
         .column {
-            width: 35%;
+            width: 34%;
             background-color: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(3px);
             border-radius: 0.5rem;
@@ -68,5 +68,9 @@
         overflow: hidden;
         transition: max-height 0.4s ease, padding 0.4s ease;  
         border-bottom: 2px solid #ddd;
+        
+        &:last-child {
+          border-radius: 0 0 0.5rem 0.5rem;
+        }
     }
 }

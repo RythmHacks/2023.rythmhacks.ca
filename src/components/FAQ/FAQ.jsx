@@ -8,7 +8,7 @@ const FAQ = () => {
 
     return (
         <div id = 'faq' className='pt-[6rem]'>
-            <h3 className='text-center mb-4'>Frequently Asked Questions</h3>
+            <h3 className='text-center mb-[3rem]'>Frequently Asked Questions</h3>
 
             <div className='faqwrapper'>
                 <div className='column'>
