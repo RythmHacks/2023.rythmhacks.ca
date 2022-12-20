@@ -1,12 +1,7 @@
 import './FAQ.scss'
 import { useRef } from 'react'
 import Dropdown from './Dropdown.jsx'
-
-const questions = [
-    ['funky', 'monkey'],
-    ['large', 'amongus'],
-    ['asaaa', 'asdasf']
-]
+import { column1, column2 } from './FAQData.js'
 
 const FAQ = () => {
     const ref = useRef(null);
@@ -17,15 +12,15 @@ const FAQ = () => {
 
             <div className='faqwrapper'>
                 <div className='column'>
-                    {questions.map((question) => {
+                    {column1.map((question) => {
                         return <Dropdown q={question[0]} a={question[1]}/>
                     })}
                 </div>
 
                 <div className='column'> 
-                    <div className='row'>
-                        <p className='q'>somethign</p>
-                    </div>
+                    {column2.map((question) => {
+                        return <Dropdown q={question[0]} a={question[1]}/>
+                    })}
                 </div>
             </div>
         </div>

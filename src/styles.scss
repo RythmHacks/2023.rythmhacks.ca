@@ -41,6 +41,9 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #b6b6b6;
 }
+::-selection {
+  background-color: #9EBECE;
+}
 
 body {
   background-size: 100%;

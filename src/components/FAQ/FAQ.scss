@@ -43,8 +43,8 @@
     transform: rotate(90deg);
     top: -5px;
     left: 5px;}
-  &:hover {
-    transform: rotate(45deg) translate(-5px,-5px);
+  &.active {
+    transform: rotate(45deg) translate(-5px,-5px) scale(0.8);
     &:before{
       transform: translate(10px,0);}
     &:after{
@@ -54,21 +54,19 @@
 }
 
 .row {
-    cursor: pointer;
-    .q {
+  .q {
+        cursor: pointer;
         display: flex;
         align-items: center;
         padding: 1rem;
     }
     .a {
         padding: 0 1rem;
-        background-color:rgba(230, 240, 250, 0.7);
+        background-color:rgba(220, 235, 250, 0.7);
         max-height: 0px;
         box-sizing: border-box;
         overflow: hidden;
-        transition: max-height 0.3s ease-in, padding 0.3s ease-in;  
-        // border-top: 2px solid #ddd;
+        transition: max-height 0.4s ease, padding 0.4s ease;  
         border-bottom: 2px solid #ddd;
-
     }
 }

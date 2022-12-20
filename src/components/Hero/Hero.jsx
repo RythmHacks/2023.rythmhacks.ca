@@ -26,7 +26,7 @@ const Hero = () => {
 						</h4>
 					</div>
 
-			<h1 className='mt-12 font-bold text-accent' id = 'title'>RythmHacks</h1>
+			<h1 className='mt-[3vh] font-bold text-accent' id = 'title'>RythmHacks</h1>
 			<h4 id = 'description'>August | University of Waterloo</h4>
 			
 			<div className='mt-8 flex gap-4 justify-center'>
