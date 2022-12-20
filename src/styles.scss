@@ -107,10 +107,16 @@ p, a, button {
 a {
   transition: all 0.3s;
   color: $accent;
-  text-decoration: underline;
   cursor: pointer;
+  background-image: linear-gradient(90deg, rgba(84,140,168,1) 0%, rgba(84,140,168,1) 100%);;
+  background-size: 0% 2.5px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  text-decoration: none;
+  transition: color 0.3s, background-size 0.5s ease;
+
   &:hover {
-    color: $accent;
+    background-size: 100% 2.5px;
   }
 }
 
