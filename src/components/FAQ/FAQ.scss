@@ -11,14 +11,53 @@
             backdrop-filter: blur(3px);
             border-radius: 0.5rem;
             border: 2px solid #ddd;
+            border-bottom: none;
             height: max-content;
         }
     }
 }
 
+.arrow{
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  position: relative;
+  bottom: -3px;
+  left: -10px;
+  transition: 0.4s ease;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-align: left;
+  transform: rotate(45deg) scale(0.8);
+  float: right;
+  &:before, &:after{
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 3px;
+    background-color: #777;
+    transition: 0.4s ease;}
+  &:after{
+    position: absolute;
+    transform: rotate(90deg);
+    top: -5px;
+    left: 5px;}
+  &:hover {
+    transform: rotate(45deg) translate(-5px,-5px);
+    &:before{
+      transform: translate(10px,0);}
+    &:after{
+      transform: rotate(90deg) translate(10px,0);}
+
+  }
+}
+
 .row {
     cursor: pointer;
     .q {
+        display: flex;
+        align-items: center;
         padding: 1rem;
     }
     .a {
@@ -27,6 +66,9 @@
         max-height: 0px;
         box-sizing: border-box;
         overflow: hidden;
-        transition: max-height 0.4s ease, padding 0.4s ease;  
+        transition: max-height 0.3s ease-in, padding 0.3s ease-in;  
+        // border-top: 2px solid #ddd;
+        border-bottom: 2px solid #ddd;
+
     }
 }

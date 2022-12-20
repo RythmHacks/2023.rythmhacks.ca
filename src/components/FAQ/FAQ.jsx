@@ -2,6 +2,12 @@ import './FAQ.scss'
 import { useRef } from 'react'
 import Dropdown from './Dropdown.jsx'
 
+const questions = [
+    ['funky', 'monkey'],
+    ['large', 'amongus'],
+    ['asaaa', 'asdasf']
+]
+
 const FAQ = () => {
     const ref = useRef(null);
 
@@ -11,7 +17,9 @@ const FAQ = () => {
 
             <div className='faqwrapper'>
                 <div className='column'>
-                    <Dropdown q='What is the purpose of this website?' a='This website is a platform for students to share their experiences and advice with other students.'/>
+                    {questions.map((question) => {
+                        return <Dropdown q={question[0]} a={question[1]}/>
+                    })}
                 </div>
 
                 <div className='column'> 
