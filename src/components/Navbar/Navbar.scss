@@ -53,6 +53,9 @@
         color: theme('colors.accent');
         background-color: transparent;
       }
+      &:active {
+        transform: none;
+      }
     }
     .socialslink {
       position: absolute;
