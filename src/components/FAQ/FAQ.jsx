@@ -1,34 +1,26 @@
 import './FAQ.scss'
-import Accordion from '../Accordion/Accordion';
+import { useRef } from 'react'
+import Dropdown from './Dropdown.jsx'
+import { column1, column2 } from './FAQData.js'
 
 const FAQ = () => {
+    const ref = useRef(null);
 
     return (
-        <div id = 'faq' className='section items-center'>
-            <h2 className='mt-8 text-center'>
-                <span className='gradient-vertical'>F</span>REQUENTLY <span className='gradient-vertical'>A</span>SKED
-                {' '}<span className='gradient-vertical'>Q</span>UESTIONS
-            </h2>
-            <div className='faq-content'>
+        <div id = 'faq' className='pt-[6rem]'>
+            <h3 className='text-center mb-[3rem]'>Frequently Asked Questions</h3>
+
+            <div className='faqwrapper'>
                 <div className='column'>
-                    <Accordion
-                    title='What is RythmHacks?'
-                    content='RythmHacks is a hackathon.'
-                    />
-                    <Accordion
-                    title='What kind of workshops, speakers, and activities will there be?'
-                    content='TBD'
-                    />
+                    {column1.map((question) => {
+                        return <Dropdown q={question[0]} a={question[1]}/>
+                    })}
                 </div>
-                <div className='column'>
-                    <Accordion
-                    title='How much does it cost?'
-                    content='Nothing! There is no cost to attending RythmHacks, food and accommodations will be provided during the event.'
-                    />
-                    <Accordion
-                    title='Who can participate?'
-                    content='TBD'
-                    />
+
+                <div className='column'> 
+                    {column2.map((question) => {
+                        return <Dropdown q={question[0]} a={question[1]}/>
+                    })}
                 </div>
             </div>
         </div>

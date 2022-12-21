@@ -5,11 +5,11 @@
     
     img {
       transition: 1.5s ease;
-      transform: scale(70%);
+      transform: scale(0.9);
     }
     .sectionwrapper { img {
       transition: 1.5s ease;
-      transform: scale(70%);
+      transform: scale(0.9);
     } }
   }
   
@@ -19,11 +19,11 @@
 
   img {
     transition: 1.5s ease;
-    transform: scale(100%);
+    transform: scale(1);
   }
 
   .sectionwrapper { img {
-      transform: scale(100%);
+      transform: scale(1);
   } }
 }
   

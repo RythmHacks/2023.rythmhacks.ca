@@ -1,28 +1,76 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.faq-content {
-  display: flex;
-  gap: 1rem;
-}
-
-@media screen and (max-width: 1000px) {
-  .faq-content {
-    display: block;
-  }
-}
-
-.column {
-  flex: 50%;
-  border-radius: 10px;
-  border-collapse: separate;
-
-  &:first-child {
-    &:first-child {
-      border-radius: 15px 15px 0px 0px;
+#faq {
+    margin: 0 0 5rem 0;
+    .faqwrapper {
+        display: flex;
+        justify-content: center;
+        gap: 7.5%;
+        
+        .column {
+            width: 34%;
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(3px);
+            border-radius: 0.5rem;
+            border: 2px solid #ddd;
+            border-bottom: none;
+            height: max-content;
+        }
     }
+}
+
+.arrow{
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  position: relative;
+  bottom: -3px;
+  left: -10px;
+  transition: 0.4s ease;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-align: left;
+  transform: rotate(45deg) scale(0.8);
+  float: right;
+  &:before, &:after{
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 3px;
+    background-color: #777;
+    transition: 0.4s ease;}
+  &:after{
+    position: absolute;
+    transform: rotate(90deg);
+    top: -5px;
+    left: 5px;}
+  &.active {
+    transform: rotate(45deg) translate(-5px,-5px) scale(0.8);
+    &:before{
+      transform: translate(10px,0);}
+    &:after{
+      transform: rotate(90deg) translate(10px,0);}
+
   }
+}
+
+.row {
+  .q {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+    .a {
+        padding: 0 1rem;
+        background-color:rgba(220, 235, 250, 0.7);
+        max-height: 0px;
+        box-sizing: border-box;
+        overflow: hidden;
+        transition: max-height 0.4s ease, padding 0.4s ease;  
+        border-bottom: 2px solid #ddd;
+        
+        &:last-child {
+          border-radius: 0 0 0.5rem 0.5rem;
+        }
+    }
 }
