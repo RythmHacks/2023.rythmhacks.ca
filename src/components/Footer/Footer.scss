@@ -1,0 +1,91 @@
+#footer {
+    position: relative;
+    bottom: 0;
+    padding-top: 5vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-bottom: 2vw;
+    display: flex;
+    gap: 5rem;
+
+    div {
+        display: block;
+        width: 33%;
+        // background-color: #78B68C;
+        line-height: max(3vw, 30px);
+    }
+
+    h2 {
+        color: lighten($dark, 50%);
+        font-size: max(1vw, 10px)
+    }
+
+    #copyright {
+        h1 {
+            flex-basis: 100%;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        p {
+            margin-top: 15px;
+        }
+
+        img {
+            width: 20%;
+        }
+    }
+
+    #footersocials {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+        #devposticonf {
+            font-size: max(1.7vw, 15px);
+        }
+    }
+
+    gradient {
+        font-size: max(3vw, 3px);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #footer {
+        display: block !important;
+        justify-content: center !important;
+        div {
+            @include centered();
+            text-align: center;
+        }
+
+        #footersocials {
+            @include centered();
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+footer {
+    background-color: #0B1015;
+
+    p {
+        font-size: max(1.5vw, 13px);
+    }
+
+    a {
+        display: block;
+        transition: color 0.2s ease;
+        &:hover {
+            color: $accent;
+        }
+        cursor: pointer;
+        white-space: nowrap;
+        font-size: max(1.5vw, 13px);
+    }
+
+    padding-bottom: 5vw;
+}
