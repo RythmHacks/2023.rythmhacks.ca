@@ -1,6 +1,6 @@
 import './Navbar.scss'
 import React, { useState } from "react"
-import { GiHamburgerMenu } from 'react-icons/gi'
+import { Squash as Hamburger } from 'hamburger-react'
 import { ImTree } from 'react-icons/im'
 import Logo from '../../assets/logo.png'
 
@@ -14,6 +14,7 @@ const Navbar = () => {
     let pages = ['About', 'Join Us', 'FAQ', 'Sponsors', 'Contact']
 
     const [navbarOpen, setNavbarOpen] = useState(false)
+    const [isOpen, setOpen] = useState(false)
 
     const handleToggle = () => {
         setNavbarOpen(!navbarOpen)
@@ -51,7 +52,9 @@ const Navbar = () => {
                 )}
             </div>
             <div className="burger">
-                <p onClick={handleToggle} className='cursor-pointer burger-button h-[36px] flex items-center'><GiHamburgerMenu/></p>
+                <p onClick={handleToggle} className='text-[#777] cursor-pointer burger-button h-[36px] flex items-center'>
+                    <Hamburger toggled={isOpen} toggle={setOpen} />
+                </p>
                 <div className={navbarOpen ? "shown" : "hidden"}>
                     {pages.map(
                         (value, index) => {
