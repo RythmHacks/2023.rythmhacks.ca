@@ -12,10 +12,11 @@ const Dropdown = (props) => {
                 () => {
                     ref.current.style.maxHeight = (ref.current.style.maxHeight === '0px' || ref.current.style.maxHeight === '' || !ref.current.style.maxHeight) ? (ref.current.scrollHeight + 32) + 'px' : '0px';
                     ref.current.style.padding = (ref.current.style.maxHeight === '0px' || ref.current.style.maxHeight === '' || !ref.current.style.maxHeight) ? '0 1rem' : '1rem';
+                    ref.current.style.color = (ref.current.style.maxHeight === '0px' || ref.current.style.maxHeight === '' || !ref.current.style.maxHeight) ? 'rgba(0, 0, 0, 0)' : 'rgba(0, 0, 0, 1)';
                     ref2.current.classList.toggle('active');
                 }
             }>
-                <p ref={ref2} className='arrow'></p>
+                <p ref={ref2} className='arrow active'></p>
                 {props.q}
             </p>
             <p ref={ref} className='a'>{props.a}</p>
