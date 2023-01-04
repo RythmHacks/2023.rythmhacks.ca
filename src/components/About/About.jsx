@@ -20,7 +20,7 @@ const About = () => {
 
         <div ref={ref1} className={isInViewport1 ? 'hide show' : "hide"}>
           <h3>
-              Experience the <h3 className='gradient blue'>magic of tech</h3>.
+              Experience the <span className='gradient blue'>magic of tech</span>.
           </h3>
           <div className='sectionwrapper'>
             <p>
@@ -34,7 +34,7 @@ const About = () => {
 
         <div ref={ref2} className={`${isInViewport2 ? 'hide show' : "hide"} mt-4`}>
           <h3>
-            A place <h3 className='darkblue gradient'> for everyone</h3>. 
+            A place <span className='darkblue gradient'> for everyone</span>. 
           </h3>
           <div className='sectionwrapper'>
             <img loading='lazy' src={TogetherImg} alt='togetherimg' className='block md:hidden'></img>

@@ -14,7 +14,7 @@ const Sponsor = () => {
     <div id='sponsors' className='section'>
 
       <div ref={ref1} className={isInViewport1 ? 'hide show' : "hide"}>
-        <h3>Sponsor the <h3 className='gradient green'>future of technology</h3>.</h3>
+        <h3>Sponsor the <span className='gradient green'>future of technology</span>.</h3>
         <div className='sectionwrapper'>
           <p>
             As a nonprofit organization, RythmHacks relies on the support of our sponsors to make our event possible. We're looking for sponsors who are passionate about supporting the next generation of tech innovators.
