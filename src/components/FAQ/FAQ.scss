@@ -89,11 +89,16 @@
         max-height: 0px;
         box-sizing: border-box;
         overflow: hidden;
-        transition: max-height 0.4s ease, padding 0.4s ease, color 0.4s ease;  
+        transition: max-height 0.6s ease, padding 0.4s ease, color 0.5s ease;  
         border-bottom: 2px solid #ddd;
+        color: rgba(0, 0, 0, 0);
         
         &:last-child {
           border-radius: 0 0 0.5rem 0.5rem;
+        }
+        &.open {
+          padding: 1rem;
+          color: rgba(0, 0, 0, 1);
         }
     }
 }

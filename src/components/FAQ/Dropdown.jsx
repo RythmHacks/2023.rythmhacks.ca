@@ -1,25 +1,24 @@
 import './FAQ.scss'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 
 const Dropdown = (props) => {
 
     const ref = useRef(null);
     const ref2 = useRef(null);
+    const [open, setOpen] = useState(false);
 
     return (
         <div className='row'>
             <p className='q' onClick = {
                 () => {
                     ref.current.style.maxHeight = (ref.current.style.maxHeight === '0px' || ref.current.style.maxHeight === '' || !ref.current.style.maxHeight) ? (ref.current.scrollHeight + 32) + 'px' : '0px';
-                    ref.current.style.padding = (ref.current.style.maxHeight === '0px' || ref.current.style.maxHeight === '' || !ref.current.style.maxHeight) ? '0 1rem' : '1rem';
-                    ref.current.style.color = (ref.current.style.maxHeight === '0px' || ref.current.style.maxHeight === '' || !ref.current.style.maxHeight) ? 'rgba(0, 0, 0, 0)' : 'rgba(0, 0, 0, 1)';
-                    ref2.current.classList.toggle('active');
+                    setOpen(!open);
                 }
             }>
-                <p ref={ref2} className='arrow active'></p>
+                <p ref={ref2} className={`arrow ${open ? 'active' : ""}`}></p>
                 {props.q}
             </p>
-            <p ref={ref} className='a'>{props.a}</p>
+            <p ref={ref} className={`a ${open ? "open" : ""}`}>{props.a}</p>
         </div>
     )
 }
