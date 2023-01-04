@@ -40,8 +40,12 @@ export const column2 = [
 "Yes. For safety reasons, we require that attendees will stay at the venue for the entirety of the event."
 ],
 [
-"How will I communicate during the event?",
-"Announcements during and before ClockHacks will be through Discord. We strongly recommend that you talk to your teammates on Discord as well."
+"What should I bring to RythmHacks?",
+"Make sure to bring any essential items to support your personal needs and your project. You should bring devices, chargers, a water bottle, sleeping bag, or anything else to bring out the most out of our hackathon. :)"
+],
+[
+"How will we communicate during the event?",
+"Announcements during and before RythmHacks will be through Discord. We strongly recommend that you talk to your teammates on Discord as well."
 ],
 [
 "What if I have more questions?",

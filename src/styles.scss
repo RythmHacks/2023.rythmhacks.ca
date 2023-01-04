@@ -44,8 +44,7 @@ html {
   
 * {
   &::selection {
-    background-color: theme('colors.accent');
-    color: white;
+    background-color: transparentize($accent, 0.75);
   }
 }
 
@@ -207,10 +206,6 @@ h4 {
   -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;  
   animation: background-pan 4s linear infinite;
-
-  &::selection {
-    background-color: transparentize($accent, 0.75);
-  }
 }
 
 .red {
