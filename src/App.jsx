@@ -7,7 +7,7 @@ import Particles from './components/Particles.jsx';
 
 const About = React.lazy(() => import('./components/About/About.jsx')); 
 const FAQ = React.lazy(() => import('./components/FAQ/FAQ.jsx')); 
-const JoinUs = React.lazy(() => import('./components/JoinUs/JoinUs.jsx')); 
+//const Team = React.lazy(() => import('./components/Team/Team.jsx')); 
 const Sponsor = React.lazy(() => import('./components/Sponsor/Sponsor.jsx')); 
 const Contact = React.lazy(() => import('./components/Contact/Contact.jsx')); 
 
@@ -22,7 +22,6 @@ function App() {
       <Navbar/>
       <Hero/>
       <About/>
-      <JoinUs/>
       <FAQ/>
       <Sponsor/>
       <Contact/>
