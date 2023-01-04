@@ -3,11 +3,14 @@
 .socials {
     a, p {
         font-size: max(1.4rem, 2vw);
+        transition: 0.3s;
 
         &:hover {
             color: lighten($accent, 10%);
         }
     }
+
+   
     p {
         &:hover {
             cursor: not-allowed;

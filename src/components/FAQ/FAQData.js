@@ -20,6 +20,10 @@ export const column1 = [
 "Is RythmHacks in person or online?",
 "RythmHacks will happen in-person at the University of Waterloo. There won't be an online portion of this year's event, but workshops and activites will be recorded and posted online."
 ],
+[
+"How can I stay in touch with RythmHacks?",
+(<>You can stay in touch with us by following our Instagram: <a href="https://www.instagram.com/rythm.hacks/" target="_blank" rel="noreferrer">rythm.hacks</a>. We post news and annoucements there. You can find all our socials on our <a href='https://links.rythmhacks.ca/' target='_blank' rel='noreferrer'>links page</a>.</>)
+]
 ]
 
 export const column2 = [

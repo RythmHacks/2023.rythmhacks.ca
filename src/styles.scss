@@ -104,7 +104,7 @@ p, a, button {
   line-height: 175%;
 }
 
-a {
+a:not(.socials a) {
   transition: all 0.3s;
   color: $accent;
   cursor: pointer;
@@ -121,7 +121,7 @@ a {
 }
 
 h1, h2, h3, h4 {
-  font-family: Satoshi;
+  font-family: Satoshi, sans-serif;
   // font-weight: 400;
 }
 

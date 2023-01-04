@@ -30,3 +30,25 @@ const isInViewport1 = useIsInViewport(ref1);
 ```html
 <div ref={ref1} className={isInViewport1 ? 'hide show' : "hide"}></div>
 ```
+
+## Page Section Structure
+```html
+<div id='page name' className='section'>
+    
+    <!-- additional div, usually for scroll animations -->
+    <div>
+
+        <h3>header <h3 className='gradient blue'>gradient</h3>, period.</h3>
+        
+        <!-- text and image section -->
+        <div className='sectionwrapper'>
+            <p>
+                put text here
+            </p>
+            <img loading='lazy' src={src} alt='alt'></img>
+            <!-- all images are lazy loaded and have an alt attribute -->
+        </div>
+
+    </div>
+</div>
+```
