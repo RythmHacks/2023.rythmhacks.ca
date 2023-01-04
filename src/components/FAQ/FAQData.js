@@ -14,7 +14,7 @@ export const column1 = [
 ],
 [
 "How many people can be on a team?",
-"Teams can be up to 4 people. We encourage you to apply with a team, but if you don't have one, we will help you find a team at the event."
+"Teams can be up to 4 people. We encourage you to apply with a team, but if you don't have one, we can help you find a team during the event."
 ],
 [
 "Is RythmHacks in person or online?",
