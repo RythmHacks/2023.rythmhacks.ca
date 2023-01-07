@@ -26,11 +26,16 @@ const Hero = () => {
 						</h4>
 					</div>
 
-			<h1 className='mt-[3vh] font-bold text-accent' id = 'title'>RythmHacks</h1>
+			<h1 className='mt-[6vh] font-bold text-accent' id = 'title'>RythmHacks</h1>
 			<h4 id = 'description'>August | University of Waterloo</h4>
 			
-			<div className='mt-8 flex gap-4 justify-center'>
-				<button onClick={() => {window.open('https://docs.google.com/forms/u/1/d/e/1FAIpQLSeEr_kLSEboK22bXmDTFbZhfEw1-0_QRcfEf9bmDJ_UBOhwaw/viewform?usp=send_form')}}>Apply to be an organizer!</button>
+			<div className='mt-8 justify-center'>
+				<button onClick={() => {
+					let element = document.getElementById('sponsors')
+					const y = element.getBoundingClientRect().top + window.pageYOffset - 60;
+
+					window.scrollTo({top: y, behavior: 'smooth'});
+				}} className='mr-4'>Sponsor us!</button>
 				<button onClick={() => {window.location = "mailto:rythmhacks@gmail.com";}}>Get in touch</button>
 			</div>
 

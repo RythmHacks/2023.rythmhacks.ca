@@ -24,6 +24,8 @@ const Sponsor = () => {
             Without sponsors, we wouldn't be able to purchase food and prizes, host workshops, or make RythmHacks as awesome as it is. Many of our hackers will use your software or product in their projects. With some of the most creative young minds in one place, you'll have a chance to recruit the next generation of tech talent. Sponsor us today and inspire high school students to experience the magic of tech.
             <br/><br/>
             Interested in sponsoring? Contact us at <a href='mailto:rythmhacks@gmail.com'>rythmhacks@gmail.com</a>. 
+            <br/><br/>
+            <button onClick={() => {window.location = "mailto:rythmhacks@gmail.com";}}>Reach out to us</button>
           </p>
           <img loading='lazy' src={SponsorImage} alt='sponsorimg'></img>
         </div>

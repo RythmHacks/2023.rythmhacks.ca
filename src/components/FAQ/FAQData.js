@@ -31,6 +31,10 @@ export const column1 = [
 [
 "Can I cross-submit to another hackathon?",
 "No. A project submitted to RythmHacks cannot be submitted to another hackathon on the same weekend. "
+],
+[
+"I'm a business or corporation. Can I help support RythmHacks?",
+(<>Yes! RythmHacks is a nonprofit organization, and we rely on sponsors to make our event possible. By sponsoring, you'll be inspiring and supporting the future innovators of technology. For sponsorship inquiries, contact <a href='mailto:rythmhacks@gmail.com'>rythmhacks@gmail.com</a>.</>)
 ]
 ]
 
@@ -45,7 +49,7 @@ export const column2 = [
 ],
 [
 "Do I have to stay at the venue the whole time?",
-"Yes. For safety reasons, we require that attendees will stay at the venue for the entirety of the event."
+"Yes. For safety reasons, we require that attendees will stay at the venue for the duration of the event. We will have a designated area for sleeping, and we will have a quiet room for those who need to rest. If you need to leave the building for any reason, let us know on Discord."
 ],
 [
 "What should I bring to RythmHacks?",
