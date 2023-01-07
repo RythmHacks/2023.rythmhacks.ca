@@ -14,26 +14,34 @@ export const column1 = [
 ],
 [
 "How many people can be on a team?",
-"Teams can be up to 4 people. We encourage you to apply with a team, but if you don't have one, we can help you find a team during the event."
+"Teams can be up to 4 people. We encourage you to apply with a team, but if you don't have one, we can help you find a team during the event. This doesn't mean that you have to submit a project with a team, it's fine to work by yourself if you'd like."
 ],
 [
 "Is RythmHacks in person or online?",
 "RythmHacks will happen in-person at the University of Waterloo. There won't be an online portion of this year's event, but workshops and activites will be recorded and posted online."
 ],
 [
-"How can I stay in touch with RythmHacks?",
-(<>You can stay in touch with us by following our Instagram: <a href="https://www.instagram.com/rythm.hacks/" target="_blank" rel="noreferrer">rythm.hacks</a>. We post news and annoucements there. You can find all our socials on our <a href='https://links.rythmhacks.ca/' target='_blank' rel='noreferrer'>links page</a>.</>)
+"Are there any costs?",
+"RythmHacks is free for all admitted hackers! It's our pleasure to bring our workshops, swag, and prizes to our hackers without any cost on your end. However, you must provide your own transportation to our venue. "
+],
+[
+"Can I submit a previously made project?",
+(<>If your project wasn't fully made during the hacking portion of RythmHacks, it won't be eligible for prizes. In order to keep the competition fair, you won't be able to submit a previously made project.</>)
+],
+[
+"Can I cross-submit to another hackathon?",
+"No. A project submitted to RythmHacks cannot be submitted to another hackathon on the same weekend. "
 ]
 ]
 
 export const column2 = [
 [
 "What kind of project can I make?",
-"You can make any type of project you would like! An app, a website, blockchain, hardware, design, or anything that your heart desires. "
+"You can make any type of project you would like! An app, website, blockchain, hardware, design, or anything that your heart desires. We may have a hardware checkout, but it will be limited. If you plan on making a project involving hardware, we recommend that you bring materials from home. RythmHacks doesn't have a specified theme, but we do encourage that you make your project solve a real-world problem or issue."
 ],
 [
 "Is there food?",
-"Yes! We will be providing 6 meals of breakfast, lunch, and dinner throughout the event. During registration, you can let us know if you have any dietary restrictions."
+"Yes! We will be providing 6 meals of breakfast, lunch, and dinner throughout the event. During registration, you can let us know if you have any dietary restrictions. We'll also have snacks available at any time."
 ],
 [
 "Do I have to stay at the venue the whole time?",
@@ -44,9 +52,17 @@ export const column2 = [
 "Make sure to bring any essential items to support your personal needs and your project. You should bring devices, chargers, a water bottle, sleeping bag, or anything else to bring out the most out of our hackathon. :)"
 ],
 [
+"Help, I can't think of any ideas for my project!",
+(<>You can use <a href='https://helpineedideas.vercel.app/' target='_blank' rel='noreferrer'>this website</a> to get inspiration for your project. Simply specify a theme, and OpenAI will generate a hackathon project idea for you!</>)
+],
+[
 "How will we communicate during the event?",
 "Announcements during and before RythmHacks will be through Discord. We strongly recommend that you talk to your teammates on Discord as well."
 ],
+[
+"How can I stay in touch with RythmHacks?",
+(<>You can stay in touch with us by following our Instagram: <a href="https://www.instagram.com/rythm.hacks/" target="_blank" rel="noreferrer">rythm.hacks</a>. We post news and annoucements there. You can find all our socials on our <a href='https://links.rythmhacks.ca/' target='_blank' rel='noreferrer'>links page</a>.</>)
+],    
 [
 "What if I have more questions?",
 (<>You can email us at <a href='mailto:rythmhacks@gmail.com'>rythmhacks@gmail.com</a> for any questions or concerns you may have.</>)

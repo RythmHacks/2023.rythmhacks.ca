@@ -42,6 +42,8 @@ const About = () => {
               Whether you're a seasoned developer or it's your first time creating a project, you're welcome at RythmHacks. We've got workshops, mini-events, and other resources planned through the weekend to help you in your project creation. Developers, designers, hardware wizards, and tech enthusiasts of all sorts have a place here at RythmHacks.
               <br/><br/>
               We know from first-hand experience that finding tech opportunities can be one of the hardest things to do in high school. That's why we've made RythmHacks into a high-school only hackathon, tailored to beginners. We hope that you'll learn a lot and that attending RythmHacks will help you launch your career.
+              <br/><br/>
+              RythmHacks works to create an ecosystem that supports startups and entrepreneurs. If you want to take your project further into the startup world after RythmHacks, we'll have mentorship, resources, and connections to help you do so. Furthermore, we hope to have other startup-related resources for you to take advantage of during the event, such as workshops, prize tracks, and mentors.
             </p>
             <img loading='lazy' src={TogetherImg} alt='togetherimgmobile' className='hidden md:block'></img>
           </div>

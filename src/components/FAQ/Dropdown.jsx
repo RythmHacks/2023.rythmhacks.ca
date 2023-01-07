@@ -15,8 +15,8 @@ const Dropdown = (props) => {
                     setOpen(!open);
                 }
             }>
-                <p ref={ref2} className={`arrow ${open ? 'active' : ""}`}></p>
                 {props.q}
+                <p ref={ref2} className={`arrow ${open ? 'active' : ""}`}></p>
             </p>
             <p ref={ref} className={`a ${open ? "open" : ""}`}>{props.a}</p>
         </div>
