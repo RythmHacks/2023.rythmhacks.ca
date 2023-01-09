@@ -42,6 +42,12 @@
     }
 }
 
+@media screen and (max-height: 800px) {
+    .getstarted {
+        display: none;
+    }
+}
+
 .rw-sentence{
 	text-align: left;
 }

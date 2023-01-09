@@ -46,7 +46,7 @@
         height: 3px;
         transition: width 0.3s;
       }
-      &:hover:after {
+      &:hover:not(.navlogo):after {
         width: 100%;
       }
       &:hover {

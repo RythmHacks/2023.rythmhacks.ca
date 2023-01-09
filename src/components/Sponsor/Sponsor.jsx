@@ -25,7 +25,7 @@ const Sponsor = () => {
             <br/><br/>
             Interested in sponsoring? Contact us at <a href='mailto:rythmhacks@gmail.com'>rythmhacks@gmail.com</a>. 
             <br/><br/>
-            <button onClick={() => {window.location = "mailto:rythmhacks@gmail.com";}}>Reach out to us</button>
+            <button onClick={() => {window.location = "mailto:rythmhacks@gmail.com";}}>Contact us</button>
           </p>
           <img loading='lazy' src={SponsorImage} alt='sponsorimg'></img>
         </div>
