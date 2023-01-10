@@ -3,6 +3,9 @@ import logo from '../../assets/logosmall.png'
 import Socials from '../Socials/Socials.jsx'
 
 const Footer = () => {
+
+    let pages = ['About', 'FAQ', 'Sponsors', 'Contact']
+
     return (
         <div id='footer'>
             
@@ -17,10 +20,15 @@ const Footer = () => {
 
             <div className='column'>
                 <h2>Navigation</h2>
+                {pages.map((value, index) => {
+                    return (
+                        <a href={'#'+value.toLowerCase()}>{value}</a>
+                    )
+                })}
             </div>
             
             <div className='column'>
-                a
+                <h2></h2>
             </div>
         </div>
     )
