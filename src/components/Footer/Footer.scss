@@ -1,8 +1,22 @@
 #footer {
     padding: 5%;
     background-color: rgba(200, 200, 200, 100);
+    display: flex;
+    justify-content: space-around;
+
+    .column {
+        border: 1px solid red;
+        width: 30%;
+    }
 
     .logowrapper {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: theme('colors.accent');
 
+        img {
+            height: 3rem;
+        }
     }
 }
