@@ -4,7 +4,7 @@ import Socials from '../Socials/Socials.jsx'
 
 const Footer = () => {
 
-    let pages = ['About', 'FAQ', 'Sponsors', 'Contact']
+    let pages = ['Hero', 'About', 'FAQ', 'Sponsors', 'Contact']
 
     return (
         <div id='footer'>
@@ -22,13 +22,29 @@ const Footer = () => {
                 <h2>Navigation</h2>
                 {pages.map((value, index) => {
                     return (
-                        <a href={'#'+value.toLowerCase()}>{value}</a>
+                        <button 
+                        onClick = {
+                            () => {
+                                var element = document.getElementById(value.toLowerCase());
+                                element.scrollIntoView({
+                                  block: 'start',
+                                  behavior: 'smooth'
+                                });
+                            }
+                        }
+                        >{value}</button>
                     )
                 })}
             </div>
             
             <div className='column'>
-                <h2></h2>
+                <h2>Links</h2>
+                <button onClick={() => {window.scrollTo(0,0)}}>Back to Top</button>
+                <a target='_blank' rel='noreferrer' href='https://github.com/RythmHacks/rythmhacks.ca/'>Source</a>
+                <a target='_blank' rel='noreferrer' href='https://github.com/RythmHacks/rythmhacks.ca/blob/footer/LICENSE'>License</a>
+                <a target='_blank' rel='noreferrer' href='https://links.rythmhacks.ca/'>Links Page</a>
+                <a target='_blank' rel='noreferrer' href='https://static.mlh.io/docs/mlh-code-of-conduct.pdf'>MLH Code of Conduct</a>
+                <a target='_blank' rel='noreferrer' href='mailto:rythmhacks@gmail.com'>Email</a>
             </div>
         </div>
     )

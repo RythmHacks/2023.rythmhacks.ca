@@ -1,5 +1,5 @@
 #footer {
-    padding: 2.5%;
+    padding: 5%;
     background-color: #1a1f2b;
     background-image: radial-gradient(#777 1px, transparent 0);
     background-size: 40px 40px;
@@ -20,13 +20,27 @@
         display: block;
         line-height: 230%;
 
-        a {
+        button {
             display: block;
+            background-color: transparent;
+            padding: 0;
             background-size: 0px 0px;
             color: #ddd;
+            width: auto;
+            transition: 0.3s color ease;
 
             &:hover {
                 color: theme('colors.accent');
+            }
+            &:active {
+                transform: scale(1);
+            }
+        }
+        a {
+            transition: 0.3s ease;
+            display: block;
+            &:hover {
+                color: theme('colors.accent')
             }
         }
 
