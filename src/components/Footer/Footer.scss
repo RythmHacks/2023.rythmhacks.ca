@@ -61,3 +61,23 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    #footer {
+        display: block;
+        
+        .column {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2rem;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    #footer {
+        .column {
+            width: 80%;
+        }
+    }
+}
