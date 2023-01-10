@@ -5,8 +5,9 @@
     justify-content: space-around;
 
     .column {
-        border: 1px solid red;
+        // border: 1px solid red;
         width: 30%;
+        display: block;
     }
 
     .logowrapper {

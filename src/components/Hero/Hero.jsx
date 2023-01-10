@@ -7,9 +7,9 @@ import { useScrollPosition } from '../ScrollAnimation/UseScrollPosition'
 const Hero = () => {
 
 	let scrollPosition = useScrollPosition();
-	let amountLeft = 900-scrollPosition;
-	let opacity = (amountLeft/900);
-	opacity = parseFloat(opacity).toFixed(2);
+	// let amountLeft = 900-scrollPosition;
+	// let opacity = (amountLeft/900);
+	// opacity = parseFloat(opacity).toFixed(2);
 
     return (
 		<div id = 'hero' className={`h-[92vh] p-[4%] fixed w-full ${(scrollPosition > 300) ? "opacity-0 pointer-events-none" : "opacity-1 pointer-events-auto"}`}>
@@ -40,7 +40,7 @@ const Hero = () => {
 			</div>
 
 			<div className='flex justify-center mt-8'>
-				<Socials />
+				<Socials/>
 			</div>
 
 			<div className='getstarted' onClick={() => {

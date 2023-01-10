@@ -1,11 +1,11 @@
 import React from 'react'
-import { SiDiscord, SiLinkedin, SiTwitter, SiGithub } from 'react-icons/si'
+import { SiLinkedin, SiTwitter, SiGithub } from 'react-icons/si'
 import { RiInstagramFill } from 'react-icons/ri'
 import './Socials.scss'
 
 const Socials = () => {
   return (
-    <div className='socials text-accentlight text-lg flex gap-4 border-accent border-2 px-4 pr-4 pt-2 pb-2 rounded-full'>
+    <div className={`socials flex gap-4`}>
         {/* <p>
             <SiDiscord />
         </p> */}

@@ -6,7 +6,7 @@
         transition: 0.3s;
 
         &:hover {
-            color: lighten($accent, 10%);
+            color: $accent;
         }
     }
 
