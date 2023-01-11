@@ -10,6 +10,7 @@ const FAQ = React.lazy(() => import('./components/FAQ/FAQ.jsx'));
 //const Team = React.lazy(() => import('./components/Team/Team.jsx')); 
 const Sponsor = React.lazy(() => import('./components/Sponsor/Sponsor.jsx')); 
 const Contact = React.lazy(() => import('./components/Contact/Contact.jsx')); 
+const Footer = React.lazy(() => import('./components/Footer/Footer.jsx')); 
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
       <FAQ/>
       <Sponsor/>
       <Contact/>
+      <Footer/>
     </React.Suspense>
     </>
   );

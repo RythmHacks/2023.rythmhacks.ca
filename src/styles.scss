@@ -99,12 +99,12 @@ button {
 }
 
 p, a, button {
-  font-size: max(1.1vw, 1.1rem);
+  font-size: max(1.1vw, 1rem);
   font-family: 'Inter', sans-serif;
   line-height: 175%;
 }
 
-a:not(.socials a) {
+a:not(.socials a, #footer a) {
   transition: all 0.3s;
   color: $accent;
   cursor: pointer;
