@@ -4,11 +4,11 @@
     transform: translate(0, 5rem);
     
     img {
-      transition: 1.5s ease;
+      transition: 2s ease;
       transform: scale(0.9);
     }
     .sectionwrapper { img {
-      transition: 1.5s ease;
+      transition: 2s ease;
       transform: scale(0.9);
     } }
   }
@@ -18,11 +18,12 @@
   transform: translate(0, 0);
 
   img {
-    transition: 1.5s ease;
+    transition: 2s ease;
     transform: scale(1);
   }
 
   .sectionwrapper { img {
+      transition: 2s ease;
       transform: scale(1);
   } }
 }

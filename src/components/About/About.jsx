@@ -32,7 +32,7 @@ const About = () => {
           </div>
         </div>
 
-        <div ref={ref2} className={`${isInViewport2 ? 'hide show' : "hide"} mt-4`}>
+        <div ref={ref2} className={`${isInViewport2 ? 'hide show' : "hide"} mt-8`}>
           <h3>
             A place <span className='darkblue gradient'> for everyone</span>. 
           </h3>
