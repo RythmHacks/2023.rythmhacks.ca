@@ -2,7 +2,7 @@
 
 .socials {
     a, p {
-        font-size: 1.2rem;
+        font-size: max(1.4vw, 1.2rem);
         transition: 0.3s;
 
         &:hover {
