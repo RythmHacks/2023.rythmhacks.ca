@@ -74,7 +74,7 @@ const ParticlesComponent = (props) => {
         },
       },
     };
-  }, []);
+  }, [animate]);
 
   const particlesInit = useCallback((engine) => {
     loadSlim(engine);

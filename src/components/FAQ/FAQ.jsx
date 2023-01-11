@@ -1,10 +1,8 @@
 import './FAQ.scss'
-import { useRef } from 'react'
 import Dropdown from './Dropdown.jsx'
 import { column1, column2 } from './FAQData.js'
 
 const FAQ = () => {
-    const ref = useRef(null);
 
     return (
         <div id = 'faq' className='pt-[6rem]'>
