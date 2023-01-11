@@ -14,7 +14,7 @@ const Footer = () => {
                     <img loading='lazy' alt='logo' src={logo} className='rounded-full'></img>
                     <h3>RythmHacks</h3>
                 </div>
-                <p className='mb-4'>Copyright © 2022 RythmHacks</p>
+                <p className='mb-4'>Copyright © 2022-23 RythmHacks</p>
                 <Socials />
             </div>
 
