@@ -25,6 +25,9 @@ const Footer = () => {
                         <button 
                         onClick = {
                             () => {
+                                if (value.toLowerCase() == 'hero')  {
+                                    window.scrollTo(0,0)
+                                }
                                 var element = document.getElementById(value.toLowerCase());
                                 element.scrollIntoView({
                                   block: 'start',
