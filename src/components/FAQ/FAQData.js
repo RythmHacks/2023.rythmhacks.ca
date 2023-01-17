@@ -1,5 +1,6 @@
-export const column1 = [
+import { BiDownArrowAlt } from 'react-icons/bi'
 
+export const column1 = [
 [
 "What is a hackathon?", 
 "A hackathon is an event where developers, builders, designers, and tech enthusiasts work in teams to create a project. Within a given time limit, hackers will make projects that aim to solve real-world issues and problems. Additionally, hackathons often feature workshops, talks, networking opportunities, and mini-events to help hackers learn new skills and meet new people. At the end of the weekend, hackers will present their projects to a panel of judges and compete for prizes."
@@ -54,6 +55,10 @@ export const column2 = [
 [
 "What should I bring to RythmHacks?",
 "Make sure to bring any essential items to support your personal needs and your project. You should bring devices, chargers, a water bottle, sleeping bag, or anything else to bring out the most out of our hackathon. :)"
+],
+[
+"Why is it called RythmHacks?",
+(<div className='inline'>The branding of RythmHacks is themed around CS concepts like algorithms, graphs, and data structures.<br></br>Algorithm <BiDownArrowAlt/> rithm <BiDownArrowAlt/> Rythm</div>)
 ],
 [
 "Help, I can't think of any ideas for my project!",
