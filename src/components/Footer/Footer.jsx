@@ -20,12 +20,12 @@ const Footer = () => {
 
             <div className='column'>
                 <h2>Navigation</h2>
-                {pages.map((value, index) => {
+                {pages.map((value) => {
                     return (
                         <button 
                         onClick = {
                             () => {
-                                if (value.toLowerCase() == 'hero')  {
+                                if (value.toLowerCase() === 'hero')  {
                                     window.scrollTo(0,0)
                                 }
                                 var element = document.getElementById(value.toLowerCase());
