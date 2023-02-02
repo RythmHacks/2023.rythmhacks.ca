@@ -1,5 +1,5 @@
 # RythmHacks Website
-For the RythmHacks hackathon
+Website for the RythmHacks hackathon
 
 https://www.rythmhacks.ca/<br/>
 [Backup link](https://rythmhacks.vercel.app/)<br/>
