@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiLinkedin, SiTwitter, SiGithub } from 'react-icons/si'
+import { SiLinkedin, SiTwitter, SiGithub, SiMedium } from 'react-icons/si'
 import { RiInstagramFill } from 'react-icons/ri'
 import './Socials.scss'
 
@@ -20,6 +20,9 @@ const Socials = () => {
         </a>
         <a href='https://github.com/RythmHacks' target='_blank' rel='noreferrer'>
             <SiGithub />
+        </a>
+        <a href="https://medium.com/@rythmhacks" target='_blank' rel='noreferrer'>
+            <SiMedium />
         </a>
     </div>
   )
