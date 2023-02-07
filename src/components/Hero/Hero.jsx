@@ -30,12 +30,13 @@ const Hero = () => {
 			<h4 id = 'description'>August | University of Waterloo</h4>
 			
 			<div className='mt-8 justify-center'>
+				<button onClick={() => {window.open('https://opnform.com/forms/rythmhacks-pre-registration')}} className='mr-4 mb-2'>Pre-register now!</button><br/>
 				<button onClick={() => {
 					let element = document.getElementById('sponsors')
 					const y = element.getBoundingClientRect().top + window.pageYOffset - 60;
 
 					window.scrollTo({top: y, behavior: 'smooth'});
-				}} className='mr-4'>Sponsor us!</button>
+				}} className='mr-4'>Sponsor us</button>
 				<button onClick={() => {window.location = "mailto:rythmhacks@gmail.com";}}>Get in touch</button>
 			</div>
 
