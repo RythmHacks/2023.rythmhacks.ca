@@ -17,9 +17,9 @@ import shamir from '../../assets/Headshots/shamir.png'
 
 const people = [
     {
-        name: "Jeffrey Zang",
-        picture: jeffrey,
-        link: 'https://www.linkedin.com/in/jeffreyzang2007',
+        name: 'Ali Elnagmi',
+        picture: ali,
+        link: 'https://www.linkedin.com/in/ali-elnagmi/',
         role: 'Co-Lead'
     },
     {
@@ -29,9 +29,9 @@ const people = [
         role: 'Co-Lead'
     },
     {
-        name: 'Ali Elnagmi',
-        picture: ali,
-        link: 'https://www.linkedin.com/in/ali-elnagmi/',
+        name: "Jeffrey Zang",
+        picture: jeffrey,
+        link: 'https://www.linkedin.com/in/jeffreyzang2007',
         role: 'Co-Lead'
     },
     {
@@ -47,22 +47,16 @@ const people = [
         role: 'Finance Lead'
     },
     {
-        name: 'Ellie Kim',
-        picture: ellie,
-        link: 'https://www.linkedin.com/in/ellie-k-b072b4252/',
-        role: 'Finance'
-    },
-    {
         name: 'Shamir Khan',
         picture: shamir,
         link: 'https://www.linkedin.com/in/shamir-khan-40698123b/',
         role: 'Finance'
     },
     {
-        name: 'Allan George',
-        picture: allan,
-        link: 'https://www.linkedin.com/in/allan-george-003891239/',
-        role: 'Logistics'
+        name: 'Ellie Kim',
+        picture: ellie,
+        link: 'https://www.linkedin.com/in/ellie-k-b072b4252/',
+        role: 'Finance'
     },
     {
         name: 'Ammar Ahmad',
@@ -71,15 +65,21 @@ const people = [
         role: 'Logistics'
     },
     {
-        name: 'Daniel Zhang',
-        picture: daniel,
-        link: 'https://www.linkedin.com/in/daniel-zhang-0770a0249/',
+        name: 'Allan George',
+        picture: allan,
+        link: 'https://www.linkedin.com/in/allan-george-003891239/',
         role: 'Logistics'
     },
     {
         name: "Damian Nikolic",
         picture: damian,
         link: 'https://www.linkedin.com/in/damian-nikolic-638813250/',
+        role: 'Logistics'
+    },
+    {
+        name: 'Daniel Zhang',
+        picture: daniel,
+        link: 'https://www.linkedin.com/in/daniel-zhang-0770a0249/',
         role: 'Logistics'
     },
     {

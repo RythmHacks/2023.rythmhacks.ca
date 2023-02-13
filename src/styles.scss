@@ -98,10 +98,15 @@ button {
   }
 }
 
-p, a, button {
-  font-size: max(1.1vw, 1rem);
+p, a {
+  // font-size: max(1.1vw, 1rem);
+  font-size: 1rem;
   font-family: 'Inter', sans-serif;
   line-height: 175%;
+}
+button {
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
 }
 
 a:not(.socials a, #footer a) {

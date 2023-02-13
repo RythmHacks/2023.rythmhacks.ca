@@ -3,9 +3,11 @@
 }
 .team-people {
     margin-top: 2.5rem;
-    padding: 0 5%;
+    padding: 0 10%;
     display: flex;
     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-evenly;
     
     gap: 5%;
@@ -17,15 +19,17 @@
             object-fit: cover;
             border-radius: 50%;
             cursor: pointer;
-            transition: transform 0.2s ease;
+            transition: transform 0.2s ease, border-radius 0.2s ease;
+            box-shadow: 10px 0px 10px 0px  rgba(175, 175, 175, 50%);
 
             &:hover {
-                transform: scale(1.05);
+                transform: scale(1.1);
+                border-radius: 3rem;
             }
         }
         .name {
             font-family: Satoshi, 'sans-serif';
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-bottom: 0;
         }
         text-align: center;
