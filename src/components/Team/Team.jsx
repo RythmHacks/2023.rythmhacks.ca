@@ -11,6 +11,7 @@ import jasmine from '../../assets/Headshots/jasminexu.png'
 import jeffrey from '../../assets/Headshots/jeffrey.png'
 import jim from '../../assets/Headshots/jimwang.jpg'
 import khurram from '../../assets/Headshots/khurram.PNG'
+import ali from '../../assets/Headshots/Ali.jpg'
 import lifeng from '../../assets/Headshots/Lifeng.jpg'
 import shamir from '../../assets/Headshots/shamir.png'
 
@@ -28,22 +29,34 @@ const people = [
         role: 'Co-Lead'
     },
     {
+        name: 'Ali Elnagmi',
+        picture: ali,
+        link: 'https://www.linkedin.com/in/ali-elnagmi/',
+        role: 'Co-Lead'
+    },
+    {
         name: 'Jasmine Xu',
         picture: jasmine,
         link: 'https://www.linkedin.com/in/jasmine-xu-276873218/',
         role: 'Marketing Lead'
     },
     {
-        name: 'Bella Kim',
-        picture: bella,
-        link: 'https://www.linkedin.com/in/gayeunbella/',
-        role: 'Marketing'
+        name: "Hooman Reza Nezhad",
+        picture: hooman,
+        link: 'https://www.linkedin.com/in/hooman-nezhad/',
+        role: 'Finance Lead'
     },
     {
-        name: 'Jim Wang',
-        picture: jim,
-        link: 'https://www.linkedin.com/in/jim-wang-263877212/',
-        role: 'Marketing'
+        name: 'Ellie Kim',
+        picture: ellie,
+        link: 'https://www.linkedin.com/in/ellie-k-b072b4252/',
+        role: 'Finance'
+    },
+    {
+        name: 'Shamir Khan',
+        picture: shamir,
+        link: 'https://www.linkedin.com/in/shamir-khan-40698123b/',
+        role: 'Finance'
     },
     {
         name: 'Allan George',
@@ -70,22 +83,16 @@ const people = [
         role: 'Logistics'
     },
     {
-        name: "Hooman Reza Nezhad",
-        picture: hooman,
-        link: 'https://www.linkedin.com/in/hooman-nezhad/',
-        role: 'Finance Lead'
+        name: 'Bella Kim',
+        picture: bella,
+        link: 'https://www.linkedin.com/in/gayeunbella/',
+        role: 'Marketing'
     },
     {
-        name: 'Ellie Kim',
-        picture: ellie,
-        link: 'https://www.linkedin.com/in/ellie-k-b072b4252/',
-        role: 'Finance'
-    },
-    {
-        name: 'Shamir Khan',
-        picture: shamir,
-        link: 'https://www.linkedin.com/in/shamir-khan-40698123b/',
-        role: 'Finance'
+        name: 'Jim Wang',
+        picture: jim,
+        link: 'https://www.linkedin.com/in/jim-wang-263877212/',
+        role: 'Marketing'
     },
     {
         name: "Li Feng Yin",
@@ -104,7 +111,12 @@ const Team = () => {
             <div className='team-people'>
                 {people.map((person) => {
                     return (
-                        <img src={person.picture}></img>
+                        <div className='person'>
+                            <img src={person.picture} className='person picture'
+                            alt='headshot' loading='lazy' onClick={() => {window.open(person.link)}}></img>
+                            <p className='person name'>{person.name}</p>
+                            <p>{person.role}</p>
+                        </div>
                     )
                 })}
             </div>
