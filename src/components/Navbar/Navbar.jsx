@@ -11,7 +11,7 @@ const Navbar = () => {
     let scrollPosition = useScrollPosition();
     let shouldChange = (scrollPosition > 10) ? 'scrolled' : '';
 
-    let pages = ['About', 'FAQ', 'Sponsors', 'Contact']
+    let pages = ['About', 'FAQ', 'Sponsors', 'Team', 'Contact']
 
     const [navbarOpen, setNavbarOpen] = useState(false)
     const [isOpen, setOpen] = useState(false)
