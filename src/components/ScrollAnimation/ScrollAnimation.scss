@@ -1,7 +1,6 @@
 .hide {
     opacity: 0;
     transition: 1.5s ease;
-    transform: translate(0, 5rem);
     
     img {
       transition: 2s ease;
@@ -15,7 +14,6 @@
   
 .show {
   opacity: 1;
-  transform: translate(0, 0);
 
   img {
     transition: 2s ease;
