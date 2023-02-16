@@ -4,7 +4,7 @@ import Socials from '../Socials/Socials.jsx'
 
 const Footer = () => {
 
-    let pages = ['Hero', 'About', 'FAQ', 'Sponsors', 'Contact']
+    let pages = ['Hero', 'About', 'FAQ', 'Sponsors', 'Team', 'Contact']
 
     return (
         <div id='footer'>
