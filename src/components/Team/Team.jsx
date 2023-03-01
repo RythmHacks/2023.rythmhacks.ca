@@ -14,6 +14,7 @@ import khurram from '../../assets/Headshots/khurram.PNG'
 import ali from '../../assets/Headshots/Ali.jpg'
 import lifeng from '../../assets/Headshots/Lifeng.jpg'
 import shamir from '../../assets/Headshots/shamir.png'
+import harry from '../../assets/Headshots/harry.jpg'
 
 const people = [
     {
@@ -56,6 +57,12 @@ const people = [
         name: 'Ellie Kim',
         picture: ellie,
         link: 'https://www.linkedin.com/in/ellie-k-b072b4252/',
+        role: 'Finance'
+    },
+    {
+        name: 'Harry Wang',
+        picture: harry,
+        link: 'https://www.linkedin.com/in/harry-wang-b2b764215/',
         role: 'Finance'
     },
     {
