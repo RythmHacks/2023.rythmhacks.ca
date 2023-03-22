@@ -46,7 +46,7 @@ const Footer = () => {
                 <a target='_blank' rel='noreferrer' href='https://github.com/RythmHacks/rythmhacks.ca/'>Source</a>
                 <a target='_blank' rel='noreferrer' href='https://github.com/RythmHacks/rythmhacks.ca/blob/footer/LICENSE'>License</a>
                 <a target='_blank' rel='noreferrer' href='https://links.rythmhacks.ca/'>Links Page</a>
-                <a target='_blank' rel='noreferrer' href='https://static.mlh.io/docs/mlh-code-of-conduct.pdf'>MLH Code of Conduct</a>
+                <a target='_blank' rel='noreferrer' href='mailto:business@rythmhacks.ca'>Business Email</a>
                 <a target='_blank' rel='noreferrer' href='mailto:rythmhacks@gmail.com'>Email</a>
             </div>
         </div>

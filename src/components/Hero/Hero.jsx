@@ -36,8 +36,13 @@ const Hero = () => {
 					const y = element.getBoundingClientRect().top + window.pageYOffset - 60;
 
 					window.scrollTo({top: y, behavior: 'smooth'});
-				}} className='mr-4'>Sponsor us</button>
-				<button onClick={() => {window.location = "mailto:rythmhacks@gmail.com";}}>Get in touch</button>
+				}} className='mr-4'>Sponsor us!</button>
+				<button onClick={() => {
+					let element = document.getElementById('faq')
+					const y = element.getBoundingClientRect().top + window.pageYOffset - 60;
+
+					window.scrollTo({top: y, behavior: 'smooth'});					
+				}}>Have questions?</button>
 			</div>
 
 			<div className='flex justify-center mt-8'>
