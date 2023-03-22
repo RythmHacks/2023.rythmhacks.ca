@@ -7,7 +7,6 @@ import damian from '../../assets/Headshots/damian.png'
 import daniel from '../../assets/Headshots/danielzhang.jpg'
 import ellie from '../../assets/Headshots/elliekim.jpeg'
 import hooman from '../../assets/Headshots/Hooman.jpg'
-import jasmine from '../../assets/Headshots/jasminexu.png'
 import jeffrey from '../../assets/Headshots/jeffrey.png'
 import jim from '../../assets/Headshots/jimwang.jpg'
 import khurram from '../../assets/Headshots/khurram.PNG'
@@ -34,12 +33,6 @@ const people = [
         picture: jeffrey,
         link: 'https://www.linkedin.com/in/jeffreyzang2007',
         role: 'Co-Lead'
-    },
-    {
-        name: 'Jasmine Xu',
-        picture: jasmine,
-        link: 'https://www.linkedin.com/in/jasmine-xu-276873218/',
-        role: 'Marketing Lead'
     },
     {
         name: "Hooman Reza Nezhad",

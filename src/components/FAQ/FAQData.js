@@ -23,7 +23,7 @@ export const column1 = [
 ],
 [
 "Is RythmHacks in person or online?",
-"RythmHacks will happen in-person at the University of Waterloo. There won't be an online portion of this year's event, but workshops and activites will be recorded and posted online."
+"RythmHacks will happen in-person. The venue is yet to be confirmed. There won't be an online portion of this year's event, but workshops and activites will be recorded and posted online."
 ],
 [
 "Are there any costs?",
