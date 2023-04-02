@@ -67,28 +67,28 @@ const Sponsor = () => {
         <div className='entrepreneur'>
           {entrepreneur.map((sponsor, index) => {
             return (
-              <img src={sponsor.logo} alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
+              <img src={sponsor.logo} loading='lazy' alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
             )
           })}
         </div>
         <div className='pioneer'>
           {pioneer.map((sponsor, index) => {
             return (
-              <img src={sponsor.logo} alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
+              <img src={sponsor.logo} loading='lazy' alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
             )
           })}
         </div>
         <div className='innovator'>
           {innovator.map((sponsor, index) => {
             return (
-              <img src={sponsor.logo} alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
+              <img src={sponsor.logo} loading='lazy' alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
             )
           })}
         </div>
         <div className='explorer'>
           {explorer.map((sponsor, index) => {
             return (
-              <img src={sponsor.logo} alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
+              <img src={sponsor.logo} loading='lazy' alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
             )
           })}
         </div>
