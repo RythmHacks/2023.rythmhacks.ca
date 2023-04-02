@@ -5,14 +5,68 @@ import { useRef } from 'react'
 import useIsInViewport from '../ScrollAnimation/useIsInViewport.js'
 import '../ScrollAnimation/ScrollAnimation.scss'
 
+import wolfram from '../../assets/Sponsors/wolfram.png'
+
+const entrepreneur = [
+  {
+    link: "https://www.wolfram.com/",
+    logo: wolfram   
+  },
+  {
+    link: "https://www.wolfram.com/",
+    logo: wolfram   
+  }
+]
+const pioneer = [
+  {
+    link: "https://www.wolfram.com/",
+    logo: wolfram   
+  },
+  {
+    link: "https://www.wolfram.com/",
+    logo: wolfram   
+  },
+  {
+    link: "https://www.wolfram.com/",
+    logo: wolfram   
+  }
+]
+const innovator = [
+  {
+    link: "https://www.wolfram.com/",
+    logo: wolfram   
+  },
+  {
+    link: "https://www.wolfram.com/",
+    logo: wolfram   
+  },
+  {
+    link: "https://www.wolfram.com/",
+    logo: wolfram   
+  },
+]
+const explorer = [
+  {
+    link: "https://www.wolfram.com/",
+    logo: wolfram   
+  },
+  {
+    link: "https://www.wolfram.com/",
+    logo: wolfram   
+  },
+  {
+    link: "https://www.wolfram.com/",
+    logo: wolfram   
+  }
+]
+
 const Sponsor = () => {
 
   const ref1 = useRef(null);
-  const ref2 = useRef(null);
   const isInViewport1 = useIsInViewport(ref1);
-  const isInViewport2 = useIsInViewport(ref2);
 
   return (
+    <>
     <div id='sponsors' className='section'>
 
       <div ref={ref1} className={isInViewport1 ? 'hide show' : "hide"}>
@@ -43,9 +97,41 @@ const Sponsor = () => {
         </div>
       </div>
 
-      <div ref={ref2} className={`${isInViewport2 ? 'hide show' : "hide"} mt-4`}>
+    </div>
+    <div className='mt-8'>
+      <h3 className='text-center mb-4'>Sponsors</h3>
+      <div className='sponsorlogos'>
+        <div className='entrepreneur'>
+          {entrepreneur.map((sponsor, index) => {
+            return (
+              <img src={sponsor.logo} alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
+            )
+          })}
+        </div>
+        <div className='pioneer'>
+          {pioneer.map((sponsor, index) => {
+            return (
+              <img src={sponsor.logo} alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
+            )
+          })}
+        </div>
+        <div className='innovator'>
+          {innovator.map((sponsor, index) => {
+            return (
+              <img src={sponsor.logo} alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
+            )
+          })}
+        </div>
+        <div className='explorer'>
+          {explorer.map((sponsor, index) => {
+            return (
+              <img src={sponsor.logo} alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
+            )
+          })}
+        </div>
       </div>
     </div>
+    </>
   )
 }
 

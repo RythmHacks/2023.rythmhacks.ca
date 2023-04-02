@@ -3,3 +3,49 @@
     background-color: rgba(220, 220, 220, 0.3);
     box-shadow: 10px 0px 10px 10px  rgba(175, 175, 175, 50%);
 }
+.sponsorlogos {
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        gap: 1rem;    
+        margin-bottom: 1rem;
+    }
+    
+    img {
+        object-fit: cover;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        max-width: none !important;
+        aspect-ratio: 14 / 6;
+        transition: transform .3s ease;
+
+        &:hover {
+            transform: scale(0.95);
+        }
+    }
+
+    .entrepreneur {
+        display: block;
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            width: 45%;
+            margin-bottom: 1rem;
+        }
+    }
+    .pioneer img {
+        width: 35%;
+    }
+    .innovator img {
+        width: 25%;
+    }
+    .explorer img {
+        width: 20%;
+    }
+}
