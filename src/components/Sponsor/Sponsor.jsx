@@ -6,30 +6,11 @@ import useIsInViewport from '../ScrollAnimation/useIsInViewport.js'
 import '../ScrollAnimation/ScrollAnimation.scss'
 
 import wolfram from '../../assets/Sponsors/wolfram.png'
+import echo3d from '../../assets/Sponsors/echo3d.png'
 
 const entrepreneur = [
-  {
-    link: "https://www.wolfram.com/",
-    logo: wolfram   
-  },
-  {
-    link: "https://www.wolfram.com/",
-    logo: wolfram   
-  }
 ]
 const pioneer = [
-  {
-    link: "https://www.wolfram.com/",
-    logo: wolfram   
-  },
-  {
-    link: "https://www.wolfram.com/",
-    logo: wolfram   
-  },
-  {
-    link: "https://www.wolfram.com/",
-    logo: wolfram   
-  }
 ]
 const innovator = [
   {
@@ -37,27 +18,11 @@ const innovator = [
     logo: wolfram   
   },
   {
-    link: "https://www.wolfram.com/",
-    logo: wolfram   
-  },
-  {
-    link: "https://www.wolfram.com/",
-    logo: wolfram   
+    link: "https://www.echo3d.com/",
+    logo: echo3d   
   },
 ]
 const explorer = [
-  {
-    link: "https://www.wolfram.com/",
-    logo: wolfram   
-  },
-  {
-    link: "https://www.wolfram.com/",
-    logo: wolfram   
-  },
-  {
-    link: "https://www.wolfram.com/",
-    logo: wolfram   
-  }
 ]
 
 const Sponsor = () => {
@@ -87,8 +52,6 @@ const Sponsor = () => {
             to continue their project further. Additionally, we're giving
             special benefits to companies that are still in the start-up
             stage.
-            <br/><br/>
-            Interested in sponsoring? Contact us at <a href='mailto:business@rythmhacks.ca'>business@rythmhacks.ca</a>. 
             <br/><br/>
             <button onClick={() => window.location = "mailto:business@rythmhacks.ca"} className='mr-4'>Contact us</button>
             <button onClick={() => window.open('https://www.rythmhacks.ca/documents/prospectus.pdf')}>Sponsorship Prospectus</button>
@@ -129,6 +92,10 @@ const Sponsor = () => {
             )
           })}
         </div>
+        <p className='text-center px-8'>
+          Interested in sponsoring? Contact us at <a href='mailto:business@rythmhacks.ca'>business@rythmhacks.ca</a>. 
+        </p>
+        <br/><br/>
       </div>
     </div>
     </>
