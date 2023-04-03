@@ -22,6 +22,7 @@
         border-radius: 1rem;
         cursor: pointer;
         transition: transform .2s ease;
+        border: 2px solid #ddd;
 
         &:hover {
             transform: scale(0.95);
