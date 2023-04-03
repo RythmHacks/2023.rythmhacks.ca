@@ -3,3 +3,54 @@
     background-color: rgba(220, 220, 220, 0.3);
     box-shadow: 10px 0px 10px 10px  rgba(175, 175, 175, 50%);
 }
+.sponsorlogos {
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        gap: 1rem;    
+        margin-bottom: 1rem;
+    }
+    
+    img {
+        object-fit: contain;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: transform .2s ease;
+        border: 2px solid #ddd;
+
+        &:hover {
+            transform: scale(0.95);
+        }
+    }
+
+    .entrepreneur {
+        display: block;
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            width: 45%;
+            margin-bottom: 1rem;
+            min-width: 300px;
+        }
+    }
+    .pioneer img {
+        width: 30%;
+        min-width: 200px
+    }
+    .innovator img {
+        width: 20%;
+        min-width: 133px;
+        padding: 0.75rem;
+    }
+    .explorer img {
+        width: 15%;
+        min-width: 100px;
+        padding: 0.5rem;
+    }
+}

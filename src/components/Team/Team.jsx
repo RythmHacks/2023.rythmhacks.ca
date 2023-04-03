@@ -113,7 +113,7 @@ const Team = () => {
                     return (
                         <div className='person'>
                             <img loading='lazy' src={person.picture} className='person picture'
-                            alt='headshot' onClick={() => {window.open(person.link)}}></img>
+                            alt='headshot' onClick={() => window.open(person.link)}></img>
                             <p className='person name'>{person.name}</p>
                             <p>{person.role}</p>
                         </div>
