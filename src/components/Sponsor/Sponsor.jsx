@@ -54,7 +54,7 @@ const Sponsor = () => {
             stage.
             <br/><br/>
             <button onClick={() => window.location = "mailto:business@rythmhacks.ca"} className='mr-4'>Contact us</button>
-            <button onClick={() => window.open('https://www.rythmhacks.ca/documents/prospectus.pdf')}>Sponsorship Prospectus</button>
+            <button onClick={() => window.location.href = "/documents/prospectus.pdf"}>Sponsorship Prospectus</button>
           </p>
           <img loading='lazy' src={SponsorImage} alt='sponsorimg'></img>
         </div>
