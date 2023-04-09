@@ -7,6 +7,8 @@ import '../ScrollAnimation/ScrollAnimation.scss'
 
 import wolfram from '../../assets/Sponsors/wolfram.png'
 import echo3d from '../../assets/Sponsors/echo3d.png'
+import xyz from '../../assets/Sponsors/xyz.png'
+import onepass from '../../assets/Sponsors/1pass.png'
 
 const entrepreneur = [
 ]
@@ -21,6 +23,14 @@ const innovator = [
     link: "https://www.echo3d.com/",
     logo: echo3d   
   },
+  {
+    link: 'https://gen.xyz/',
+    logo: xyz
+  },
+  {
+    link: 'https://1password.com/',
+    logo: onepass
+  }
 ]
 const explorer = [
 ]
@@ -54,7 +64,7 @@ const Sponsor = () => {
             stage.
             <br/><br/>
             <button onClick={() => window.location = "mailto:business@rythmhacks.ca"} className='mr-4'>Contact us</button>
-            <button onClick={() => window.location.href = "/documents/prospectus.pdf"}>Sponsorship Prospectus</button>
+            <button onClick={() => window.location.href = "/documents/prospectus.pdf"} className='mt-4 lg:mt-0'>Sponsorship Prospectus</button>
           </p>
           <img loading='lazy' src={SponsorImage} alt='sponsorimg'></img>
         </div>
