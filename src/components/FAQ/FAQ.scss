@@ -1,21 +1,21 @@
 #faq {
-    margin: 0 0 5rem 0;
+  margin: 0 0 5rem 0;
 
-    .faqwrapper {
-        display: flex;
-        justify-content: center;
-        gap: 7.5%;
-        
-        .column {
-            width: 34%;
-            background-color: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(3px);
-            border-radius: 0.5rem;
-            border: 2px solid #ddd;
-            border-bottom: none;
-            height: max-content;
-        }
+  .faqwrapper {
+    display: flex;
+    justify-content: center;
+    gap: 7.5%;
+    
+    .column {
+      width: 34%;
+      background-color: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(3px);
+      border-radius: 1rem 1rem;
+      border: 2px solid #ddd;
+      border-bottom: none;
+      height: max-content;
     }
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -32,6 +32,49 @@
 @media screen and (max-width: 600px) {
   #faq .faqwrapper .column {
     width: 80%;
+  }
+}
+
+.row {
+  &.open {
+    .a {
+      padding: 1rem;
+      color: rgba(0, 0, 0, 1);
+      border-bottom: 2px solid #ddd !important;
+    }
+    .q.last {
+      border-radius: 0;
+    }
+  }
+
+  .q {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: space-between;
+    transition: border-radius 0.6s ease;
+    
+    &.last {
+      border-bottom: 2px solid #ddd;
+      border-radius: 0 0 1rem 1rem;
+    }
+  }
+  .a {
+    padding: 0 1rem;
+    background-color:rgba(220, 235, 250, 0.7);
+    max-height: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: max-height 0.6s ease, padding 0.4s ease, color 0.5s ease;  
+    border-bottom: 2px solid #ddd;
+    color: rgba(0, 0, 0, 0);
+    
+    &.last {
+      border-radius: 0 0 1rem 1rem;
+      border-bottom: none;
+    }
   }
 }
 
@@ -74,33 +117,4 @@
       transform: rotate(90deg) translate(10px,0);
     }
   }
-}
-
-.row {
-  .q {
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      padding: 1rem;
-      gap: 1rem;
-      justify-content: space-between;
-    }
-    .a {
-        padding: 0 1rem;
-        background-color:rgba(220, 235, 250, 0.7);
-        max-height: 0px;
-        box-sizing: border-box;
-        overflow: hidden;
-        transition: max-height 0.6s ease, padding 0.4s ease, color 0.5s ease;  
-        border-bottom: 2px solid #ddd;
-        color: rgba(0, 0, 0, 0);
-        
-        &:last-child {
-          border-radius: 0 0 0.5rem 0.5rem;
-        }
-        &.open {
-          padding: 1rem;
-          color: rgba(0, 0, 0, 1);
-        }
-    }
 }

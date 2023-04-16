@@ -17,13 +17,19 @@ const FAQ = () => {
 
             <div ref={ref} className={`faqwrapper ${isInViewport1 ? 'hide show' : "hide"}`}>
                 <div className='column'>
-                    {column1.map((question) => {
+                    {column1.map((question, index) => {
+                        if (index === column1.length - 1) {
+                            return <Dropdown q={question[0]} a={question[1]} last={true}/>
+                        }
                         return <Dropdown q={question[0]} a={question[1]}/>
                     })}
                 </div>
 
                 <div className='column'> 
-                    {column2.map((question) => {
+                    {column2.map((question, index) => {
+                        if (index === column2.length - 1) {
+                            return <Dropdown q={question[0]} a={question[1]} last={true}/>
+                        } 
                         return <Dropdown q={question[0]} a={question[1]}/>
                     })}
                 </div>
