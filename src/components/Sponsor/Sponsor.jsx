@@ -9,6 +9,7 @@ import wolfram from '../../assets/Sponsors/wolfram.png'
 import echo3d from '../../assets/Sponsors/echo3d.png'
 import xyz from '../../assets/Sponsors/xyz.png'
 import onepass from '../../assets/Sponsors/1pass.png'
+import hcb from '../../assets/Sponsors/hcb.png'
 
 const entrepreneur = [
 ]
@@ -106,6 +107,10 @@ const Sponsor = () => {
           Interested in sponsoring? Contact us at <a href='mailto:business@rythmhacks.ca'>business@rythmhacks.ca</a>. 
         </p>
         <br/><br/>
+        <h3 className='text-center mb-4'>Partners</h3>
+        <div className='innovator'>
+          <img src={hcb} loading='lazy' alt='sponsor' onClick={() => window.open("https://bank.hackclub.com/")}></img>
+        </div>
       </div>
     </div>
     </>
