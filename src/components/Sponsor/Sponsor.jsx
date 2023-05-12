@@ -6,7 +6,8 @@ import useIsInViewport from '../ScrollAnimation/useIsInViewport.js'
 import '../ScrollAnimation/ScrollAnimation.scss'
 
 import wolfram from '../../assets/Sponsors/wolfram.png'
-import echo3d from '../../assets/Sponsors/echo3d.png'
+import bb from '../../assets/Sponsors/bestbuy.png'
+import jd from '../../assets/Sponsors/jd.png'
 import xyz from '../../assets/Sponsors/xyz.png'
 import onepass from '../../assets/Sponsors/1pass.png'
 import hcb from '../../assets/Sponsors/hcb.png'
@@ -21,19 +22,23 @@ const innovator = [
     logo: wolfram   
   },
   {
-    link: "https://www.echo3d.com/",
-    logo: echo3d   
-  },
-  {
     link: 'https://gen.xyz/',
     logo: xyz
   },
   {
     link: 'https://1password.com/',
     logo: onepass
+  },
+  {
+    link: 'https://www.bestbuy.ca/en-ca',
+    logo: bb
   }
 ]
 const explorer = [
+  {
+    link: 'https://www.jdoodle.com',
+    logo: jd
+  }
 ]
 
 const Sponsor = () => {
