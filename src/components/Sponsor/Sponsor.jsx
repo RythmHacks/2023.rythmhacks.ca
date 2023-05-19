@@ -11,12 +11,17 @@ import jd from '../../assets/Sponsors/jd.png'
 import xyz from '../../assets/Sponsors/xyz.png'
 import onepass from '../../assets/Sponsors/1pass.png'
 import hcb from '../../assets/Sponsors/hcb.png'
+import tmmc from '../../assets/Sponsors/tmmc.png'
 
 const entrepreneur = [
 ]
 const pioneer = [
 ]
 const innovator = [
+  {
+    link: 'https://tmmc.ca/en/',
+    logo: tmmc
+  },
   {
     link: "https://www.wolfram.com/",
     logo: wolfram   
