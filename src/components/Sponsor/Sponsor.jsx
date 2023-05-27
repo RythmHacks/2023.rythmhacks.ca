@@ -12,6 +12,7 @@ import xyz from '../../assets/Sponsors/xyz.png'
 import onepass from '../../assets/Sponsors/1pass.png'
 import hcb from '../../assets/Sponsors/hcb.png'
 import tmmc from '../../assets/Sponsors/tmmc.png'
+import fb from '../../assets/Sponsors/fb.png'
 
 const entrepreneur = [
 ]
@@ -120,6 +121,8 @@ const Sponsor = () => {
         <h3 className='text-center mb-4'>Partners</h3>
         <div className='innovator'>
           <img src={hcb} loading='lazy' alt='sponsor' onClick={() => window.open("https://bank.hackclub.com/")}></img>
+          <img src={fb} loading='lazy' alt='sponsor' onClick={() => window.open("https://www.flowboat.ca")} className='!p-0'></img>
+          
         </div>
       </div>
     </div>
