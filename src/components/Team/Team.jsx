@@ -13,7 +13,7 @@ import khurram from '../../assets/Headshots/khurram.jpeg'
 import ali from '../../assets/Headshots/Ali.jpg'
 import lifeng from '../../assets/Headshots/Lifeng.jpg'
 import shamir from '../../assets/Headshots/shamir.png'
-import harry from '../../assets/Headshots/harry.jpg'
+import leo from '../../assets/Headshots/leo.jpeg'
 
 const people = [
     {
@@ -53,9 +53,9 @@ const people = [
         role: 'Finance'
     },
     {
-        name: 'Harry Wang',
-        picture: harry,
-        link: 'https://www.linkedin.com/in/harry-wang-b2b764215/',
+        name: 'Leo Peng',
+        picture: leo,
+        link: 'https://www.linkedin.com/in/leo-peng-272683238/',
         role: 'Finance'
     },
     {
