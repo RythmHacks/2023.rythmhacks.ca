@@ -5,8 +5,10 @@ import { useRef } from 'react'
 import useIsInViewport from '../ScrollAnimation/useIsInViewport.js'
 import '../ScrollAnimation/ScrollAnimation.scss'
 
+import leangap from '../../assets/Sponsors/leangap.svg'
 import wolfram from '../../assets/Sponsors/wolfram.png'
 import bb from '../../assets/Sponsors/bestbuy.png'
+import postman from '../../assets/Sponsors/postman.svg'
 import jd from '../../assets/Sponsors/jd.png'
 import xyz from '../../assets/Sponsors/xyz.png'
 import onepass from '../../assets/Sponsors/1pass.png'
@@ -17,6 +19,10 @@ import fb from '../../assets/Sponsors/fb.png'
 const entrepreneur = [
 ]
 const pioneer = [
+  {
+    link: 'https://leangap.org/',
+    logo: leangap
+  }
 ]
 const innovator = [
   {
@@ -38,6 +44,10 @@ const innovator = [
   {
     link: 'https://www.bestbuy.ca/en-ca',
     logo: bb
+  },
+  {
+    link: 'https://postman.com/',
+    logo: postman
   }
 ]
 const explorer = [
