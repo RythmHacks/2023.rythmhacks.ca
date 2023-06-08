@@ -48,6 +48,7 @@ const Footer = () => {
                 <a target='_blank' rel='noreferrer' href='https://links.rythmhacks.ca/'>Links Page</a>
                 <a target='_blank' rel='noreferrer' href='mailto:business@rythmhacks.ca'>Business Email</a>
                 <a target='_blank' rel='noreferrer' href='mailto:rythmhacks@gmail.com'>Email</a>
+                <a target='_blank' rel='noreferrer' href='https://dash.rythmhacks.ca/privacy'>Privacy Policy</a>
             </div>
         </div>
     )
