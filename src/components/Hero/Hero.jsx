@@ -27,7 +27,7 @@ const Hero = () => {
 					</div>
 
 			<h1 className='mt-[6vh] font-bold text-accent' id = 'title'>RythmHacks</h1>
-			<h4 id = 'description'>Happening in August 2023!</h4>
+			<h4 id = 'description'>September 1-3, 2023 | Accelerator Centre</h4>
 			
 			<div className='mt-8 justify-center'>
 				<button onClick={() => window.open('https://opnform.com/forms/rythmhacks-pre-registration')} className='mr-4 mb-2'>Pre-register now!</button><br/>
