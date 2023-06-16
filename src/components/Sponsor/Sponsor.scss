@@ -15,15 +15,17 @@
         margin-bottom: 1rem;
     }
     
-    img {
+    span {
         object-fit: contain;
         // aspect-ratio: 5 / 3;
         background-color: white;
         padding: 1rem;
         border-radius: 1rem;
         cursor: pointer;
-        transition: transform .2s ease;
+        transition: transform .2s ease, filter .3s ease !important;
         border: 2px solid #ddd;
+        align-items: center;
+        display: inline-flex !important;
 
         &:hover {
             transform: scale(0.95);
@@ -32,7 +34,7 @@
 
     .entrepreneur {
         display: block;
-        img {
+        span {
             margin-left: auto;
             margin-right: auto;
             width: 40%;
@@ -40,18 +42,22 @@
             min-width: 300px;
         }
     }
-    .pioneer img {
+    .pioneer span {
         width: 30%;
         min-width: 200px
     }
-    .innovator img {
+    .innovator span {
         width: 15%;
         min-width: 133px;
         padding: 0.75rem;
     }
-    .explorer img {
+    .explorer span {
         width: 12.5%;
         min-width: 100px;
         padding: 0.5rem;
+    }
+
+    .flowboat {
+        padding: 0 !important;
     }
 }

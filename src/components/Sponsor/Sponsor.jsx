@@ -15,6 +15,8 @@ import onepass from '../../assets/Sponsors/1pass.png'
 import hcb from '../../assets/Sponsors/hcb.png'
 import tmmc from '../../assets/Sponsors/tmmc.png'
 import fb from '../../assets/Sponsors/fb.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const entrepreneur = [
 ]
@@ -88,7 +90,7 @@ const Sponsor = () => {
             <button onClick={() => window.location = "mailto:business@rythmhacks.ca"} className='mr-4'>Contact us</button>
             <button onClick={() => window.location.href = "/documents/prospectus.pdf"} className='mt-4 lg:mt-0'>Sponsorship Prospectus</button>
           </p>
-          <img loading='lazy' src={SponsorImage} alt='sponsorimg'></img>
+          <LazyLoadImage src={SponsorImage} alt='sponsorimg' effect="blur" />
         </div>
       </div>
 
@@ -99,28 +101,28 @@ const Sponsor = () => {
         <div className='entrepreneur'>
           {entrepreneur.map((sponsor, index) => {
             return (
-              <img src={sponsor.logo} loading='lazy' alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
+              <LazyLoadImage effect="blur" src={sponsor.logo} alt='sponsor' onClick={() => window.open(sponsor.link)}></LazyLoadImage>
             )
           })}
         </div>
         <div className='pioneer'>
           {pioneer.map((sponsor, index) => {
             return (
-              <img src={sponsor.logo} loading='lazy' alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
+              <LazyLoadImage effect="blur" src={sponsor.logo} alt='sponsor' onClick={() => window.open(sponsor.link)}></LazyLoadImage>
             )
           })}
         </div>
         <div className='innovator'>
           {innovator.map((sponsor, index) => {
             return (
-              <img src={sponsor.logo} loading='lazy' alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
+              <LazyLoadImage effect="blur" src={sponsor.logo} alt='sponsor' onClick={() => window.open(sponsor.link)}></LazyLoadImage>
             )
           })}
         </div>
         <div className='explorer'>
           {explorer.map((sponsor, index) => {
             return (
-              <img src={sponsor.logo} loading='lazy' alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
+              <LazyLoadImage effect="blur" src={sponsor.logo} alt='sponsor' onClick={() => window.open(sponsor.link)}></LazyLoadImage>
             )
           })}
         </div>
@@ -130,9 +132,8 @@ const Sponsor = () => {
         <br/><br/>
         <h3 className='text-center mb-4'>Partners</h3>
         <div className='innovator'>
-          <img src={hcb} loading='lazy' alt='sponsor' onClick={() => window.open("https://bank.hackclub.com/")}></img>
-          <img src={fb} loading='lazy' alt='sponsor' onClick={() => window.open("https://www.flowboat.ca")} className='!p-0'></img>
-          
+          <LazyLoadImage effect="blur" src={hcb} alt='sponsor' onClick={() => window.open("https://bank.hackclub.com/")} ></LazyLoadImage>
+          <LazyLoadImage effect="blur" src={fb} alt='sponsor' onClick={() => window.open("https://www.flowboat.ca")} wrapperClassName='!p-0 rounded-md' className='rounded-2xl'></LazyLoadImage>
         </div>
       </div>
     </div>

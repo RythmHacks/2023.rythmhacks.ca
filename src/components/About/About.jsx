@@ -6,6 +6,8 @@ import '../ScrollAnimation/ScrollAnimation.scss'
 
 import EngImg from '../../assets/Graphics/engineering.png'
 import TogetherImg from '../../assets/Graphics/together.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const About = () => {
 
@@ -28,7 +30,7 @@ const About = () => {
               <br/><br/>
               In August of 2023, we're going in person for the first time! If you're a high schooler, join us for an amazing weekend of fun, innovation, and free food. At RythmHacks, you'll work in teams of four or less to create a website, app, game, robot, or anything you can imagine. You'll have 36 hours to create your project, pitch it to judges, and compete for prizes!
             </p>
-            <img loading='lazy' src={EngImg} alt='engimg'/>
+            <LazyLoadImage src={EngImg} alt='engimg' effect="blur" />
           </div>
         </div>
 
@@ -37,7 +39,7 @@ const About = () => {
             A place <span className='darkblue gradient'> for everyone</span>. 
           </h3>
           <div className='sectionwrapper'>
-            <img loading='lazy' src={TogetherImg} alt='togetherimg' className='block md:hidden'></img>
+            <LazyLoadImage src={TogetherImg} alt='togetherimg' className='block md:hidden' effect="blur" />
             <p>
               Whether you're a seasoned developer or it's your first time creating a project, you're welcome at RythmHacks. We've got workshops, mini-events, and other resources planned through the weekend to help you in your project creation. Developers, designers, hardware wizards, and tech enthusiasts of all sorts have a place here at RythmHacks.
               <br/><br/>
@@ -45,7 +47,7 @@ const About = () => {
               <br/><br/>
               RythmHacks works to create an ecosystem that supports startups and entrepreneurs. If you want to take your project further into the startup world after RythmHacks, we'll have mentorship, resources, and connections to help you do so. Furthermore, we hope to have other startup-related resources for you to take advantage of during the event, such as workshops, prize tracks, and mentors.
             </p>
-            <img loading='lazy' src={TogetherImg} alt='togetherimgmobile' className='hidden md:block'></img>
+            <LazyLoadImage src={TogetherImg} alt='togetherimgmobile' className='hidden md:block' effect="blur" />
           </div>
         </div>
     </div>
