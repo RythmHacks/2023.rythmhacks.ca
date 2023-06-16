@@ -25,7 +25,7 @@
         transition: transform .2s ease, filter .3s ease !important;
         border: 2px solid #ddd;
         align-items: center;
-        display: inline-flex !important;
+        display: grid !important;
 
         &:hover {
             transform: scale(0.95);
