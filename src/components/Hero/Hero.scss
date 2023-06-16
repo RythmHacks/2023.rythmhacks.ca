@@ -1,8 +1,6 @@
 #hero {
-    display: block;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
+    display: grid;
+    place-items: center;
     
     transition: opacity 0.4s ease;
 }
@@ -43,6 +41,11 @@
 }
 
 @media screen and (max-height: 800px) {
+    .getstarted {
+        display: none;
+    }
+}
+@media screen and (max-width: 1300px) {
     .getstarted {
         display: none;
     }
@@ -104,10 +107,6 @@
         right: 0;
         margin-top: 1vh;
         text-align: center;        
-    }
-    #hero {
-        display: block;
-        justify-content: center;
     }
 }
 

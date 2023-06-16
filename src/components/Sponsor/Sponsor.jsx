@@ -4,13 +4,14 @@ import SponsorImage from '../../assets/Graphics/sponsor.png'
 import leangap from '../../assets/Sponsors/leangap.svg'
 import wolfram from '../../assets/Sponsors/wolfram.png'
 import bb from '../../assets/Sponsors/bestbuy.png'
-import postman from '../../assets/Sponsors/postman.svg'
+import postman from '../../assets/Sponsors/postman.png'
 import jd from '../../assets/Sponsors/jd.png'
 import xyz from '../../assets/Sponsors/xyz.png'
 import onepass from '../../assets/Sponsors/1pass.png'
 import hcb from '../../assets/Sponsors/hcb.png'
 import tmmc from '../../assets/Sponsors/tmmc.png'
 import fb from '../../assets/Sponsors/fb.png'
+import bh from '../../assets/Sponsors/bh.png'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -52,6 +53,9 @@ const explorer = [
   {
     link: 'https://www.jdoodle.com',
     logo: jd
+  }, {
+    link: 'https://www.bisecthosting.com',
+    logo: bh
   }
 ]
 
