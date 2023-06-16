@@ -1,18 +1,25 @@
 import './Hero.scss'
 import Socials from '../Socials/Socials.jsx'
 import { BsArrowDownCircleFill } from 'react-icons/bs'
-
-import { useScrollPosition } from '../ScrollAnimation/UseScrollPosition'
+import { useEffect, useState } from 'react'
 
 const Hero = () => {
 
-	let scrollPosition = useScrollPosition();
-	// let amountLeft = 900-scrollPosition;
-	// let opacity = (amountLeft/900);
-	// opacity = parseFloat(opacity).toFixed(2);
+  const [scrolled, setScrolled] = useState(true);
+	const handleScroll = (e) => {
+		if (window.scrollY > 500) return
+    setScrolled(window.scrollY < 300);
+	}
 
-    return (
-		<div id='hero' className={`h-[92vh] p-[4%] fixed w-full ${(scrollPosition > 300) ? "opacity-0 pointer-events-none" : "opacity-1 pointer-events-auto"}`}>
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+				window.removeEventListener("scroll", handleScroll);
+		};
+	}, [handleScroll]);
+
+	return (
+		<div id='hero' className={`h-[92vh] p-[4%] fixed w-full ${(scrolled) ? "opacity-1 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
 			<div id='cycle-wrapper' className="font-extralight">
 						<h4 className="rw-sentence">
 							<div className="rw-words rw-words-1">
@@ -54,7 +61,7 @@ const Hero = () => {
 				<p>Let's get started</p>
 			</div>
 		</div>
-    );
+	);
 }
 
 export default Hero;

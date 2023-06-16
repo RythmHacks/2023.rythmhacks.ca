@@ -1,8 +1,4 @@
-import { useRef } from 'react';
 import './About.scss'
-
-import useIsInViewport from '../ScrollAnimation/useIsInViewport.js'
-import '../ScrollAnimation/ScrollAnimation.scss'
 
 import EngImg from '../../assets/Graphics/engineering.png'
 import TogetherImg from '../../assets/Graphics/together.png'
@@ -11,16 +7,10 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const About = () => {
 
-  const ref1 = useRef(null);
-  const ref2 = useRef(null);
-
-  const isInViewport1 = useIsInViewport(ref1);
-  const isInViewport2 = useIsInViewport(ref2);
-
   return (
     <div id='about' className='section mt-[92vh]'>
 
-        <div ref={ref1} className={isInViewport1 ? 'hide show' : "hide"}>
+        <div>
           <h3>
               Experience the <span className='gradient blue'>magic of tech</span>.
           </h3>
@@ -34,7 +24,7 @@ const About = () => {
           </div>
         </div>
 
-        <div ref={ref2} className={`${isInViewport2 ? 'hide show' : "hide"} mt-8`}>
+        <div className={`mt-8`}>
           <h3>
             A place <span className='darkblue gradient'> for everyone</span>. 
           </h3>

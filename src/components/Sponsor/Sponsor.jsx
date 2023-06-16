@@ -1,10 +1,6 @@
 import './Sponsor.scss'
 import SponsorImage from '../../assets/Graphics/sponsor.png'
 
-import { useRef } from 'react'
-import useIsInViewport from '../ScrollAnimation/useIsInViewport.js'
-import '../ScrollAnimation/ScrollAnimation.scss'
-
 import leangap from '../../assets/Sponsors/leangap.svg'
 import wolfram from '../../assets/Sponsors/wolfram.png'
 import bb from '../../assets/Sponsors/bestbuy.png'
@@ -61,14 +57,11 @@ const explorer = [
 
 const Sponsor = () => {
 
-  const ref1 = useRef(null);
-  const isInViewport1 = useIsInViewport(ref1);
-
   return (
     <>
     <div id='sponsors' className='section'>
 
-      <div ref={ref1} className={isInViewport1 ? 'hide show' : "hide"}>
+      <div>
         <h3>Sponsor the <span className='gradient green'>future of technology</span>.</h3>
         <div className='sectionwrapper'>
           <p>
