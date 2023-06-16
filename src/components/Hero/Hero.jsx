@@ -51,16 +51,6 @@ const Hero = () => {
 			<div className='flex justify-center'>
 				<Socials/>
 			</div>
-
-			<div className='getstarted' onClick={() => {
-				let element = document.getElementById('about')
-				const y = element.getBoundingClientRect().top + window.pageYOffset - 60;
-
-				window.scrollTo({top: y, behavior: 'smooth'});
-			}}>
-				<BsArrowDownCircleFill />
-				<p>Let's get started</p>
-			</div>
 			</div>
 		</div>
 	);
