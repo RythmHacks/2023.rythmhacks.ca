@@ -40,6 +40,20 @@ const About = () => {
             <LazyLoadImage src={TogetherImg} alt='togetherimgmobile' className='hidden md:block' effect="blur" />
           </div>
         </div>
+
+        <div className='mt-8'>
+          <h3>Event Info</h3>
+          <div className='flex mt-4 items-center flex-row md:flex-col'>
+            <div>
+              <h4>Venue</h4>
+              <p className='mt-4'>This year, RythmHacks is taking place at the <a href='https://www.acceleratorcentre.com' target='_blank' rel='noreferrer'>Accelerator Centre</a>!</p>
+              <p>295 Hagey Blvd, Waterloo, ON N2L 6R5</p>
+              <h4 className='mt-4'>Date</h4>
+              <p className='mt-4'>RythmHacks will start on September 1st, 2023 and end on September 3rd, 2023. Check-in will start in the late evening.</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.202789559543!2d-80.55207152563058!3d43.47723816379655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf154a15e1049%3A0x19ae946fefbc593a!2sAccelerator%20Centre!5e0!3m2!1sen!2sca!4v1687299569347!5m2!1sen!2sca" className='w-full border-4 border-accent rounded-3xl' height="450" allowFullScreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
     </div>
   )
 }

@@ -20,7 +20,7 @@ const Hero = () => {
 
 	return (
 		<div id='hero' className={`h-[92vh] fixed w-full ${(scrolled) ? "opacity-1 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
-			<div className='flex flex-col gap-8 mt-[-4rem]'>
+			<div className='flex flex-col gap-8 md:gap-4 mt-[-4rem]'>
 			<div id='cycle-wrapper' className="font-extralight">
 						<h4 className="rw-sentence">
 							<div className="rw-words rw-words-1">
@@ -34,8 +34,8 @@ const Hero = () => {
 						</h4>
 					</div>
         
-      <h1 className='mt-[6vh] font-bold text-accent' id = 'title'>RythmHacks</h1>
-			<h4 id = 'description'>September 1-3, 2023 | Accelerator Centre</h4>
+      <h1 className='mt-[6vh] font-bold text-accent text-center' id = 'title'>RythmHacks</h1>
+			<h4 className='text-center' id='description'>September 1-3, 2023 | Accelerator Centre</h4>
 			
 			<div className='justify-center flex flex-row md:flex-col items-center gap-2'>
 				<button onClick={() => window.open('https://opnform.com/forms/rythmhacks-pre-registration')}>Pre-register now!</button>
