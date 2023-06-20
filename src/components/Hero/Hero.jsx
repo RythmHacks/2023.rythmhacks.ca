@@ -1,18 +1,26 @@
 import './Hero.scss'
 import Socials from '../Socials/Socials.jsx'
 import { BsArrowDownCircleFill } from 'react-icons/bs'
-
-import { useScrollPosition } from '../ScrollAnimation/UseScrollPosition'
+import { useEffect, useState } from 'react'
 
 const Hero = () => {
 
-	let scrollPosition = useScrollPosition();
-	// let amountLeft = 900-scrollPosition;
-	// let opacity = (amountLeft/900);
-	// opacity = parseFloat(opacity).toFixed(2);
+  const [scrolled, setScrolled] = useState(true);
+	const handleScroll = (e) => {
+		if (window.scrollY > 500) return
+    setScrolled(window.scrollY < 300);
+	}
 
-    return (
-		<div id='hero' className={`h-[92vh] p-[4%] fixed w-full ${(scrollPosition > 300) ? "opacity-0 pointer-events-none" : "opacity-1 pointer-events-auto"}`}>
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+				window.removeEventListener("scroll", handleScroll);
+		};
+	}, [handleScroll]);
+
+	return (
+		<div id='hero' className={`h-[92vh] fixed w-full ${(scrolled) ? "opacity-1 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
+			<div className='flex flex-col gap-8 mt-[-4rem]'>
 			<div id='cycle-wrapper' className="font-extralight">
 						<h4 className="rw-sentence">
 							<div className="rw-words rw-words-1">
@@ -25,13 +33,13 @@ const Hero = () => {
 							</div>
 						</h4>
 					</div>
-
-			<h1 className='mt-[6vh] font-bold text-accent' id = 'title'>RythmHacks</h1>
+        
+      <h1 className='mt-[6vh] font-bold text-accent' id = 'title'>RythmHacks</h1>
 			<h4 id = 'description'>September 1-3, 2023 | Accelerator Centre</h4>
 			
-			<div className='mt-8 justify-center'>
-				<button onClick={() => window.open('https://opnform.com/forms/rythmhacks-pre-registration')} className='mr-4 mb-2'>Pre-register now!</button><br/>
-				<button onClick={() => window.location.href = '/documents/prospectus.pdf'} className='mr-4'>Sponsor us!</button>
+			<div className='justify-center flex flex-row md:flex-col items-center gap-2'>
+				<button onClick={() => window.open('https://opnform.com/forms/rythmhacks-pre-registration')}>Pre-register now!</button>
+				<button onClick={() => window.location.href = '/documents/prospectus.pdf'}>Sponsor us!</button>
 				<button onClick={() => {
 					let element = document.getElementById('faq')
 					const y = element.getBoundingClientRect().top + window.pageYOffset - 60;
@@ -40,21 +48,12 @@ const Hero = () => {
 				}}>Have questions?</button>
 			</div>
 
-			<div className='flex justify-center mt-8'>
+			<div className='flex justify-center'>
 				<Socials/>
 			</div>
-
-			<div className='getstarted' onClick={() => {
-				let element = document.getElementById('about')
-				const y = element.getBoundingClientRect().top + window.pageYOffset - 60;
-
-				window.scrollTo({top: y, behavior: 'smooth'});
-			}}>
-				<BsArrowDownCircleFill />
-				<p>Let's get started</p>
 			</div>
 		</div>
-    );
+	);
 }
 
 export default Hero;

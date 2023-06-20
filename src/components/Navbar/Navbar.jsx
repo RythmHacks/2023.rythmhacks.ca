@@ -1,27 +1,34 @@
 import './Navbar.scss'
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Squash as Hamburger } from 'hamburger-react'
 import { ImTree } from 'react-icons/im'
 import Logo from '../../assets/logo.png'
 
-import { useScrollPosition } from '../ScrollAnimation/UseScrollPosition'
-
 const Navbar = () => {
-
-    let scrollPosition = useScrollPosition();
-    let shouldChange = (scrollPosition > 10) ? 'scrolled' : '';
-
-    let pages = ['About', 'FAQ', 'Sponsors', 'Team', 'Contact']
-
     const [navbarOpen, setNavbarOpen] = useState(false)
     const [isOpen, setOpen] = useState(false)
+
+    let pages = ['About', 'FAQ', 'Sponsors', 'Team', 'Contact']
 
     const handleToggle = () => {
         setNavbarOpen(!navbarOpen)
     }
 
+    const [scrolled, setScrolled] = useState(true);
+	const handleScroll = (e) => {
+		if (window.scrollY > 500) return
+    setScrolled(window.scrollY < 300);
+	}
+
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+				window.removeEventListener("scroll", handleScroll);
+		};
+	}, [handleScroll]);
+    
     return (
-        <nav className={`nav text-3xl ${shouldChange}`}>
+        <nav className={`nav text-3xl ${(scrolled) ? "" : "scrolled"}`}>
             <button onClick={
                 () => {
                     window.scrollTo(0,0)

@@ -1,5 +1,7 @@
 import './Contact.scss'
 import Contactimg from '../../assets/Graphics/contact.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Contact = () => {
   return (
@@ -12,7 +14,7 @@ const Contact = () => {
                     <br/>Want to get some first-hand insight into the hackathon before it starts? Check out our <a href='https://medium.com/@rythmhacks' target='_blank' rel='noreferrer'>Medium blog</a>, which features posts written by our organizers that give you a look into the event planning process, as well as advice to make your time at Rythmhacks worthwhile.<br/> 
                     <br/>Have questions? Need guidance about the application process? Want to sponsor or support us? Email us <a href='mailto:rythmhacks@gmail.com'>here!</a>
                 </p>
-                <img loading='lazy' src={Contactimg} alt='contact' className='w-[30%] p-0'></img>
+                <LazyLoadImage src={Contactimg} alt='contact' className='w-full p-0' effect="blur" />
             </div>
         </div>
     </div>

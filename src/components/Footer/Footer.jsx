@@ -1,6 +1,8 @@
 import './Footer.scss'
 import logo from '../../assets/logosmall.png'
 import Socials from '../Socials/Socials.jsx'
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Footer = () => {
 
@@ -11,7 +13,7 @@ const Footer = () => {
             
             <div className='column'>
                 <div className='logowrapper mb-4'>
-                    <img loading='lazy' alt='logo' src={logo} className='rounded-full'></img>
+                    <LazyLoadImage alt='logo' src={logo} className='rounded-full' effect="blur" />
                     <h3>RythmHacks</h3>
                 </div>
                 <p className='mb-4'>Copyright © 2022-23 RythmHacks</p>

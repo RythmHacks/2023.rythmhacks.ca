@@ -1,21 +1,20 @@
 import './Sponsor.scss'
 import SponsorImage from '../../assets/Graphics/sponsor.png'
 
-import { useRef } from 'react'
-import useIsInViewport from '../ScrollAnimation/useIsInViewport.js'
-import '../ScrollAnimation/ScrollAnimation.scss'
-
 import ac from '../../assets/Sponsors/ac.png'
 import leangap from '../../assets/Sponsors/leangap.svg'
 import wolfram from '../../assets/Sponsors/wolfram.png'
 import bb from '../../assets/Sponsors/bestbuy.png'
-import postman from '../../assets/Sponsors/postman.svg'
+import postman from '../../assets/Sponsors/postman.png'
 import jd from '../../assets/Sponsors/jd.png'
 import xyz from '../../assets/Sponsors/xyz.png'
 import onepass from '../../assets/Sponsors/1pass.png'
 import hcb from '../../assets/Sponsors/hcb.png'
 import tmmc from '../../assets/Sponsors/tmmc.png'
 import fb from '../../assets/Sponsors/fb.png'
+import bh from '../../assets/Sponsors/bh.png'
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const entrepreneur = [
   {
@@ -59,19 +58,19 @@ const explorer = [
   {
     link: 'https://www.jdoodle.com',
     logo: jd
+  }, {
+    link: 'https://www.bisecthosting.com',
+    logo: bh
   }
 ]
 
 const Sponsor = () => {
 
-  const ref1 = useRef(null);
-  const isInViewport1 = useIsInViewport(ref1);
-
   return (
     <>
     <div id='sponsors' className='section'>
 
-      <div ref={ref1} className={isInViewport1 ? 'hide show' : "hide"}>
+      <div>
         <h3>Sponsor the <span className='gradient green'>future of technology</span>.</h3>
         <div className='sectionwrapper'>
           <p>
@@ -93,7 +92,7 @@ const Sponsor = () => {
             <button onClick={() => window.location = "mailto:business@rythmhacks.ca"} className='mr-4'>Contact us</button>
             <button onClick={() => window.location.href = "/documents/prospectus.pdf"} className='mt-4 lg:mt-0'>Sponsorship Prospectus</button>
           </p>
-          <img loading='lazy' src={SponsorImage} alt='sponsorimg'></img>
+          <LazyLoadImage src={SponsorImage} alt='sponsorimg' effect="blur" />
         </div>
       </div>
 
@@ -104,28 +103,28 @@ const Sponsor = () => {
         <div className='entrepreneur'>
           {entrepreneur.map((sponsor, index) => {
             return (
-              <img src={sponsor.logo} loading='lazy' alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
+              <LazyLoadImage effect="blur" src={sponsor.logo} alt='sponsor' onClick={() => window.open(sponsor.link)}></LazyLoadImage>
             )
           })}
         </div>
         <div className='pioneer'>
           {pioneer.map((sponsor, index) => {
             return (
-              <img src={sponsor.logo} loading='lazy' alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
+              <LazyLoadImage effect="blur" src={sponsor.logo} alt='sponsor' onClick={() => window.open(sponsor.link)}></LazyLoadImage>
             )
           })}
         </div>
         <div className='innovator'>
           {innovator.map((sponsor, index) => {
             return (
-              <img src={sponsor.logo} loading='lazy' alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
+              <LazyLoadImage effect="blur" src={sponsor.logo} alt='sponsor' onClick={() => window.open(sponsor.link)}></LazyLoadImage>
             )
           })}
         </div>
         <div className='explorer'>
           {explorer.map((sponsor, index) => {
             return (
-              <img src={sponsor.logo} loading='lazy' alt='sponsor' onClick={() => window.open(sponsor.link)}></img>
+              <LazyLoadImage effect="blur" src={sponsor.logo} alt='sponsor' onClick={() => window.open(sponsor.link)}></LazyLoadImage>
             )
           })}
         </div>
@@ -135,9 +134,8 @@ const Sponsor = () => {
         <br/><br/>
         <h3 className='text-center mb-4'>Partners</h3>
         <div className='innovator'>
-          <img src={hcb} loading='lazy' alt='sponsor' onClick={() => window.open("https://bank.hackclub.com/")}></img>
-          <img src={fb} loading='lazy' alt='sponsor' onClick={() => window.open("https://www.flowboat.ca")} className='!p-0'></img>
-          
+          <LazyLoadImage effect="blur" src={hcb} alt='sponsor' onClick={() => window.open("https://bank.hackclub.com/")} ></LazyLoadImage>
+          <LazyLoadImage effect="blur" src={fb} alt='sponsor' onClick={() => window.open("https://www.flowboat.ca")} wrapperClassName='!p-0 rounded-md' className='rounded-2xl'></LazyLoadImage>
         </div>
       </div>
     </div>

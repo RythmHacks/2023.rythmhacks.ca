@@ -15,6 +15,9 @@ import lifeng from '../../assets/Headshots/Lifeng.jpg'
 import shamir from '../../assets/Headshots/shamir.png'
 import leo from '../../assets/Headshots/leo.jpeg'
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 const people = [
     {
         name: 'Ali Elnagmi',
@@ -112,8 +115,8 @@ const Team = () => {
                 {people.map((person) => {
                     return (
                         <div className='person'>
-                            <img loading='lazy' src={person.picture} className='person picture'
-                            alt='headshot' onClick={() => window.open(person.link)}></img>
+                            <LazyLoadImage src={person.picture} className='person picture'
+                            alt='headshot' onClick={() => window.open(person.link)} effect='blur'></LazyLoadImage>
                             <p className='person name'>{person.name}</p>
                             <p>{person.role}</p>
                         </div>

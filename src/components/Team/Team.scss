@@ -19,7 +19,7 @@
             object-fit: cover;
             border-radius: 50%;
             cursor: pointer;
-            transition: transform 0.2s ease, border-radius 0.2s ease;
+            transition: transform 0.2s ease, border-radius 0.2s ease, filter 0.3s !important;
             box-shadow: 10px 0px 10px 0px  rgba(175, 175, 175, 50%);
 
             &:hover {
