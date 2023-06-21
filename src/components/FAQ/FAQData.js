@@ -14,6 +14,10 @@ export const column1 = [
 (<>Registration will be opened soon, but in the meantime you can pre-register <a href='https://opnform.com/forms/rythmhacks-pre-registration' target='_blank' rel='noreferrer'>here</a>! You'll be notified when registration starts.</>)
 ],
 [
+"When is RythmHacks?",
+(<>RythmHacks will run from September 1st to September 3rd, 2023.</>)
+],  
+[
 "What if I don't know how to code?",
 "That's okay! As a high school hackathon, we welcome students of all skill levels and backgrounds. We will have workshops and mentors available to help you learn new skills and build your project. Additionally, we will have a beginner track for those who are new to coding. Also, making a project doesn't just involve coding! Any good project will need all kinds of skills, including design, marketing, and business."
 ],
@@ -23,7 +27,7 @@ export const column1 = [
 ],
 [
 "Is RythmHacks in person or online?",
-"RythmHacks will happen in-person. The venue is yet to be confirmed. There won't be an online portion of this year's event, but workshops and activites will be recorded and posted online."
+"RythmHacks will happen in-person at the Accelerator Centre! There won't be an online portion of this year's event, but workshops and activites will be recorded and posted online."
 ],
 [
 "Are there any costs?",
@@ -37,10 +41,6 @@ export const column1 = [
 "Can I cross-submit to another hackathon?",
 "No. A project submitted to RythmHacks cannot be submitted to another hackathon on the same weekend. "
 ],
-[
-"I'm a business or corporation. Can I help support RythmHacks?",
-(<>Yes! RythmHacks is a nonprofit organization, and we rely on sponsors to make our event possible. By sponsoring, you'll be inspiring and supporting the future innovators of technology. For sponsorship inquiries, contact <a href='mailto:rythmhacks@gmail.com'>rythmhacks@gmail.com</a>.</>)
-]
 ]
 
 export const column2 = [
@@ -54,7 +54,7 @@ export const column2 = [
 ],
 [
 "Do I have to stay at the venue the whole time?",
-"Yes. For safety reasons, we require that attendees will stay at the venue for the duration of the event. We will have a designated area for sleeping, and we will have a quiet room for those who need to rest. If you need to leave the building for any reason, let us know on Discord."
+"No, you can leave at any time if you wish. If you are participating, please be sure to be at the venue for check-ins, pitching, and the closing ceremony."
 ],
 [
 "What should I bring to RythmHacks?",
@@ -79,5 +79,9 @@ export const column2 = [
 [
 "What if I have more questions?",
 (<>You can email us at <a href='mailto:rythmhacks@gmail.com'>rythmhacks@gmail.com</a> for any questions or concerns you may have.</>)
-]
+],
+[
+"I'm a business or corporation. Can I help support RythmHacks?",
+(<>Yes! RythmHacks is a nonprofit organization, and we rely on sponsors to make our event possible. By sponsoring, you'll be inspiring and supporting the future innovators of technology. For sponsorship inquiries, contact <a href='mailto:rythmhacks@gmail.com'>rythmhacks@gmail.com</a>.</>)
+]  
 ]
