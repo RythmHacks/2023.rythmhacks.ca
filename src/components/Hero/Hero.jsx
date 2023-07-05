@@ -23,7 +23,7 @@ const Hero = () => {
 			<h4 className='text-center' id='description'>September 1-3, 2023 | Accelerator Centre</h4>
 			
 			<div className='justify-center flex flex-row md:flex-col items-center gap-2'>
-				<button onClick={() => window.open('https://opnform.com/forms/rythmhacks-pre-registration')}>Pre-register now!</button>
+				<button onClick={() => window.open('https://dash.rythmhacks.ca')}>Register now!</button>
 				<button onClick={() => window.location.href = '/documents/prospectus.pdf'}>Sponsor us!</button>
 				<button onClick={() => {
 					let element = document.getElementById('faq')
