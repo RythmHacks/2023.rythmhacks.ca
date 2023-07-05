@@ -13,6 +13,7 @@ import hcb from '../../assets/Sponsors/hcb.png'
 import tmmc from '../../assets/Sponsors/tmmc.png'
 import fb from '../../assets/Sponsors/fb.png'
 import bh from '../../assets/Sponsors/bh.png'
+import pb from '../../assets/Sponsors/pb.jpeg'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -61,6 +62,9 @@ const explorer = [
   }, {
     link: 'https://www.bisecthosting.com',
     logo: bh
+  }, {
+    link: "https://paybridgetech.com",
+    logo: pb
   }
 ]
 

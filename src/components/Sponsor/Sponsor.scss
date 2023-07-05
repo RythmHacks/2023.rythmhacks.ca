@@ -26,6 +26,7 @@
         border: 2px solid #ddd;
         align-items: center;
         display: grid !important;
+        place-items: center;
 
         &:hover {
             transform: scale(0.95);
