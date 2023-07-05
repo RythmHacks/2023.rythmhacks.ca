@@ -1,25 +1,10 @@
 import './Hero.scss'
 import Socials from '../Socials/Socials.jsx'
-import { BsArrowDownCircleFill } from 'react-icons/bs'
-import { useEffect, useState } from 'react'
 
 const Hero = () => {
 
-  const [scrolled, setScrolled] = useState(true);
-	const handleScroll = (e) => {
-		if (window.scrollY > 500) return
-    setScrolled(window.scrollY < 300);
-	}
-
-	useEffect(() => {
-		window.addEventListener("scroll", handleScroll);
-		return () => {
-				window.removeEventListener("scroll", handleScroll);
-		};
-	}, [handleScroll]);
-
 	return (
-		<div id='hero' className={`h-[92vh] fixed w-full ${(scrolled) ? "opacity-1 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
+		<div id='hero' className={`h-[92vh] w-full`}>
 			<div className='flex flex-col gap-8 md:gap-4 mt-[-4rem]'>
 			<div id='cycle-wrapper' className="font-extralight">
 						<h4 className="rw-sentence">

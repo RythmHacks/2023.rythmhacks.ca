@@ -8,7 +8,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 const About = () => {
 
   return (
-    <div id='about' className='section mt-[92vh]'>
+    <div id='about' className='section'>
 
         <div>
           <h3>
