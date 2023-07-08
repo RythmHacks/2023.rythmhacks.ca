@@ -11,7 +11,7 @@ export const column1 = [
 ],
 [
 "How do I register for RythmHacks?",
-(<>Registration will be opened soon, but in the meantime you can pre-register <a href='https://opnform.com/forms/rythmhacks-pre-registration' target='_blank' rel='noreferrer'>here</a>! You'll be notified when registration starts.</>)
+(<>Registration is open now! <a href='https://opnform.com/forms/rythmhacks-pre-registration' target='_blank' rel='noreferrer'>Click here</a> to register now or Daniel will be very disappointed. Registration will close on August 8th, 2023, meaning any submissions past that point will not be considered. </>)
 ],
 [
 "When is RythmHacks?",
