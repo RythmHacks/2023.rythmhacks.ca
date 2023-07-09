@@ -7,7 +7,7 @@ export const column1 = [
 ],
 [
 "Who can come to RythmHacks?",
-"Anybody who is currently in or entering a secondary school is welcome to attend RythmHacks. We welcome students of all skill levels and backgrounds, and we encourage you to apply! As a high school hackathon, we are unable to accept any professionals or post-secondary students, but you will be welcome to apply to be a mentor or judge!"
+"Any individual who will be in or below high school during the 2023-24 school year is welcome at RythmHacks. We welcome students of all skill levels and backgrounds, and we encourage you to apply! As a high school hackathon, we are unable to accept any professionals or post-secondary students, but you will be welcome to apply to be a mentor or judge!"
 ],
 [
 "How do I register for RythmHacks?",
