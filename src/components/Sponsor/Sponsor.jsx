@@ -14,6 +14,7 @@ import tmmc from '../../assets/Sponsors/tmmc.png'
 import fb from '../../assets/Sponsors/fb.png'
 import bh from '../../assets/Sponsors/bh.png'
 import pb from '../../assets/Sponsors/pb.jpeg'
+import uw from '../../assets/Sponsors/uw.png'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -27,6 +28,10 @@ const pioneer = [
   {
     link: 'https://leangap.org/',
     logo: leangap
+  },
+  {
+    link: "https://uwaterloo.ca",
+    logo: uw
   }
 ]
 const innovator = [
