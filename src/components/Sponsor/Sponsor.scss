@@ -17,7 +17,7 @@
     
     span {
         object-fit: contain;
-        aspect-ratio: 6 / 3 !important;
+        aspect-ratio: 2 / 1 !important;
         background-color: white;
         padding: 1rem;
         border-radius: 1rem;
@@ -27,6 +27,13 @@
         align-items: center;
         display: grid !important;
         place-items: center;
+
+        img {
+            aspect-ratio: 2 / 1 !important;
+            object-fit: contain;
+            width: auto;
+            height: auto;
+        }
 
         &:hover {
             transform: scale(0.95);

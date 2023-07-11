@@ -15,6 +15,7 @@ import fb from '../../assets/Sponsors/fb.png'
 import bh from '../../assets/Sponsors/bh.png'
 import pb from '../../assets/Sponsors/pb.jpeg'
 import uw from '../../assets/Sponsors/uw.png'
+import mt from '../../assets/Sponsors/mt.png'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -70,6 +71,10 @@ const explorer = [
   }, {
     link: "https://paybridgetech.com",
     logo: pb
+  },
+  {
+    link: "https://monkeytype.com",
+    logo: mt
   }
 ]
 
