@@ -28,13 +28,6 @@
         display: grid !important;
         place-items: center;
 
-        img {
-            aspect-ratio: 2 / 1 !important;
-            object-fit: contain;
-            width: auto;
-            height: auto;
-        }
-
         &:hover {
             transform: scale(0.95);
         }

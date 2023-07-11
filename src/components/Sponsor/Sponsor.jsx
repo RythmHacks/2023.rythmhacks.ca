@@ -13,7 +13,7 @@ import hcb from '../../assets/Sponsors/hcb.png'
 import tmmc from '../../assets/Sponsors/tmmc.png'
 import fb from '../../assets/Sponsors/fb.png'
 import bh from '../../assets/Sponsors/bh.png'
-import pb from '../../assets/Sponsors/pb.jpeg'
+import pb from '../../assets/Sponsors/pb.png'
 import uw from '../../assets/Sponsors/uw.png'
 import mt from '../../assets/Sponsors/mt.png'
 import { LazyLoadImage } from "react-lazy-load-image-component";
