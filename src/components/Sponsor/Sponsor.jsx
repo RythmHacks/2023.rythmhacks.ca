@@ -16,6 +16,7 @@ import bh from '../../assets/Sponsors/bh.png'
 import pb from '../../assets/Sponsors/pb.png'
 import uw from '../../assets/Sponsors/uw.png'
 import mt from '../../assets/Sponsors/mt.png'
+import mlh from '../../assets/Sponsors/mlh.svg'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -150,6 +151,7 @@ const Sponsor = () => {
         <div className='innovator'>
           <LazyLoadImage effect="blur" src={hcb} alt='sponsor' onClick={() => window.open("https://bank.hackclub.com/")} ></LazyLoadImage>
           <LazyLoadImage effect="blur" src={fb} alt='sponsor' onClick={() => window.open("https://www.flowboat.ca")} wrapperClassName='!p-0 rounded-md' className='rounded-2xl'></LazyLoadImage>
+          <LazyLoadImage effect="blur" src={mlh} alt='sponsor' onClick={() => window.open("https://mlh.io")}></LazyLoadImage>
         </div>
       </div>
     </div>
