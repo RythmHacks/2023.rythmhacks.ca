@@ -59,7 +59,7 @@ const Navbar = () => {
                 )}
             </div>
             <div className="burger">
-                <p onClick={handleToggle} className='text-[#777] cursor-pointer burger-button h-[36px] flex items-center'>
+                <p onClick={handleToggle} className='burger-button text-[#777] cursor-pointer h-[36px] w-[48px] ml-[auto] mr-20 items-center'>
                     <Hamburger toggled={isOpen} toggle={setOpen} />
                 </p>
                 <div className={navbarOpen ? "shown" : "hidden"}>
@@ -83,9 +83,10 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <button className='socialslink' onClick={() => {window.open('https://dash.rythmhacks.ca/')}}>
-                Register Now!
-            </button>
+            {/*style="display:block;max-width:100px;min-width:60px;position:fixed;right:24px;top:0;width:10%;z-index:10000" href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"*/}
+            <a id="mlh-trust-badge" className="fixed block style-none w-[12%] min-w-[48px] max-w-[90px] top-0 right-2 z-50"  target="_blank">
+                <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg" alt="Major League Hacking 2024 Hackathon Season" className="w-full" />
+            </a>
         </nav>
     );
 };
