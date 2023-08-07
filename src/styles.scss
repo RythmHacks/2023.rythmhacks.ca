@@ -109,7 +109,7 @@ button {
   font-family: 'Inter', sans-serif;
 }
 
-a:not(.socials a, #footer a) {
+a:not(.socials a, #footer a, .style-none) {
   transition: all 0.3s;
   color: $accent;
   cursor: pointer;
