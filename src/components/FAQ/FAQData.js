@@ -11,7 +11,7 @@ export const column1 = [
 ],
 [
 "How do I register for RythmHacks?",
-(<>Registration is open now! <a href='https://opnform.com/forms/rythmhacks-pre-registration' target='_blank' rel='noreferrer'>Click here</a> to register now or Daniel will be very disappointed. Registration will close on August 8th, 2023, meaning any submissions past that point will not be considered. </>)
+(<>Unfortunately, registration has now closed and you'll no longer be able to register for the event.</>)
 ],
 [
 "When is RythmHacks?",
@@ -63,10 +63,6 @@ export const column2 = [
 [
 "Why is it called RythmHacks?",
 (<div className='inline'>The branding of RythmHacks is themed around CS concepts like algorithms, graphs, and data structures.<br></br>Algorithm <BiDownArrowAlt/> rithm <BiDownArrowAlt/> Rythm</div>)
-],
-[
-"Help, I can't think of any ideas for my project!",
-(<>You can use <a href='https://helpineedideas.vercel.app/' target='_blank' rel='noreferrer'>this website</a> to get inspiration for your project. Simply specify a theme, and OpenAI will generate a hackathon project idea for you!</>)
 ],
 [
 "How will we communicate during the event?",
