@@ -24,7 +24,8 @@ const Footer = () => {
                 <h2>Navigation</h2>
                 {pages.map((value) => {
                     return (
-                        <button 
+                        <button
+                        className='text-[16px]'
                         onClick = {
                             () => {
                                 if (value.toLowerCase() === 'hero')  {
@@ -44,8 +45,9 @@ const Footer = () => {
             
             <div className='column'>
                 <h2>Links</h2>
-                <button onClick={() => {window.scrollTo(0,0)}}>Back to Top</button>
+                <button className='text-[16px]' onClick={() => {window.scrollTo(0,0)}}>Back to Top</button>
                 <a target='_blank' rel='noreferrer' href='https://github.com/RythmHacks/rythmhacks.ca/'>Source</a>
+                <a target='_blank' rel='noreferrer' href='https://static.mlh.io/docs/mlh-code-of-conduct.pdf'>MLH Code of Conduct</a>
                 <a target='_blank' rel='noreferrer' href='https://github.com/RythmHacks/rythmhacks.ca/blob/footer/LICENSE'>License</a>
                 <a target='_blank' rel='noreferrer' href='https://links.rythmhacks.ca/'>Links Page</a>
                 <a target='_blank' rel='noreferrer' href='mailto:business@rythmhacks.ca'>Business Email</a>
