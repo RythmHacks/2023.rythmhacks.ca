@@ -24,7 +24,9 @@ const Hero = () => {
 			
 			<div className='justify-center flex flex-row md:flex-col items-center gap-2'>
 				{/* <button onClick={() => window.open('https://dash.rythmhacks.ca')}>Register now!</button> */}
-				<button onClick={() => window.location.href = '/documents/prospectus.pdf'}>Sponsor us!</button>
+				{/* <button onClick={() => window.location.href = '/documents/prospectus.pdf'}>Sponsor us!</button> */}
+				<button onClick={() => window.open('https://dash.rythmhacks.ca')}>Hacker Dashboard</button>
+				<button onClick={() => window.open('https://rythmhacks2023.devpost.com')}>Devpost</button>
 				<button onClick={() => {
 					let element = document.getElementById('faq')
 					const y = element.getBoundingClientRect().top + window.pageYOffset - 60;
