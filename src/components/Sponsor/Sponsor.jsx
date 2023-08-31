@@ -17,6 +17,7 @@ import pb from '../../assets/Sponsors/pb.png'
 import uw from '../../assets/Sponsors/uw.png'
 import mt from '../../assets/Sponsors/mt.png'
 import mlh from '../../assets/Sponsors/mlh.svg'
+import gar from '../../assets/Sponsors/gar.png'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -58,9 +59,13 @@ const innovator = [
     logo: bb
   },
   {
+    link: "https://automationroboticsarduino.com",
+    logo: gar
+  },
+  {
     link: 'https://postman.com/',
     logo: postman
-  }
+  },
 ]
 const explorer = [
   {
