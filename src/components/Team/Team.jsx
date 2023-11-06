@@ -41,7 +41,7 @@ const people = [
         name: "Hooman Reza Nezhad",
         picture: hooman,
         link: 'https://www.linkedin.com/in/hooman-nezhad/',
-        role: 'Finance Lead'
+        role: 'Co-Lead'
     },
     {
         name: 'Shamir Khan',
