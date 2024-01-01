@@ -16,7 +16,7 @@ const Footer = () => {
                     <LazyLoadImage alt='logo' src={logo} className='rounded-full' effect="blur" />
                     <h3>RythmHacks</h3>
                 </div>
-                <p className='mb-4'>Copyright © 2022-23 RythmHacks</p>
+                <p className='mb-4'>Copyright © 2022-24 RythmHacks</p>
                 <Socials />
             </div>
 
