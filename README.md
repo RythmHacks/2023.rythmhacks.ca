@@ -5,6 +5,14 @@ https://www.rythmhacks.ca/<br/>
 [Backup link](https://rythmhacks.vercel.app/)<br/>
 [Graphics](https://designstripe.com/) for reference
 
+## Setup Instructions
+1. Clone the repository<br/>
+```
+git clone https://github.com/RythmHacks/2023.rythmhacks.ca.git
+```
+2. Type `npm i` to install dependencies
+3. Write some code and run `npm start` to start the web app
+
 ## Created Using
 - React
 - Tailwind 
